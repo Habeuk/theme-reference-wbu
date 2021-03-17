@@ -1,0 +1,5 @@
+{% if page.content %}
+<div class="page container">
+	<div{{ page.content.attributes }}>  {{ page.content|without('attributes', 'wrapper_attribute', 'entete') }}</div>
+</div>
+{% endif %}

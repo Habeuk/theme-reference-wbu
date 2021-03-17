@@ -1,0 +1,81 @@
+
+{% if current_user %}
+<div class="container">
+	<div class="job-profile section">
+		<div class="user-profile">
+			<div class="user-images">
+				{{ current_user.user_picture }}
+			</div>
+			<div class="user">
+				<h2 class="d-flex">
+					<span class="pr-2">Salut,
+					</span>
+					<a href="#" class="name-profile d-flex ">
+						<div>{{ current_user.field_nom }}</div>
+						<div class="pl-2">{{ current_user.field_prenom }}</div>
+					</a>
+				</h2>
+				<h5>Derniere connexion :
+					{{ current_user.acces_time }}</h5>
+				<div>
+					<a href="/user/{{ current_user.uid }}/edit">Editer mon profile</a>
+				</div>
+			</div>
+			{% if 'candidat' in current_user.roles %}
+			<div class="favorites-user">
+				<div class="my-ads d-none">
+					<a href="applied-job.html">0<small>Apply Job</small>
+					</a>
+				</div>
+			</div>
+			{% endif %}
+		</div>
+		<ul class="user-menu">
+			{% if 'employeur' in current_user.roles %}
+				<li class="active">
+					<a href="/user/{{ current_user.uid }}">
+						Information du compte
+					</a>
+				</li>
+				<li class="identification_de_l_emlpoi">
+					<a href="/user/{{ current_user.uid }}/identification_de_l_emlpoi">Details du compte</a>
+				</li>
+				<li class="mangage_emploie">
+					<a href="/user/{{ current_user.uid }}/mangage_emploie">Emplois</a>
+				</li>
+				<li class="souscription d-none">
+					<a href="/user/{{ current_user.uid }}/souscription">Soupcriptions</a>
+				</li>
+				<li class="offre_formations">
+					<a href="/user/{{ current_user.uid }}/offre_formations">Formations</a>
+				</li>
+				<li class="appel_d_offre">
+					<a href="/user/{{ current_user.uid }}/appel_d_offre">Appel d'offres</a>
+				</li>
+			{% elseif 'candidat' in current_user.roles %}
+				<li class="active">
+					<a href="/user/{{ current_user.uid }}">
+						Information du compte
+					</a>
+				</li>
+				<li class="identification_du_candidat">
+					<a href="/user/{{ current_user.uid }}/identification_du_candidat">Details du compte</a>
+				</li>
+				<li class="formations">
+					<a href="/user/{{ current_user.uid }}/formations/list">Formations</a>
+				</li>
+				<li class="experience_competence">
+					<a href="/user/{{ current_user.uid }}/experience_competence/list">Experiences / competances</a>
+				</li>
+				<li class="realisations">
+					<a href="/user/{{ current_user.uid }}/realisations/list">Realisations</a>
+				</li>
+				<li class="d-none">
+					<a href="delete-account.html">Fermer votre compte</a>
+				</li>
+			{% endif %}
+
+		</ul>
+	</div>
+</div>
+{% endif %}

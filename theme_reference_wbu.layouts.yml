@@ -1,0 +1,63 @@
+# les elements personalisers tels que "fieldtype" doivent etre supprimer y compris le code PHP en relation. Car ce code a peut de change d'evoluer.
+theme_reference_wbu.top_header:
+  label: 'TopHeader'
+  category: 'Template theme_reference_wbu'
+  template: templates/layouts/DefaultSection/TopHeader
+  default_region: infos
+  regions:
+    button:
+      label: Button     
+      fieldtype: button 
+    infos:
+      label: Infos (email or phone)
+      fieldtype: string
+    link:
+      label: Link
+      fieldtype: links
+      
+    
+theme_reference_wbu.before_header:
+  label: 'Before Header'
+  category: 'Template theme_reference_wbu'
+  default_region: title
+  regions:
+    logo:
+      label: charge le logo.     
+      fieldtype: logo 
+    titre1:
+      label: titre 1     
+      fieldtype: string 
+    icone1:
+      label: icone
+      fieldtype: string
+    titre2:
+      label: titre 2     
+      fieldtype: string 
+    icone2:
+      label: icone
+      fieldtype: string
+
+      
+theme_reference_wbu.section_hero:
+  label: 'Section hero'
+  category: 'Template theme_reference_wbu'
+  default_region: titre
+  regions:
+    image:
+      label: image de couverture.     
+      fieldtype: image 
+    titre:
+      label: titre    
+      fieldtype: string 
+    lien:
+      label: url
+      fieldtype: link
+    description:
+      label: description     
+      fieldtype: textarea 
+    liens:
+      label: Liens
+      fieldtype: textarea
+      
+
+      

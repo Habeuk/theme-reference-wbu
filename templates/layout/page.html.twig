@@ -1,0 +1,9 @@
+{% if page.content %}
+<div{{ page.content.attributes.addClass('container-fluid') }}>
+	{{ page.content|without('attributes','wrapper_attribute') }}
+</div>
+{% endif %}
+
+{% if page.top_header %}
+	{{ page.top_header }}
+{% endif %}

@@ -1,0 +1,45 @@
+{#
+/**
+ * @file
+ * Theme implementation for a 'webform' element.
+ *
+ * This is an copy of the webform.html.twig theme_wrapper which includes the
+ * 'title_prefix' and 'title_suffix' variables needed for
+ * contextual links to appear.
+ *
+ * Available variables
+ * - attributes: A list of HTML attributes for the wrapper element.
+ * - children: The child elements of the webform.
+ * - title_prefix: Additional output populated by modules, intended to be
+ *   displayed in front of the main title tag that appears in the template.
+ * - title_suffix: Additional output populated by modules, intended to be
+ *   displayed after the main title tag that appears in the template.
+ *
+ * @see template_preprocess_webform()
+ * @see _webform_form_after_build()
+ *
+ * @ingroup themeable
+ */
+#}
+<span class="btn btn-success d-none" data-toggle="modal" data-target="#modal-soupcription">apply</span>
+
+<div class="modal fade" id="modal-soupcription">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title">Participer à cette formation</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times</span>
+				</button>
+			</div>
+			<div class="modal-body">
+				<form{{ attributes }}>
+                  {{ title_prefix }}
+                  {{ children }}
+                  {{ title_suffix }}
+                </form>
+			</div>
+		</div>
+	</div>
+</div>
+

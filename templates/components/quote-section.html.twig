@@ -1,0 +1,57 @@
+<!--   quote section start    -->
+<div class="quote-section quote-bg" id="id-quote-section">
+	<div class="container container-xl">
+		<div class="row">
+			<div class="offset-lg-5 col-lg-7">
+				<div class="quote-form-section">
+					<span class="title">Besoin d'information ?</span>
+					<h2 class="subtitle">Contactez nous !</h2>
+					{% if page.form_contact %}
+						{{ page.form_contact }}
+					{% endif %}
+					{#
+					<form action="index.html#" class="d-none">
+						<div class="row">
+							<div class="col-lg-6">
+								<div class="form-element">
+									<input name="name" type="text" placeholder="You name">
+								</div>
+							</div>
+							<div class="col-lg-6">
+								<div class="form-element">
+									<div class="select-wrapper">
+										<select name="freight">
+											<option value="" selected disabled>Select a Freight</option>
+											<option value="">Air Freight</option>
+											<option value="">Ocean Freight</option>
+											<option value="">Road Freight</option>
+										</select>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-6">
+								<div class="form-element">
+									<input name="email" type="email" placeholder="Email">
+								</div>
+							</div>
+							<div class="col-lg-6">
+								<div class="form-element">
+									<input name="phone" type="text" placeholder="Phone">
+								</div>
+							</div>
+							<div class="col-lg-12">
+								<div class="form-element mb-0">
+									<button type="submit">
+										<span>Submit</span>
+									</button>
+								</div>
+							</div>
+						</div>
+					</form>
+					#}
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!--   quote section end    -->

@@ -1,0 +1,25 @@
+<section class="job-bg user-page">
+	<div class="container  text-center">
+		<div class="user-account-content">
+			<div class="user-account job-user-account">
+				<h2>{{ page['#title'] }}</h2>
+				<ul class="nav nav-tabs text-center" role="tablist">
+					<li role="presentation">
+						<a class="active" href="#find-job" aria-controls="candidat" role="tab" data-toggle="tab">Espace Candidat</a>
+					</li>
+					<li role="presentation">
+						<a href="#post-job" aria-controls="recruteur" role="tab" data-toggle="tab">Espace Entreprise</a>
+					</li>
+				</ul>
+				<div class="tab-content">
+					{{ page.content|without('attributes', 'wrapper_attribute') }}
+				</div>
+			</div>
+			<div class="text-center pt-4">
+				Ou !<br/>
+				<h5>Vous avez un compte ?</h5>
+				<a href="/user/login" class="btn-primary">Connectez vous</a>
+			</div>
+		</div>
+	</div>
+</section>

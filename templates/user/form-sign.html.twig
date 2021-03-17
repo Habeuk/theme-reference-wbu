@@ -1,0 +1,22 @@
+<section class="clearfix job-bg user-page">
+	<div class="container text-center">
+		<div class="user-account-content">
+			<div class="user-account job-user-account">
+				<h2>{{ page['#title'] }}</h2>
+
+				{{ page.content|without('attributes', 'wrapper_attribute') }}
+
+				<div class="user-option">
+					<div class="pull-right forgot-password">
+						<a href="/user/password">Mot de passe oublier</a>
+					</div>
+				</div>
+			</div>
+			<div class="text-center pt-4">
+				Ou !<br/>
+				<h5>Vous n'avez pas de compte ?</h5>
+				<a href="/user/register" class="btn-primary">Creer votre compte</a>
+			</div>
+		</div>
+	</div>
+</section>

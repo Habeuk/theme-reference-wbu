@@ -1,0 +1,51 @@
+/**
+ * Les principales couleurs.
+ */
+$color1             : #2fbd3c; //represente la couleur principal du site.
+$color2             : #00a651 !default;
+$color3             : #f53def !default;
+/**
+ * Text color.
+ */
+$text_extra_light   : #dadada !default;
+$text_light         : #908d8d !default;
+$text_normal        : #5a5a5a !default;
+$text_dark          : #212529 !default;
+/**
+ * Space section
+ */
+$margin_top         : 60px !default;
+$margin_bottom      : 60px !default;
+/**
+ * les variantes des couleurs ci-dessus, pour bootstrap
+ */
+$link_color         : $color2;
+$site_success_color : #2f998c !default;
+$puce_color         : #24716a !default;
+$site_bg_gris_claire: #f1f1f1 !default;
+$site_bg_gris       : #e0e0e0 !default;
+$gray-600           : #6c757d !default;
+$site_bg_white      : #FFF !default; //
+$blue               : $link_color !default;
+$success            : $site_success_color !default;
+$bg_link_color_light: #faebd7 !default;
+/**
+ * Bootstrap
+ */
+$primary            : $color1 !default;
+$primary-color      : $color1 !default; //
+$info               : $color2 !default;
+$info-color         : $color2 !default;
+/**
+ * md-bootstrap
+ */
+$secondary-color    : $gray-600 !default; // add models.
+/**
+ * Defaut/model/socialmediaicons.scss
+ */
+//@import "/siteweb/airportlome/public/web/themes/contrib/wb_universe/scss/defaut/model/socialmediaicons.scss";
+$color-1            : #18bd3c; //s#269352;
+$color-2            : #f4cd01;
+$color-3            : #fb3535;
+$color-4            : darken($color-2, 20); //#716210;
+$padding-space      : 100px;
