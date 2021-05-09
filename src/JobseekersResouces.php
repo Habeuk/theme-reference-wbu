@@ -10,7 +10,7 @@ class JobseekersResouces {
   {
     $parameters = \Drupal::routeMatch()->getParameters()->all();
     // debugLog::kintDebugDrupal(self::getListLayout(), 'getListLayout');
-    $variables['page']['demo_layout'] = self::LoadLayout('top_header');
+    //$variables['page']['demo_layout'] = self::LoadLayout('top_header');
     // dump($layoutPluginManager);
     self::loadUserInfo($variables, $parameters);
     // dump($variables);
@@ -44,7 +44,12 @@ class JobseekersResouces {
       '#items' => $definedLayouts
     ];
   }
-
+ 
+ /**
+   * Ce service 'plugin.manager.core.layout' est est disponible si et seulement si le module "Layout Builder" est installé.
+   * @param string $id_layout
+   * @return array
+   */
   protected static function LoadLayout($id_layout)
   {
     $layoutPluginManager = \Drupal::service('plugin.manager.core.layout');
