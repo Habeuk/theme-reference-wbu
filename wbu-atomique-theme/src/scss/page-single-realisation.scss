@@ -1,0 +1,18 @@
+@use "@stephane888/wbu-atomique/scss/wbu-ressources.scss" as *;
+@use "./variables.scss" as *; //@use "@stephane888/wbu-atomique/scss/organisme/sections/page-header-bg";
+@use "@stephane888/wbu-atomique/scss/molecule/stan/galeryImage";
+@use "@stephane888/wbu-atomique/scss/molecule/stan/galeryTitle";
+@use "@stephane888/wbu-atomique/scss/molecule/stan/projectSummary";
+@use "@stephane888/wbu-atomique/scss/molecule/stan/twoBlockCarousel";
+@use "@stephane888/wbu-atomique/scss/molecule/steph/expert-solution.scss";
+@use "@stephane888/wbu-atomique/scss/molecule/stan/serviceBlock-module";
+@use "@stephane888/wbu-atomique/scss/organisme/steph/lamaisonsaintgobain/image-before-after.scss";
+@use "table-budject";
+
+.block-title {
+  text-align: center;
+}
+
+.serviceBlock-module {
+  max-width: 770px;
+}

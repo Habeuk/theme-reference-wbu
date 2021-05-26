@@ -1,0 +1,19 @@
+@use "@stephane888/wbu-atomique/scss/wbu-ressources.scss" as *;
+@use "./variables.scss" as *;
+@use "@stephane888/wbu-atomique/scss/organisme/sections/page-header-bg";
+@use "@stephane888/wbu-atomique/scss/molecule/steph/header-blog";
+@use "@stephane888/wbu-atomique/scss/molecule/steph/teaser-img-title";
+@use "@stephane888/wbu-atomique/scss/molecule/steph/teaser-img-desc";
+@use "@stephane888/wbu-atomique/scss/molecule/stan/serviceBlock-module";
+
+.serviceBlock-module {
+  margin-top: 3rem;
+
+  .serviceBlock-module__serviceMessage {
+    margin: $wbu-margin;
+  }
+}
+
+.realisation-categories {
+  margin-bottom: $wbu-margin*1.5;
+}

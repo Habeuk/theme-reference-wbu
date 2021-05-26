@@ -1,3 +1,2 @@
-@use "police.scss";
-@import "@stephane888/wbu-atomique/scss/wbu-ressources.scss";
+@use "@stephane888/wbu-atomique/scss/wbu-ressources.scss" as *;
 $wbu-color-primary: #3687c6; //$wbu-h2-font-size : 3.4rem;

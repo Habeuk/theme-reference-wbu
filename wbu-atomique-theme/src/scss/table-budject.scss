@@ -1,0 +1,44 @@
+@use "@stephane888/wbu-atomique/scss/wbu-ressources.scss" as *;
+@use "./variables.scss" as *;
+
+.table-budjet {
+  width       : 100%;
+  max-width   : 970px;
+  margin-left : auto;
+  margin-right: auto;
+
+  tr:nth-child(2n) {
+    background: #f8f8f8;
+  }
+
+  th {
+    padding: $wbu-margin 0 $wbu-margin $wbu-margin;
+  }
+
+  td {
+    padding: $wbu-margin $wbu-margin $wbu-margin 0;
+  }
+
+  &--title,
+  .table-budjet--tableData--1rz3U {
+    font-size  : $wbu-default-font-size*1.18;
+    font-weight: 400;
+  }
+
+  &--totalPrice {
+    font-size  : $wbu-default-font-size*2.5;
+    font-weight: 600;
+    color      : $wbu-color-primary;
+  }
+
+  &--description,
+  &--totalPriceDescription,
+  &--totalText {
+    font-size: $wbu-default-font-size/1.18;
+    color    : lighten($wbu-color-text, 30);
+  }
+
+  td {
+    text-align: right;
+  }
+}

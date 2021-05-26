@@ -1,0 +1,10 @@
+@use "@stephane888/wbu-atomique/scss/wbu-ressources.scss" as *;
+@use "fonts/Ubuntu/police.scss";
+
+.space-margin {
+  margin-bottom: $wbu-margin*4;
+}
+
+.space-padding {
+  padding: $wbu-margin*4 0;
+}

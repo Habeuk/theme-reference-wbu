@@ -28,6 +28,11 @@ module.exports = {
     "single-blog": "./src/js/single-blog.js",
     commentaire: "./src/js/commentaire.js",
     "blog-teaser": "./src/js/blog-teaser.js",
+    "defautl-style": "./src/js/defautl-style.js",
+    "page-single-article": "./src/js/page-single-article.js",
+    "page-home-principal": "./src/js/page-home-principal.js",
+    "page-single-realisation": "./src/js/page-single-realisation.js",
+    "page-nos-guides-travaux": "./src/js/page-nos-guides-travaux.js",
     "page-nos-realisations": "./src/js/page-nos-realisations.js"
   },
   output: {
