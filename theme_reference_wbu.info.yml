@@ -1,9 +1,11 @@
-name: WBU Lacam
+name: theme_reference_wbu
 type: theme
 description: "Theme Pour entrprise"
 core: 8.x
 core_version_requirement: ^8 || ^9
 base theme: wb_universe
+dependencies:
+  - drupal:wb_universe
 logo: images/logo.png
 screenshot: images/theme_reference_wbu.png
 
