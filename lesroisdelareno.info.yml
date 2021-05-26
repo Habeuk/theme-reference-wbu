@@ -21,6 +21,7 @@ libraries:
  # - lesroisdelareno/md-slider
   - lesroisdelareno/global-style
   - lesroisdelareno/defautl-style
+  - lesroisdelareno/override-style
 
 # Supprimer les librairies du themes parent.  
 libraries-override:

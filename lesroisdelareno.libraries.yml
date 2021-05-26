@@ -147,3 +147,10 @@ jquery-custom:
     gpl-compatible: true
   js:
     modele/core/assets/vendor/jquery/jquery.min.js: { minified: true, weight: -20 }
+
+override-style:
+  css:
+    theme:
+      css/override-style.css: {weight: 25}
+  js:
+    js/override-style.js: {}    
