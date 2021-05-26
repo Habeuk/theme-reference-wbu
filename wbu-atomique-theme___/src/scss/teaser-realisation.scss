@@ -1,0 +1,10 @@
+@use "./variables.scss" as *;
+@use "@stephane888/wbu-atomique/scss/molecule/stan/projectHero-module";
+@use "@stephane888/wbu-atomique/scss/molecule/stan/ourAchievments-module";
+@use "@stephane888/wbu-atomique/scss/molecule/stan/serviceBlock-module";
+@use "@stephane888/wbu-atomique/scss/atome/stan/seeMore";
+@use "@stephane888/wbu-atomique/scss/molecule/stan/reinsuranceBlock";
+
+div div * {
+  color: #fff;
+}
