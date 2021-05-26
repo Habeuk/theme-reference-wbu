@@ -1,0 +1,17 @@
+{% if title %}
+<h3>
+	{{ title }}
+</h3>
+{% endif %}
+<div class="owl-carousel owl-theme " data-owlresponsive='{"responsive":{"0":{"items":3},"768":{"items":4},"992":{"items":5}},"nav":false,"dots":true,"autoplay":true}'>
+{% for row in rows %}
+{%
+        set row_classes = [
+          default_row_class ? 'views-row',
+        ]
+      %}
+<div {{ row.attributes.addClass([]) }} >
+	{{ row.content }}
+</div>
+{% endfor %}
+</div>

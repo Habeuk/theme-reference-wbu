@@ -1,0 +1,22 @@
+{% if content %}
+    {% set image %}{{ content.image }}{% endset %}
+    
+    {% if image == "" %}
+    	{% set image = '/sites/default/files/styles/image_entete/public/2021-04/placeholder.png' %}
+    {% endif %}
+    <section {{ attributes.addClass(['lesroisdelareno-entete-project', 'inner-banner', 'pages']) }}
+    	style="background-image: url('{{ image|striptags|trim }}')">
+    	<div class="container pad-container">
+    		<div class="content-text">    		
+    			<div class="d-none visible-on-admin"> {{ content.image }} </div>
+    			<h1> {{ content.title }} </h1>
+    			{% if content.subtitle %}
+    				<h3> {{ content.subtitle }} </h3>
+    			{% endif %}    			
+    		</div>
+    	</div>
+    </section>
+{% endif %}
+{#
+	/sites/default/files/styles/image_entete/public/2021-04/placeholder.png
+#}

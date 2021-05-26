@@ -1,0 +1,148 @@
+{% if content %}
+
+<div class="projectHero-module">
+{# url #}
+    {% if content.url %}	    
+    	{% set RenderUrl = content.url|layout_raw(0) %}
+    	{% if RenderUrl.value %}
+            {% set RenderUrl %}{{- path('entity.node.canonical', {'node': RenderUrl.value}) -}}{% endset %}
+    	{% endif %}
+    {% endif %}
+	
+{% if RenderUrl %}<a href="{{- RenderUrl -}}">{% endif %}
+  {# on ajoute un template #}
+      {% set RenderBgimage = {
+          '#theme':'formatage_models__img_url',
+          '#content_all': content.bgimage,
+          '#tag_fields': '',
+          '#tag_field': '',
+          '#tag_field_attibutes':{}
+        } 
+      %}
+      {% set RenderBgimagHtml %}{{ render_var(RenderBgimage) }}{% endset %}
+  <div class="projectHero-module__image" style="background-image: url('{{ RenderBgimagHtml|striptags|trim }}');"></div>
+  <div class="projectHero-module__header">
+  	{# on ajoute un template #}
+      {% set RenderListes= {
+          '#theme':'formatage_models__clean_field',
+          '#content_all': content.listes,
+          '#tag_fields': 'ul',
+          '#tag_field': 'button',
+          '#tag_field_attibutes':{class:['btn-radius']}
+        } 
+      %}
+    {{ RenderListes }}
+    <h2 class="projectHero-module__title">
+      {# on ajoute un template #}
+      {% set RenderTitre= {
+          '#theme':'formatage_models__clean_field',
+          '#content_all': content.titre
+        } 
+      %}
+      {{ RenderTitre }}
+    </h2>
+  </div>
+{% if RenderUrl %}</a>{% endif %}
+</div>
+{% endif %}
+
+{#
+<!-- -->
+<div class="ourAchievments-module  d-none">
+  <div class="ourAchievments-module__image" style="background-image: url('https://prod-saint-gobain-fr.content.saint-gobain.io/sites/saint-gobain.fr/files/2020-07/une-salle-de-bain-familiale-design-00_1.jpg');">
+    <div class="ourAchievments-module__container">
+      <div class="showProject">
+        <div>Voir le projet</div>
+      </div>
+      <ul>
+        <button class="btn-radius">12 900 €</button>
+        <button class="btn-radius">10 jours</button>
+        <button class="btn-radius">12 m²</button>
+      </ul>
+    </div>
+  </div>
+  <h2 class="ourAchievments-module__title">
+    Une salle de bain familiale
+  </h2>
+</div>
+<!-- -->
+<div class="serviceBlock-module d-none">
+  <div class="serviceBlock-module__container">
+    <div class="serviceBlock-module__serviceMessage">
+      <div class="serviceBlock-module__serviceTitle">
+        Ces idées vous ont donné
+      </div>
+      <div class="serviceBlock-module__serviceTitle">
+        envie de vous lancer&nbsp;?
+      </div>
+      <div class="serviceBlock-module__serviceDescription">
+        Publiez votre projet sur notre plateforme, sélectionnez et rencontrez jusqu’à 3 professionnels, réalisez vos travaux en toute sérénité&nbsp;!
+      </div>
+      <a class="serviceBlock-module__button">
+        Je décris mon projet
+        <i class="fa fa-arrow-right"></i>
+      </a>
+    </div>
+  </div>
+</div>
+<!-- -->
+<div class="seeMore  d-none">
+  Voir plus de réalisations
+</div>
+
+<!-- -->
+<!-- import "../scss/molecule/stan/reinsuranceBlock.scss"; -->
+<div class="reinsuranceBlock d-none">
+  <hr class="reinsuranceBlock__hr"/>
+  <div class="reinsuranceBlock__h3">
+    Pourquoi choisir La Maison Saint-Gobain pour vos travaux&nbsp;?
+  </div>
+  <div class="reinsuranceBlock__container">
+    <div class="reinsuranceItem">
+      <div class="reinsuranceItem__iconContainer">
+        <div class="reinsuranceItem__assistance">
+          <i class="fa fa-bug"></i>
+        </div>
+      </div>
+      <div class="reinsuranceItem__title">
+        Conseil et support<span>&nbsp;<!-- -->à toutes les étapes du projet</span>
+      </div>
+      <p>
+        Un conseiller client dédié vous accompagne tout au long de votre projet. Joignable 6/7 jours.
+      </p>
+    </div>
+    <div class="reinsuranceItem">
+      <div class="reinsuranceItem__iconContainer">
+        <div class="reinsuranceItem__assistance">
+          <i class="fa fa-cogs"></i>
+        </div>
+      </div>
+      <div class="reinsuranceItem__title">
+        Conseil et support<span>&nbsp;<!-- -->à toutes les étapes du projet</span>
+      </div>
+      <p>
+        Un conseiller client dédié vous accompagne tout au long de votre projet. Joignable 6/7 jours.
+      </p>
+    </div>
+    <div class="reinsuranceItem">
+      <div class="reinsuranceItem__iconContainer">
+        <div class="reinsuranceItem__assistance">
+          <i class="fa fa-american-sign-language-interpreting"></i>
+        </div>
+      </div>
+      <div class="reinsuranceItem__title">
+        Conseil et support<span>&nbsp;<!-- -->à toutes les étapes du projet</span>
+      </div>
+      <p>
+        Un conseiller client dédié vous accompagne tout au long de votre projet. Joignable 6/7 jours.
+      </p>
+    </div>
+  </div>
+
+  <div class="reinsuranceBlock__bouton">
+    <button class="btn btn-radius">
+      <i class="fa fa-braille"></i>
+      J'ai un projet</button>
+  </div>
+</div>
+#}

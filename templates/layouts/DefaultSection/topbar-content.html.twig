@@ -1,0 +1,29 @@
+<div class="topbar"></div>
+<div class="container topbar-content">
+	<div class="row">
+		<div class="col-lg-6 d-none d-lg-block">
+    		<div id="block-gaterblocktopbarleft">
+    			<ul class="p-0 m-0">
+    				<li> <i class="icon-clock-1"></i> Un devis travaux en ligne dès que vous en avez besoin... </li>
+    			</ul>
+    		</div>
+    	</div>
+    	<div class="col-lg-6 right">
+    		<div class="d-flex justify-content-end pt-2">    			
+        		<nav role="navigation" aria-labelledby="block-topmenu-menu"
+        			id="block-topmenu">
+        			<ul class="toplink p-0 m-0 d-none">							
+        				<li> <a href="/form/renovation" class="is-active"> Estimer mes travaux </a> </li>
+        			</ul>
+        		</nav>
+        		<div class="header_search_1">
+    			    {% if logged_in == true %} 
+    			    	<a href="/user/logout" id="header-search-button"> <i class="icon-logout"></i> </a> 
+    			    {% else %} 
+    			    	<a href="/user/login" id="header-search-button"> <i class="icon-login"></i> Connexion </a>  
+    			    {% endif %}
+        		</div>
+    		</div>
+    	</div>
+	</div>
+</div>

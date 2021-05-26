@@ -1,0 +1,321 @@
+.project-item:hover .project-img:after {
+  top: 1.5em;
+}
+
+.region-hero-slider #block-homepageslider {
+  //display: none;
+}
+
+.container {
+  max-width: 1170px;
+  width    : 100%;
+}
+// on force le rendu.
+// $bleu-ciel: #3687c6;
+// $color-principal: $bleu-ciel;
+
+.page-node-1 {
+  .block-page-title-block {
+    display: none;
+  }
+
+  .node__meta {
+    display: none;
+  }
+}
+//
+
+.header-nav {
+  @include media-min(DD) {
+    padding: 30px 0 45px;
+  }
+
+  .logo {
+    padding      : 0;
+    margin-bottom: 0.7em;
+    @include media-min(DD) {
+      margin-bottom: 0;
+    }
+
+    img {
+      width     : auto;
+      max-width : 175px;
+      margin-top: 0;
+      height    : 91px !important;
+      @include media-min(DD) {
+        max-width : 200px;
+        margin-top: -1.2em;
+        height    : auto !important;
+      }
+    }
+  }
+
+  .site-name {
+    font-size  : 1.5em;
+    font-weight: 600;
+    color      : $color-principal;
+  }
+
+  .site-slogant {
+    font-style: italic;
+  }
+
+  .mobile-menu {
+    margin  : 0;
+    position: absolute;
+    right   : 15px;
+    left    : auto;
+    bottom  : auto;
+    top     : calc(50% - 15px);
+    padding : 0;
+  }
+
+  ul.top-contact {
+    li {
+      margin-bottom: 20px;
+      @include media-min('DD') {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+//
+
+#fp-nav li .active span,
+.bg-color,
+.black-box.color,
+.bot-subscribe,
+.box-dark,
+.btn,
+.btn a,
+.btn-submit,
+.btn.btn-blue,
+.color-wrapper,
+.double-bounce1,
+.double-bounce2,
+.edu .btn-submit,
+.filter li a.active,
+.footer .btn-submit.alt,
+.footer.white .btn-submit.alt,
+.fp-slidesNav .active span,
+.hi-icon-wrap:hover.hi-icon-effect-1a .hi-icon,
+.map-bg:before,
+.nav-tabs li.active a:after,
+.navbar-nav > li.current-box,
+.navbar-nav > li:hover.box,
+.newsletter-wrapper #mc_embed_signup .button,
+.newsletter-wrapper #mc_embed_signup .button,
+.owl-slider-wrapper .item .owl-content,
+.owl-theme .owl-controls .owl-page.active span,
+.owl-theme .owl-controls.Gatesable .owl-page:hover span,
+.pagination .current,
+.pagination ul li a:hover,
+.panel-title .active,
+.panel-title > a:hover,
+.parallax .btn-submit,
+.parallax .btn-submit:hover,
+.post .date,
+.post-content .date,
+.post-content .testimonial,
+.pricing .plan.active,
+.pricing .plan:hover,
+.projects-grid-2.hover-color .project-item:hover .project-img:after,
+.projects-grid-3.hover-color .project-item:hover .project-img:after,
+.projects-grid.hover-color .project-item:hover .project-img:after,
+.q-form .btn-submit:hover,
+.q-form-title,
+.services-box-2 i,
+.services-box-2.left:hover i,
+.services-box-3:hover i,
+.social-icons li a:hover i,
+.table td:hover i,
+.tabs-top .tab.active a,
+.tags li a:hover,
+.team-alt.active,
+.team-alt:hover,
+.team-box-animated .back,
+.topbar,
+.topbar:after,
+ul.circled li.bg.current,
+ul.circled li:hover.bg,
+ul.circled span {
+  background: $color-principal;
+}
+
+.btn {
+  color: #FFF;
+}
+
+#testimonials .author,
+.aboutme h3,
+.btn.btn-color-brd,
+.btn.parallax:hover,
+.btn:hover,
+.colored,
+.f-element .highlight.color,
+.f-element i,
+.facts-home a:hover,
+.filter a.active,
+.filter a.active,
+.filter a:hover,
+.footer .services-box-3:hover i,
+.footer .widget .meta i:hover,
+.footer a:hover,
+.footer-links li a:hover,
+.items .info h4 a:hover,
+.meta ul li a:hover,
+.milestone-details,
+.nav > li > a:hover,
+.nav > li.current a,
+.navbar-nav .dropdown-menu li a.active,
+.navbar-nav .dropdown-menu li a:hover,
+.navbar-nav > li > a:hover,
+.navigation a:hover,
+.owl-portfolio .info h4 a:hover,
+.page-nav .active,
+.page-nav a:hover,
+.parallax a:hover,
+.parallax.pagetitle a,
+.post-content h2 a:hover,
+.post-content.testimonial .author,
+.post-format h2 a:hover,
+.post-home .col h1 a:hover,
+.pricing .plan h4,
+.product-grid .post .meta ul li a:hover,
+.product-grid .post .post-content .price span,
+.product-grid .post .post-content .rating,
+.product-grid .post .post-content h3 a:hover,
+.product-grid .post .post-content h5 a:hover,
+.progress-list li em,
+.rating,
+.rw-words-1 span,
+.services-box .col:hover i,
+.services-box i,
+.services-box-2 .content h3 a:hover.dark,
+.services-box-2 i.small,
+.sidebar a:hover,
+.sidebox a:hover,
+.tabs-top .tab a:hover,
+.tabs-top .tab.active a,
+.team-alt .social-icons li a:hover i,
+.team-box-animated .front span,
+.team-member .social-links a:hover,
+.testimonials h2,
+.top-contact li .icon i,
+.topbar li a:hover,
+.topbar ul.social-icons li a:hover i,
+.topbar-content ul.toplink li a:hover,
+.tp-caption a,
+.tp-caption.upper h2 span,
+.tp-caption.upper2 h2 span,
+.work-descr,
+.work-item:hover .work-descr,
+.yamm .yamm-content a:hover,
+a,
+ul.arrow li:before,
+ul.circled li:before {
+  color: $color-principal;
+}
+
+#fp-nav span,
+#testimonials .tab a.active,
+#testimonials .tab a:hover,
+.btn.btn-color-brd,
+.f-element .sep,
+.filter a.active,
+.filter a:hover,
+.filter li a.active,
+.fp-slidesNav span,
+.header-nav .dropdown-menu,
+.hi-icon-wrap:hover,
+.nav > li > a:hover:before,
+.nav-tabs li a:after,
+.nav-tabs li.active a:after,
+.navbar-nav > li > a:after,
+.navbar-nav > li.current,
+.navbar-nav > li.current:before,
+.navbar-nav > li:hover.pad,
+.navigation a:hover,
+.post-content .date:after,
+.pricing .plan.active,
+.pricing .plan:hover,
+.project-title:before,
+.services-box .col a:hover,
+.services-box-2.left i:after,
+.services-box-2.left:hover i,
+.services-box-3 .col:hover i,
+.services-box-3 i.circle-border,
+.services-box-3:hover i.circle-border,
+.social-icons li a:hover i,
+.table td:hover i,
+.tabs-top .tab.active a,
+.tags li a:hover,
+.team-box-animated .back,
+.top-contact li .icon i,
+.tp-caption.upper,
+:after,
+h2.heading:before,
+h3.heading:before,
+p.h-sub:before {
+  border-color: $color-principal;
+}
+
+.md-layer-4-20-6 a,
+.md-layer-4-21-6,
+.md-layer-4-22-6,
+.md-layer-4-23-6 {
+  background: $color-principal;
+}
+
+.footer_tags li a:hover,
+.nav-tabs li a:focus,
+.nav-tabs li a:hover,
+.nav-tabs li.active a,
+.nav-tabs li.active a:focus,
+.nav-tabs li.active a:hover,
+.pages,
+.progress .bar,
+.progress-green .bar,
+.progress-success .bar,
+.services-box-3 .col:hover i,
+.tooltip-inner {
+  background-color: $color-principal;
+}
+
+.box-dark.color1 {
+  background: $color-principal;
+
+  * {
+    color: #FFF !important;
+  }
+
+  &:hover * {
+    color: inherit !important;
+  }
+}
+
+.show {
+  opacity: 1;
+}
+
+.alert-dismissible {
+  z-index : 99999;
+  position: relative;
+}
+
+.box-dark .content h3 {
+  font-size  : 20px !important;
+  position   : relative;
+  line-height: 25px !important;
+
+  &:before {
+    top                : auto !important;
+    border-bottom-color: #fff !important;
+    bottom             : -10px;
+  }
+}
+@include media-min('L') {
+  .box-dark {
+    padding: 20px 45px 30px;
+  }
+}

@@ -1,0 +1,32 @@
+{% if content %}
+<div id="block-gater-content">
+	<section {{ attributes.addClass(['lesroisdelareno-project-content']) }}>
+		<div class="container pad-container2">
+			<div class="row">
+				<div class="col-sm-8">
+
+					<div class="img">
+						{# <a href="project-title-1.html"> <img#} {#
+						src="sites/default/files/styles/image700x600/public/2016-10/full-project-1_0.jpg%3Fitok=0PWXibQj"#}
+						{# width="700" height="600" alt="Image title" typeof="foaf:Image"
+						/>#} {# </a>#}
+						{{ content.image }}
+					</div>
+				</div>
+				<div class="col-sm-4 l-pad30">
+					<h3 class="title-left">Description</h3>
+					{{ content.texte }}
+					<div class="sep30"></div>
+					<ul class="item-details">
+						<li class="d-flex"><span>Date publication :</span> {{ content.datepost }}
+						</li>
+						<li class="d-flex"><span>Categories : </span> {{ content.categorie }}
+						</li>
+						<li class="d-flex"><span>Client : </span> {{ content.client }}</li>
+					</ul>					
+				</div>
+			</div>
+		</div>
+	</section>
+</div>
+{% endif %}

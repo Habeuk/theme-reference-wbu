@@ -1,0 +1,29 @@
+{% if page.top_header %}
+	{{ page.top_header }}
+{% endif %}
+
+
+{% if page.hero_slider %}
+	{{ page.hero_slider }}
+{% endif %}
+
+{% if page.content %}
+<section class="lesroisdelareno-entete-project" style="background-image: url('/themes/custom/lesroisdelareno/images/blog-bg.jpg');background-size: 75%;background-position: right center;">
+    	<div class="container pad-container">
+    		<div class="col-md-12">    					
+    		</div>
+    	</div>
+</section>
+<div{{ page.content.attributes.addClass("container") }}>
+	{{ page.content|without('attributes','wrapper_attribute') }}	
+</div>
+{% endif %}
+
+{% if page.call_to_action %}
+	{{ page.call_to_action }}
+{% endif %}
+
+
+{% if page.footer %}
+	{{ page.footer }}
+{% endif %}

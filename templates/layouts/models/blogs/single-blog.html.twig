@@ -1,0 +1,29 @@
+{% if content %}
+<div class="single-blog">
+    {% set RenderBgimage = {
+          '#theme':'formatage_models__img_url',
+          '#content_all': content.bgimage,
+          '#tag_fields': '',
+          '#tag_field': '',
+          '#tag_field_attibutes':{}
+        } 
+      %}
+      {% set RenderBgimagHtml %}{{ render_var(RenderBgimage) }}{% endset %}
+	<header class="billetDeBlogTeaser" style="background-image: url('{{ RenderBgimagHtml|striptags|trim }}');">
+        <div class="background">
+            <div class="billetDeBlogTeaser__text">                
+                <h1 class="title">
+                    {{ render_var({ '#theme': 'formatage_models__clean_field', '#content_all': content.title }) }}
+                </h1>
+                <div class="infos d-flex justify-content-center align-items-center">
+                	<div class="date">{{ content.date }}</div>
+                	<div class="user">{{ content.user }}</div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="single-blog--description">
+    	{{ content.body }}
+    </div>
+</div>
+{% endif %}

@@ -1,0 +1,38 @@
+{% if page.top_header %}
+  {{ page.top_header }}
+{% endif %}
+
+{% if page.hero_slider %}
+<section {{ attributes.addClass(['lesroisdelareno-entete-project','inner-banner', 'pages']) }}
+    	style="background-image: url('/themes/custom/lesroisdelareno/images/teambg.jpg');background-size: 75%;background-position: right center;">
+    	<div class="container pad-container">
+    		<div class="col-md-12">    		
+    			<div class="d-none visible-on-admin"> {{ content.image }} </div>
+    			{{ page.hero_slider }} 			
+    		</div>
+    	</div>
+    </section>
+{% endif %}
+    
+{% if page.content %}
+<section class="webform-main-container">
+  <div {{ page.content.attributes.addClass('container-lg') }}>
+  	{#
+  	 	// bug il faut à partir d'ou il est emit. 'entete'
+  	 #}
+    {{ page.content|without('attributes','wrapper_attribute','entete') }}
+  </div>
+</section>
+{% endif %}
+
+{% if page.call_to_action %}
+  {{ page.call_to_action }}
+{% endif %}
+
+{% if page.footer %}
+  {{ page.footer }}
+{% endif %}
+
+{#
+	----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+	#}

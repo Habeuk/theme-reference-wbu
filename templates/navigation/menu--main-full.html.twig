@@ -32,27 +32,26 @@
   {% import _self as menus %}
   {% if items %}
     {% if menu_level == 0 %}
-      <ul>
+      <ul class="nav navbar-nav">
     {% else %}
-      <ul class="dropdown-menu-0">
+      <ul class="dropdown-menu">
     {% endif %}
     {% for item in items %}
       {%
         set classes = [
-          menu_level ? 'dropdown-item-0' : 'nav-item-0',
+          menu_level ? 'dropdown-item' : 'nav-item',
           item.is_expanded ? 'menu-item--expanded',
           item.is_collapsed ? 'menu-item--collapsed',
           item.in_active_trail ? 'active',
           item.below ? 'dropdown',
         ]
       %}
-      <li{{ item.attributes.addClass(classes) }}>
-      
+      <li{{ item.attributes.addClass(classes) }}>      
         {%
           set link_classes = [
-            not menu_level ? 'nav-link-0',
+            not menu_level ? 'nav-link',
             item.in_active_trail ? 'active',
-            item.below ? 'dropdown-toggle-0',
+            item.below ? 'dropdown-toggle',
             item.url.getOption('attributes').class ? item.url.getOption('attributes').class | join(' '),
           ]
         %}
@@ -68,6 +67,21 @@
         {% endif %}
       </li>
     {% endfor %}
+    {% if menu_level == 0 %}
+    <li>
+						<ul class="social-top d-none d-xl-block">
+							<li><a href="https://twitter.com/" class="twitter-alt"
+								title="Twitter" data-placement="top"><i class="icon-twitter"></i></a></li>
+							<li><a href="https://www.facebook.com/" class="facebook-alt"
+								title="Facebook" data-placement="top"><i
+									class="icon-facebook"></i></a></li>
+							<li><a href="https://www.instagram.com/lesroisdelareno.fr/" class="google-alt" title="Instagram" data-placement="top"> 
+									<i class="icon-instagram"></i> 
+								</a>
+							</li>
+						</ul>
+					</li>
+		{% endif %}
     </ul>
   {% endif %}
 {% endmacro %}

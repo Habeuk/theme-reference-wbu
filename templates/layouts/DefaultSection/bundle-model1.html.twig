@@ -1,0 +1,24 @@
+{% if content %}
+{% set link  %}
+			{{ content.link }}
+{% endset %}
+<div {{ attributes.addClass(['lesroisdelareno-bundle-model1','services-box-2','mb-5']) }}>
+	<div class="content">
+		<div class="b-mgr20">
+{# 			<img#}
+{# 				src="sites/default/files/styles/image370x222/public/2016-10/owl-hom02_0.jpg%3Fitok=oiTVGMAs"#}
+{# 				width="370" height="222" alt="Image title" typeof="Image" />#}
+			<a href="{{ link | striptags }}">{{ content.image }}</a>
+		</div>
+		<h3><a href="{{ link | striptags }}">{{ content.titre }}</a></h3>
+		{% set descript  %}
+			{{ content.text }}
+		{% endset %}
+		{{ descript }}
+		
+		<div class="t-mgr10 d-none">
+			<a href="{{ link | striptags }}">Lire la suite ...</a>
+		</div>
+	</div>
+</div>
+{% endif %}

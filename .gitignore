@@ -3,6 +3,8 @@ node_modules
 /dist
 /files-log
 /modele/*
+/wbu-atomique-theme/node_modules
+/wbu-atomique-theme/package-lock.json
 
 
 # local env files

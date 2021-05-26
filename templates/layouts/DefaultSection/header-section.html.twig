@@ -1,0 +1,13 @@
+{% if content %}
+<section {{ attributes.addClass(['views-element-container','bg-dark-gray']) }}>	
+		<div class="container">
+			<div class=" col-md-12 text-center pt-5 pb-3">
+				<h2 class="heading colored pt-5">Nos realisations</h2>
+				<p class="h-sub-white">Client satisfait</p>
+			</div>
+		</div>
+		<div class="projects-grid hide-titles">
+		{{ content.main }}
+		</div>	
+</section>
+{% endif %}

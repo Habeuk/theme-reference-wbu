@@ -1,0 +1,41 @@
+name: Les rois de la Reno
+type: theme
+description: "Theme Pour entrprise"
+core: 8.x
+core_version_requirement: ^8 || ^9
+base theme: wb_universe
+logo: images/logo.png
+screenshot: images/lesroisdelareno.png
+
+regions:
+  top_header: "Top header"
+  header: "Header"
+  hero_slider: "Hero slider"
+  content: "Contenu principal"
+  call_to_action: "Call to action"
+  footer: "Footer"
+
+# Ajout des librairies
+libraries:  
+  - lesroisdelareno/theme-gater
+ # - lesroisdelareno/md-slider
+  - lesroisdelareno/global-style
+  - lesroisdelareno/defautl-style
+
+# Supprimer les librairies du themes parent.  
+libraries-override:
+  wb_universe/fontawesome: false
+  wb_universe/google-police: false
+  wb_universe/google-analytics: false
+  # Replace jquery library.
+  #core/jquery: lesroisdelareno/jquery-custom
+  
+# Add custom css to ckeditor
+ckeditor_stylesheets:
+  - modele/themes/custom/gater/css/bootstrap.css
+  - css/style-auto.css
+  - css/page-single-article.css  
+  - css/ckeditor.css
+
+  
+  

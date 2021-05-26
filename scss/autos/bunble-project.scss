@@ -1,0 +1,57 @@
+$width_text: 45%;
+$min_height: 250px;
+
+.lesroisdelareno-entete-project {
+  position   : relative;
+  overflow   : hidden;
+  z-index    : 1;
+  height     : auto;
+  min-height : 250px;
+  display    : flex;
+  align-items: center;
+
+  [class*="col-"] {
+    margin-bottom: 0;
+  }
+
+  .pad-container {
+    z-index : 2;
+    position: relative;
+    padding : 0;
+    @include media-min('DD') {
+      padding: 2em;
+    }
+  }
+
+  &::before {
+    display   : block;
+    content   : "";
+    position  : absolute;
+    width     : 33%;
+    min-width : $width_text;
+    bottom    : 0;
+    left      : 0;
+    top       : 0;
+    right     : auto;
+    z-index   : 1;
+    background: $color-principal;
+  }
+
+  &::after {
+    content     : "";
+    display     : block;
+    position    : absolute;
+    min-width   : calc(#{$min_height} + 10%);
+    bottom      : 0;
+    left        : calc(#{$width_text} - #{$width_text}/2.6);
+    top         : 0;
+    right       : auto;
+    z-index     : 1;
+    border-top  : 290px solid $color-principal;
+    border-right: 120px solid transparent;
+  }
+
+  .content-text {
+    max-width: $width_text;
+  }
+}

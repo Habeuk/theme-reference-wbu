@@ -1,0 +1,423 @@
+# les elements personalisers tels que "fieldtype" doivent etre supprimer y compris le code PHP en relation. Car ce code a peut de change d'evoluer.
+lesroisdelareno.topbar_content:
+  label: 'topbar-content'
+  category: 'Template lesroisdelareno'
+  template: templates/layouts/DefaultSection/topbar-content
+  default_region: main
+  regions:
+    main:
+      label: main
+
+
+lesroisdelareno.header_nav:
+  label: 'header-nav'
+  category: 'Template lesroisdelareno'
+  template: templates/layouts/DefaultSection/header-nav
+  default_region: main
+  regions:
+    main:
+      label: main
+
+lesroisdelareno.banner_container:
+  label: 'banner-container'
+  category: 'Template lesroisdelareno'
+  template: templates/layouts/DefaultSection/banner-container
+  default_region: main
+  regions:
+    main:
+      label: main
+
+
+lesroisdelareno.call_to_action_pub:
+  label: 'call-to-action-pub'
+  category: 'Template lesroisdelareno'
+  template: templates/layouts/DefaultSection/call-to-action-pub
+  default_region: main
+  regions:
+    main:
+      label: main
+
+
+lesroisdelareno.bundle_model1:
+  label: 'bundle-model1'
+  category: 'Template lesroisdelareno'
+  template: templates/layouts/DefaultSection/bundle-model1
+  default_region: image
+  regions:
+    image:
+      label: Image
+    titre:
+      label: Titre
+    text:
+      label: Texte
+    link:
+      label: Link
+
+
+lesroisdelareno.bundle_model2:
+  label: 'bundle-model2'
+  category: 'Template lesroisdelareno'
+  template: templates/layouts/DefaultSection/bundle-model2
+  default_region: image
+  regions:
+    image:
+      label: Image
+    titre:
+      label: Titre
+    category:
+      label: Category
+    link:
+      label: Link
+
+
+lesroisdelareno.bundle_model3:
+  label: 'bundle-model3'
+  category: 'Template lesroisdelareno'
+  template: templates/layouts/DefaultSection/bundle-model3
+  default_region: image
+  regions:
+    image:
+      label: Image
+    titre:
+      label: Titre
+    text:
+      label: Texte
+    link:
+      label: Link
+    category:
+      label: Category
+    comment:
+      label: Comment
+    date:
+      label: Date
+
+
+
+
+lesroisdelareno.block_features:
+  label: 'block-features'
+  category: 'Template lesroisdelareno'
+  template: templates/layouts/DefaultSection/block-features
+  default_region: main
+  regions:
+    main:
+      label: main
+
+
+lesroisdelareno.blockcounter:
+  label: 'blockcounter'
+  category: 'Template lesroisdelareno'
+  template: templates/layouts/DefaultSection/blockcounter
+  default_region: main
+  regions:
+    main:
+      label: main
+
+
+lesroisdelareno.block_services:
+  label: 'block-services'
+  category: 'Template lesroisdelareno'
+  template: templates/layouts/DefaultSection/block-services
+  default_region: main
+  regions:
+    main:
+      label: main
+
+
+lesroisdelareno.header_section:
+  label: 'header-section'
+  category: 'Template lesroisdelareno'
+  template: templates/layouts/DefaultSection/header-section
+  default_region: main
+  regions:
+    main:
+      label: main
+
+
+lesroisdelareno.header_section2:
+  label: 'header-section-2'
+  category: 'Template lesroisdelareno'
+  template: templates/layouts/DefaultSection/header-section-white
+  default_region: main
+  regions:
+    main:
+      label: main
+
+
+
+lesroisdelareno.section_bg_fixed:
+  label: 'section-bg-fixed'
+  category: 'Template lesroisdelareno'
+  template: templates/layouts/DefaultSection/section-bg-fixed
+  default_region: main
+  regions:
+    main:
+      label: main
+
+
+lesroisdelareno.client_testimonials:
+  label: 'client-testimonials'
+  category: 'Template lesroisdelareno'
+  template: templates/layouts/DefaultSection/client-testimonials
+  default_region: main
+  regions:
+    main:
+      label: main
+
+
+lesroisdelareno.newsletter:
+  label: 'newsletter'
+  category: 'Template lesroisdelareno'
+  template: templates/layouts/DefaultSection/newsletter
+  default_region: main
+  regions:
+    main:
+      label: main
+
+
+lesroisdelareno.footer:
+  label: 'footer'
+  category: 'Template lesroisdelareno'
+  template: templates/layouts/DefaultSection/footer
+  default_region: main
+  regions:
+    main:
+      label: main
+
+
+lesroisdelareno.footer_end:
+  label: 'footer-end'
+  category: 'Template lesroisdelareno'
+  template: templates/layouts/DefaultSection/footer-end
+  default_region: main
+  regions:
+    main:
+      label: main
+
+lesroisdelareno.layout_main_menu:
+  label: 'Main menu'
+  category: 'Template lesroisdelareno'
+  template: templates/layouts/DefaultSection/layout-main-menu
+  default_region: main
+  regions:
+    main:
+      label: main
+
+
+lesroisdelareno.entete_project:
+  label: 'Entete project'
+  category: 'Template lesroisdelareno'
+  template: templates/layouts/DefaultSection/project-entete
+  default_region: title
+  regions:
+    title:
+      label: Title
+    subtitle:
+      label: sub title
+    image:
+      label: Image
+
+
+lesroisdelareno.project_content:
+  label: 'Content project'
+  category: 'Template lesroisdelareno'
+  template: templates/layouts/DefaultSection/project-content
+  default_region: image
+  regions:
+    image:
+      label: Image
+    texte:
+      label: Texte
+    datepost:
+      label: Datepost
+    categorie:
+      label: Categorie
+    client:
+      label: Client
+
+lesroisdelareno.button-light:
+  label: 'button-light'
+  category: 'Template lesroisdelareno'
+  template: templates/layouts/models/button-light
+  library: 'lesroisdelareno/blog-teaser'
+  default_region: name
+  regions:
+    name:
+      label: name
+
+lesroisdelareno.block-call-to-action:
+  label: 'block-call-to-action'
+  category: 'Template lesroisdelareno'
+  template: templates/layouts/models/call-to-action
+  library: 'lesroisdelareno/block-call-to-action'
+  default_region: titre
+  regions:
+    titre:
+      label: Titre
+    description:
+      label: Description
+
+lesroisdelareno.single-blog:
+  label: 'single-blog'
+  category: 'Template lesroisdelareno'
+  template: templates/layouts/models/blogs/single-blog
+  library: 'lesroisdelareno/single-blog'
+  default_region: body
+  regions:
+    body:
+      label: body
+    right:
+      label: Right
+    title:
+      label: Title
+    user:
+      label: user
+    bgimage:
+      label: bgimage
+    date:
+      label: date
+
+
+lesroisdelareno.blog-home:
+  label: 'Blog Home'
+  category: 'Template lesroisdelareno'
+  template: templates/layouts/models/blogs/home-blog
+  library: 'lesroisdelareno/blog-teaser'
+  default_region: left
+  regions:
+    left:
+      label: Left
+    right:
+      label: Right
+    title:
+      label: Title
+    description:
+      label: Description
+    
+lesroisdelareno.blog-teaser:
+  label: 'Blog teaser'
+  category: 'Template lesroisdelareno'
+  template: templates/layouts/models/blogs/blog-teaser
+  library: 'lesroisdelareno/blog-teaser'
+  default_region: image
+  regions:
+    bgimage:
+      label: Bg Image
+    date:
+      label: 'Date'
+    titre:
+      label: Title
+    url:
+      label: "Url sur l'affichage"
+       
+
+lesroisdelareno.blog-teaser-a-la-une:
+  label: 'Blog teaser à la une'
+  category: 'Template lesroisdelareno'
+  template: templates/layouts/models/blogs/blog-teaser-a-la-une
+  library: 'lesroisdelareno/blog-teaser'
+  default_region: image
+  regions:
+    bgimage:
+      label: Bg Image
+    date:
+      label: 'Date'
+    titre:
+      label: Title
+    url:
+      label: "Url sur l'affichage"
+
+lesroisdelareno.blog-call-toaction:
+  label: 'blog-call-toaction'
+  category: 'Template lesroisdelareno'
+  template: templates/layouts/models/realisations/blog-call-toaction
+  library: 'lesroisdelareno/blog-teaser'
+  default_region: body
+  regions:
+    title:
+      label: title
+    body:
+      label: 'Listes text'
+    link:
+      label: link
+
+lesroisdelareno.newletter:
+  label: 'blog-newletter'
+  category: 'Template lesroisdelareno'
+  template: templates/layouts/models/realisations/blog-newletter
+  library: 'lesroisdelareno/blog-teaser'
+  default_region: image
+  regions:
+    bgimage:
+      label: Bg Image
+    listes:
+      label: 'Listes Buttons'
+    titre:
+      label: Title
+    url:
+      label: "Url sur l'affichage"                       
+      
+lesroisdelareno.teaser_realisation_model_blog_small_:
+  label: 'teaser-realisation SMALL'
+  category: 'Template lesroisdelareno'
+  template: templates/layouts/models/realisations/tesaser-nos-realisations-small
+  library: 'lesroisdelareno/teaser-realisation'
+  default_region: image
+  regions:
+    bgimage:
+      label: Bg Image
+    listes:
+      label: 'Listes Buttons'
+    titre:
+      label: Title
+    url:
+      label: "Url sur l'affichage"
+
+
+lesroisdelareno.teaser_realisation_model_blog_small_:
+  label: 'teaser-realisation SMALL'
+  category: 'Template lesroisdelareno'
+  template: templates/layouts/models/realisations/tesaser-nos-realisations-small
+  library: 'lesroisdelareno/teaser-realisation'
+  default_region: image
+  regions:
+    bgimage:
+      label: Bg Image
+    listes:
+      label: 'Listes Buttons'
+    titre:
+      label: Title
+    url:
+      label: "Url sur l'affichage"
+      
+lesroisdelareno.pourquoi_choisir:
+  label: 'Pourquoi choisir (Nos realisations)'
+  category: 'Template lesroisdelareno'
+  template: templates/layouts/models/realisations/pourquoi-choisir-realisations
+  library: 'lesroisdelareno/teaser-realisation'
+  default_region: image
+  regions:
+    bgimage:
+      label: Bg Image
+    listes:
+      label: 'Listes Buttons'
+    titre:
+      label: Title
+    url:
+      label: "Url sur l'affichage"
+
+lesroisdelareno.nos-realisation:
+  label: 'teaser-realisation'
+  category: 'Template lesroisdelareno'
+  template: templates/layouts/models/realisations/tesaser-nos-realisations
+  library: 'lesroisdelareno/teaser-realisation'
+  default_region: image
+  regions:
+    bgimage:
+      label: Bg Image
+    listes:
+      label: 'Listes Buttons'
+    titre:
+      label: Title
+    url:
+      label: "Url sur l'affichage"

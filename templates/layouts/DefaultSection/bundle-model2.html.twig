@@ -1,0 +1,16 @@
+{% if content %}
+<div {{ attributes.addClass(['lesroisdelareno-bundle-model2','project-item', 'mix', '14']) }}>
+	<a href="#">
+		<div class="project-img">
+{# 			<img#}
+{# 				src="sites/default/files/styles/image700x650/public/2016-10/p-12.jpg%3Fitok=nH9XLBY-"#}
+{# 				class="project-img" alt="Image title">#}
+			{{ content.image }}
+		</div>
+		<div class="project-intro">
+			<h3 class="project-title">{{ content.titre }}</h3>
+			<div class="project-descr">{{ content.category }}</div>
+		</div>
+	</a>
+</div>
+{% endif %}

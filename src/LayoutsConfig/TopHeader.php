@@ -1,5 +1,5 @@
 <?php
-namespace Drupal\theme_reference_wbu\LayoutsConfig;
+namespace Drupal\lesroisdelareno\LayoutsConfig;
 
 class TopHeader {
   //

@@ -1,0 +1,10 @@
+.btn-outline-force {
+  background: transparent !important;
+  color     : $color-principal !important;
+  border    : 1px solid $color-principal !important;
+
+  &:hover {
+    background: $color-principal !important;
+    color     : #FFF !important;
+  }
+}

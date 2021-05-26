@@ -1,0 +1,149 @@
+global-style:
+  css:
+    theme:
+      css/normalize.css: {}
+      css/style-auto.css: {}
+      css/style.css: {}
+  js:
+    #example
+    #modele/wilcon-theme/js/main.js: {}
+    js/html5-shiv.js: {}
+    js/script.js: {}
+
+
+
+theme-gater:
+  css:
+    theme:
+      modele/themes/custom/gater/css/bootstrap.css: {}
+      modele/themes/custom/gater/css/style.css: {}
+      modele/themes/custom/gater/css/responsive.css: {}
+      modele/themes/custom/gater/css/color/yellow.css: {}
+      modele/themes/custom/gater/css/settings.css: {}
+      modele/themes/custom/gater/css/owl.carousel.css: {}
+      modele/themes/custom/gater/css/jquery.fancybox.css: {}
+      modele/themes/custom/gater/css/fonts/fontello.css: {}
+      modele/themes/custom/gater/css/fonts/gizmo.css: {}
+      modele/themes/custom/gater/css/fonts/picons.css: {}
+      modele/themes/custom/gater/switcher/switcher.css: {}
+      modele/themes/custom/gater/css/update.css: {}
+  js:
+    modele/themes/custom/gater/js/bootstrap.min.js: {}
+    #modele/themes/custom/gater/js/jquery.easing.1.3.js: {}
+    #modele/themes/custom/gater/js/jquery.inview.js: {}
+    #modele/themes/custom/gater/js/jquery.ui.totop.js: {}
+    #modele/themes/custom/gater/js/isotope.pkgd.min.js: {}
+
+
+md-slider:
+  css:
+    theme:
+      modele/modules/md_slider/assets/css/md-slider.css: {}
+      modele/modules/md_slider/assets/css/md-slider-style.css: {}
+      modele/sites/default/files/md-slider-css/md-slider-homepage_slider-layers.css: {}
+
+testimony:
+  css:
+    theme:
+      css/testimony-style.css: {}
+  js:
+    js/testimony-script.js: {}
+
+teaser-realisation:
+  css:
+    theme:
+      css/teaser-realisation.css: {}
+  js:
+    js/teaser-realisation.js: {}
+
+    
+#####################################################################################################################################################
+
+page-single-realisation:
+  css:
+    theme:
+      css/page-single-realisation.css: {weight: 20}
+  js:
+    js/page-single-realisation.js: {}
+    
+
+page-home-principal:
+  css:
+    theme:
+      css/page-home-principal.css: {weight: 20}
+  js:
+    js/page-home-principal.js: {}
+
+defautl-style:
+  css:
+    theme:
+      css/defautl-style.css: {weight: 20}
+  js:
+    js/defautl-style.js: {}    
+
+page-single-article:
+  css:
+    theme:
+      css/page-single-article.css: {weight: 20}
+  js:
+    js/page-single-article.js: {}   
+
+page-nos-guides-travaux:
+  css:
+    theme:
+      css/page-nos-guides-travaux.css: {weight: 20}
+  js:
+    js/page-nos-guides-travaux.js: {}    
+    
+page-nos-realisations:
+  css:
+    theme:
+      css/page-nos-realisations.css: {weight: 20}
+  js:
+    js/page-nos-realisations.js: {}
+
+single-blog:
+  css:
+    theme:
+      css/single-blog.css: {}
+  js:
+    js/single-blog.js: {}
+
+commentaire:
+  css:
+    theme:
+      css/commentaire.css: {}
+  js:
+    js/commentaire.js: {}
+
+blog-teaser:
+  css:
+    theme:
+      css/blog-teaser.css: {}
+  js:
+    js/blog-teaser.js: {}
+    
+    
+block-call-to-action:
+  css:
+    theme:
+      css/block-call-to-action.css: {}
+  js:
+    js/block-call-to-action.js: {}
+    
+form-multi-step:
+  css:
+    theme:
+      formmultistep/style.css: {}
+  js:
+    formmultistep/script.js: {}
+
+jquery-custom:
+  remote: https://github.com/jquery/jquery
+  version: "2.2.3"
+  license:
+    name: MIT
+    url: https://github.com/jquery/jquery/blob/2.2.3/LICENSE.txt
+    gpl-compatible: true
+  js:
+    modele/core/assets/vendor/jquery/jquery.min.js: { minified: true, weight: -20 }

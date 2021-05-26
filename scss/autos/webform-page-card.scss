@@ -1,0 +1,336 @@
+.form-control.error {
+  border    : 1px solid #F00;
+  box-shadow: 0 2px 2px rgba(255, 0, 0, 0.47);
+}
+
+.webform-main-container {
+  background-image   : url("/themes/custom/lesroisdelareno/images/background-batiement.jpg");
+  background-position: right;
+  background-repeat  : no-repeat;
+  background-size    : auto 100%;
+  position           : relative;
+  z-index            : 1;
+
+  &::before {
+    content   : "";
+    position  : absolute;
+    top       : 0;
+    left      : 0;
+    bottom    : 0;
+    right     : 0;
+    z-index   : 1;
+    background: rgba(255, 255, 255 , 0.88);
+  }
+
+  .container,
+  .page-orther-custom {
+    position      : relative;
+    z-index       : 5;
+    margin-top    : 0 !important;
+    margin-bottom : 0 !important;
+    padding-top   : 2em;
+    padding-bottom: 2em;
+    min-height    : 400px;
+    display       : flex;
+    width         : 100%;
+    align-items   : center;
+    flex-wrap     : wrap;
+
+    .block,
+    .tabs {
+      width: 100%;
+    }
+  }
+
+  .messages-container {
+    width: 100%;
+  }
+
+  .webform-progress-tracker .progress-step.is-complete .progress-marker::after,
+  .webform-progress-tracker .progress-step.is-complete .progress-marker::before {
+    background-color: darken($color-principal, 10);
+  }
+
+  table {
+    font-size: 1em;
+  }
+}
+
+.container-webform-page-card {
+  max-width: 690px;
+  width    : 100%;
+  position : relative;
+  z-index  : 1;
+}
+@mixin barreVertical() {
+  position: relative;
+
+  &::before {
+    content   : "";
+    position  : absolute;
+    top       : 5px;
+    bottom    : -1px;
+    width     : 5px;
+    left      : -31px;
+    background: #aecde4c7;
+  }
+}
+@mixin titre-page-form() {
+  font-size    : 1.5em;
+  width        : 100%;
+  font-weight  : 400;
+  display      : block;
+  text-align   : center;
+  border       : 0;
+  padding      : 0;
+  margin-bottom: 5px;
+}
+
+.webform-page-card {
+  border       : 0 none;
+  border-radius: 3px;
+  box-shadow   : 0 17px 41px -21px $color-principal;
+  padding      : 20px 30px;
+  border-top   : 9px solid $color-principal;
+
+  .form-managed-file {
+    .js-form-item {
+      width: 100%;
+    }
+  }
+
+  label {
+    font-size: 14px;
+  }
+
+  .webform-composite-test--wrapper {
+    > .fieldset-wrapper {
+      @include barreVertical();
+    }
+  }
+
+  .radios--wrapper {
+    legend {
+      width       : 100%;
+      margin-right: 1em;
+      max-width   : 100%;
+    }
+
+    > .fieldset-wrapper {
+      max-width: 100%;
+      width    : 100%;
+    }
+
+    .js-webform-radios {
+      display        : flex;
+      justify-content: left;
+      align-items    : center;
+      flex-wrap      : wrap;
+      padding-left   : 0;
+
+      .js-form-type-radio {
+        margin     : 0 1em 0.5em 0;
+        width      : calc(100% - 1em);
+        white-space: initial;
+      }
+    }
+  }
+
+  details {
+    &.main-details {
+      margin-bottom : 1em;
+      padding-bottom: 1em;
+      border-bottom : 1px solid #b6bbbf;
+    }
+
+    > summary {
+      font-size: 17px;
+    }
+
+    > .details-wrapper {
+      padding: 1.5em 0 1.5em 20px;
+    }
+
+    legend {
+      font-size: 14px;
+    }
+
+    details {
+      @include barreVertical();
+      padding-left: 10px;
+
+      &::before {
+        left: 0;
+      }
+
+      .details-wrapper {
+        padding-bottom: 0;
+        padding-top   : 0.5em;
+        padding-left  : 1.5em;
+      }
+
+      .radios--wrapper {
+        //margin: 0 0 0 1.5em;
+      }
+    }
+  }
+
+  .form-item-piece {
+    > label {
+      @include titre-page-form();
+    }
+  }
+
+  .table-responsive {
+    margin-right: -28px;
+    width       : auto;
+    margin-left : -21px;
+    overflow    : visible;
+  }
+
+  table {
+    legend {
+      margin: 0;
+      border: 0;
+    }
+
+    thead {
+      display: none;
+    }
+
+    tr {
+      border    : 0;
+      background: transparent !important;
+
+      td {
+        border    : 0;
+        background: transparent !important;
+
+        input.image-button {
+          margin       : 0;
+          border       : 0;
+          border-radius: 0;
+        }
+
+        &.webform-multiple-table--handle {
+          width  : 10px;
+          padding: 0;
+
+          a {
+            opacity: 0;
+          }
+        }
+
+        &.webform-multiple-table--operations-two {
+          width  : 20px;
+          padding: 0;
+        }
+      }
+    }
+  }
+
+  .btn {
+    border-radius: 0;
+    font-weight  : 700;
+  }
+
+  .tabledrag-toggle-weight-wrapper {
+    display: none;
+  }
+
+  .webform-multiple-add {
+    display: flex;
+
+    input[name="piece_table_add"] {
+      background-color: transparent;
+      border          : 1px solid #4c95ce;
+      color           : #000;
+      @include transition();
+
+      &:hover {
+        color           : #FFF !important;
+        background-color: $color-principal;
+      }
+    }
+
+    input[name="piece_table_add"] + fieldset {
+      display: none;
+    }
+  }
+
+  .form-actions {
+    padding        : 2em;
+    display        : flex;
+    background     : #e0e8ef;
+    margin         : 0 -30px -20px;
+    justify-content: space-between;
+
+    .webform-button--previous {
+      margin-right: 2em;
+      opacity     : 0.8;
+      max-width   : 170px;
+
+      + input {
+        max-width: 170px;
+      }
+    }
+  }
+  // show resume form
+  .container-form-resume {
+    border-bottom : 1px solid #a09f9f;
+    padding-bottom: 1em;
+    margin-bottom : 3em;
+
+    details > summary {
+      font-size: 14px;
+    }
+
+    .montant-total {
+      font-size  : 1.21em;
+      font-weight: 600;
+      text-align : right;
+      padding    : 0;
+      margin     : 0.1em 0 0.5em;
+    }
+
+    .titre-page-form {
+      @include titre-page-form();
+    }
+
+    .piece.ligne-item {
+      font-weight: 600;
+      font-size  : 16px;
+      margin-top : 1em;
+    }
+
+    .primary-container {
+      @include barreVertical();
+
+      details > .details-wrapper {
+        padding-top: 0;
+      }
+    }
+
+    .text-description {
+      margin    : 0 0 0.5em;
+      font-style: italic;
+    }
+  }
+}
+
+.webform-confirmation {
+  padding      : 2em;
+  font-size    : 2em;
+  line-height  : 1.5em;
+  border       : 1px solid #e4e4e4;
+  text-align   : center;
+  margin-bottom: 2em;
+
+  .webform-confirmation__message {
+    margin: 0;
+  }
+
+  .webform-confirmation__back {
+    display: none;
+  }
+}

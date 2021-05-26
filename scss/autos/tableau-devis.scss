@@ -1,0 +1,32 @@
+.table-container {
+  min-width: 500px;
+  width    : 100%;
+  font-size: 15px;
+
+  .ligne-item {
+    &.piece {
+      font-weight: 600;
+      font-size  : 17px;
+      padding    : 1.5rem 0 0;
+    }
+  }
+
+  .container-details {
+    border-bottom : 1px solid #eee;
+    padding-bottom: 1.5rem;
+    margin-bottom : 1.5rem;
+
+    &_titre {
+      margin-top    : 1.5rem;
+      text-transform: lowercase;
+      margin-bottom : 0.5rem;
+    }
+
+    .container-details {
+      margin-left   : 1.5rem;
+      border-bottom : 0 solid #eee;
+      padding-bottom: 0;
+      margin-bottom : 0;
+    }
+  }
+}

@@ -1,0 +1,56 @@
+{#
+/**
+ * @file
+ * Default theme implementation to display a view of unformatted rows.
+ *
+ * Available variables:
+ * - title: The title of this group of rows. May be empty.
+ * - rows: A list of the view's row items.
+ *   - attributes: The row's HTML attributes.
+ *   - content: The row's content.
+ * - view: The view object.
+ * - default_row_class: A flag indicating whether default classes should be
+ *   used on rows.
+ *
+ * @see template_preprocess_views_view_unformatted()
+ *
+ * @ingroup themeable
+ */
+#}
+{% if title %}
+  <h3>{{ title }}</h3>
+{% endif %}
+{% set it=0 %}
+{% set periode=4 %}
+<div class="row">
+{% for row in rows %}		
+	{% if it == 0 %}
+		{% set styleRenderBig = true %}
+	{% else %}
+		{% set styleRenderBig = false %}
+	{% endif %}
+  {%
+    set row_classes = [
+      default_row_class ? 'views-row',
+      (styleRenderBig == true ) ?  'col-md-12':'col-md-6'
+    ]
+  %}  
+  <div{{ row.attributes.addClass(row_classes) }}>
+  {% if styleRenderBig == true %}
+  	{% set item = row.content|merge({ '#view_mode': 'teaser_realisation_model_blog_' }) %}
+  {% else %}
+  	{% set item = row.content|merge({ '#view_mode': 'teaser_realisation_model_blog_small_' }) %}
+  {% endif %}
+    {{ item }}    
+  </div>
+  {% set it=1+it  %}
+  {% if it == periode %}
+	<div {{ row.attributes.addClass(row_classes) }}>
+		{{ load_block_content(10) }}
+	</div>
+	{% endif %}  
+  {% if it == periode %}
+  	{% set it = 0 %}
+  {% endif %}
+{% endfor %}
+</div>
