@@ -6,7 +6,17 @@
 @use "@stephane888/wbu-atomique/scss/molecule/steph/commentaire.scss";
 @use "@stephane888/wbu-atomique/scss/molecule/steph/comparaison_vs.scss";
 @use "@stephane888/wbu-atomique/scss/molecule/stan/serviceBlock-module";
+@use "@stephane888/wbu-atomique/scss/organisme/steph/lamaisonsaintgobain/item-section.scss";
 
 .guides-similaires {
   margin-bottom: $wbu-margin*2.5;
+}
+
+.owl-carousel .item {
+  margin: 0;
+}
+@include media-min('DD') {
+  .owl-carousel.owl-drag .owl-item {
+    margin-left: 1rem;
+  }
 }

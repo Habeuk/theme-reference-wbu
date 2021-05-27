@@ -16,3 +16,14 @@
     padding-bottom: $wbu-margin*2.5;
   }
 }
+// on supprimer la marge-bottom sur le dernier article dans une liste:
+
+.views {
+  .views-row {
+    &:last-child {
+      .teaser-img-desc {
+        margin-bottom: 0;
+      }
+    }
+  }
+}

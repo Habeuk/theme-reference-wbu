@@ -59,6 +59,13 @@ teaser-realisation:
     
 #####################################################################################################################################################
 
+page-taxonomie:
+  css:
+    theme:
+      css/page-taxonomie.css: {weight: 20}
+  js:
+    js/page-taxonomie.js: {}
+
 page-single-realisation:
   css:
     theme:

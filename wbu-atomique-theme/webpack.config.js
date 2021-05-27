@@ -28,6 +28,7 @@ module.exports = {
     "single-blog": "./src/js/single-blog.js",
     "override-style": "./src/js/override-style.js",
     commentaire: "./src/js/commentaire.js",
+    "page-taxonomie": "./src/js/page-taxonomie.js",
     "blog-teaser": "./src/js/blog-teaser.js",
     "defautl-style": "./src/js/defautl-style.js",
     "page-single-article": "./src/js/page-single-article.js",
