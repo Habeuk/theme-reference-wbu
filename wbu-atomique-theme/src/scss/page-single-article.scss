@@ -20,3 +20,25 @@
     margin-left: 1rem;
   }
 }
+//custom slider splidejs;
+
+.custom-splidejs {
+  .splide__slide {
+    max-width   : 500px;
+    margin-right: 1.5rem;
+    @include media-min('DD') {
+      margin-right: 3rem;
+      max-width   : 680px;
+    }
+
+    a {
+      color      : inherit;
+      line-height: 3.5;
+    }
+
+    img {
+      max-width: 100%;
+      margin   : 0;
+    }
+  }
+}

@@ -35,7 +35,8 @@ module.exports = {
     "page-home-principal": "./src/js/page-home-principal.js",
     "page-single-realisation": "./src/js/page-single-realisation.js",
     "page-nos-guides-travaux": "./src/js/page-nos-guides-travaux.js",
-    "page-nos-realisations": "./src/js/page-nos-realisations.js"
+    "page-nos-realisations": "./src/js/page-nos-realisations.js",
+    "page-travaux-renovations": "./src/js/page-travaux-renovations.js"
   },
   output: {
     path: path.resolve(__dirname, "../"),

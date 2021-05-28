@@ -56,8 +56,17 @@ teaser-realisation:
   js:
     js/teaser-realisation.js: {}
 
-    
+
 #####################################################################################################################################################
+
+
+page-travaux-renovations:
+  css:
+    theme:
+      css/page-travaux-renovations.css: {weight: 20}
+  js:
+    js/page-travaux-renovations.js: {}
+
 
 page-taxonomie:
   css:
@@ -72,7 +81,7 @@ page-single-realisation:
       css/page-single-realisation.css: {weight: 20}
   js:
     js/page-single-realisation.js: {}
-    
+
 
 page-home-principal:
   css:
@@ -86,22 +95,22 @@ defautl-style:
     theme:
       css/defautl-style.css: {weight: 20}
   js:
-    js/defautl-style.js: {}    
+    js/defautl-style.js: {}
 
 page-single-article:
   css:
     theme:
       css/page-single-article.css: {weight: 20}
   js:
-    js/page-single-article.js: {}   
+    js/page-single-article.js: {}
 
 page-nos-guides-travaux:
   css:
     theme:
       css/page-nos-guides-travaux.css: {weight: 20}
   js:
-    js/page-nos-guides-travaux.js: {}    
-    
+    js/page-nos-guides-travaux.js: {}
+
 page-nos-realisations:
   css:
     theme:
@@ -129,15 +138,15 @@ blog-teaser:
       css/blog-teaser.css: {}
   js:
     js/blog-teaser.js: {}
-    
-    
+
+
 block-call-to-action:
   css:
     theme:
       css/block-call-to-action.css: {}
   js:
     js/block-call-to-action.js: {}
-    
+
 form-multi-step:
   css:
     theme:
@@ -160,4 +169,4 @@ override-style:
     theme:
       css/override-style.css: {weight: 25}
   js:
-    js/override-style.js: {}    
+    js/override-style.js: {}
