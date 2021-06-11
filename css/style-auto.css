@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /**
  * Les principales couleurs.
  */
@@ -58,14 +59,14 @@
  * Card rotation
  */
 /**
- * translation on hover
- */
+* translation on hover
+*/
 /**
- * Before cover
- */
+* Before cover
+*/
 /**
- * Before cover
- */
+* Before cover
+*/
 /**
  *  pas de retour à la ligne
  */
@@ -90,10 +91,11 @@
  */
 /* Fichier : /siteweb/lesroisdelareno/public/web/themes/custom/lesroisdelareno/scss/autos/1_main.scss */
 .dialog-off-canvas-main-canvas {
-  width: 100%; }
-  .dialog-off-canvas-main-canvas .b-icon.bi {
-    display: block; }
-
+  width: 100%;
+}
+.dialog-off-canvas-main-canvas .b-icon.bi {
+  display: block;
+}
 /* Fichier : /siteweb/lesroisdelareno/public/web/themes/custom/lesroisdelareno/scss/autos/block-title.scss */
 .block-title {
   position: relative;
@@ -102,19 +104,21 @@
   line-height: 18px;
   margin-bottom: 30px;
   width: 100%;
-  font-weight: 600; }
-  .block-title .title {
-    margin: 0; }
-  .block-title::before {
-    display: inline-block;
-    content: "";
-    border-bottom: 1px solid #e1e3e5;
-    border-left: 1px solid #e1e3e5;
-    position: absolute;
-    width: 100%;
-    bottom: -10px;
-    left: 0; }
-
+  font-weight: 600;
+}
+.block-title .title {
+  margin: 0;
+}
+.block-title::before {
+  display: inline-block;
+  content: "";
+  border-bottom: 1px solid #e1e3e5;
+  border-left: 1px solid #e1e3e5;
+  position: absolute;
+  width: 100%;
+  bottom: -10px;
+  left: 0;
+}
 /* Fichier : /siteweb/lesroisdelareno/public/web/themes/custom/lesroisdelareno/scss/autos/bunble-project.scss */
 .lesroisdelareno-entete-project {
   position: relative;
@@ -123,90 +127,109 @@
   height: auto;
   min-height: 250px;
   display: flex;
-  align-items: center; }
-  .lesroisdelareno-entete-project [class*="col-"] {
-    margin-bottom: 0; }
+  align-items: center;
+}
+.lesroisdelareno-entete-project [class*="col-"] {
+  margin-bottom: 0;
+}
+.lesroisdelareno-entete-project .pad-container {
+  z-index: 2;
+  position: relative;
+  padding: 0;
+}
+@media only screen and (min-width: 992px) {
   .lesroisdelareno-entete-project .pad-container {
-    z-index: 2;
-    position: relative;
-    padding: 0; }
-  @media only screen and (min-width: 992px) {
-    .lesroisdelareno-entete-project .pad-container {
-      padding: 2em; } }
-  .lesroisdelareno-entete-project::before {
-    display: block;
-    content: "";
-    position: absolute;
-    width: 33%;
-    min-width: 45%;
-    bottom: 0;
-    left: 0;
-    top: 0;
-    right: auto;
-    z-index: 1;
-    background: #3687c6; }
-  .lesroisdelareno-entete-project::after {
-    content: "";
-    display: block;
-    position: absolute;
-    min-width: calc(250px + 10%);
-    bottom: 0;
-    left: calc(45% - 45%/2.6);
-    top: 0;
-    right: auto;
-    z-index: 1;
-    border-top: 290px solid #3687c6;
-    border-right: 120px solid transparent; }
-  .lesroisdelareno-entete-project .content-text {
-    max-width: 45%; }
-
+    padding: 2em;
+  }
+}
+.lesroisdelareno-entete-project::before {
+  display: block;
+  content: "";
+  position: absolute;
+  width: 33%;
+  min-width: 45%;
+  bottom: 0;
+  left: 0;
+  top: 0;
+  right: auto;
+  z-index: 1;
+  background: #3687c6;
+}
+.lesroisdelareno-entete-project::after {
+  content: "";
+  display: block;
+  position: absolute;
+  min-width: calc(250px + 10%);
+  bottom: 0;
+  left: calc(45% - 45%/2.6);
+  top: 0;
+  right: auto;
+  z-index: 1;
+  border-top: 290px solid #3687c6;
+  border-right: 120px solid transparent;
+}
+.lesroisdelareno-entete-project .content-text {
+  max-width: 45%;
+}
 /* Fichier : /siteweb/lesroisdelareno/public/web/themes/custom/lesroisdelareno/scss/autos/buttons.scss */
 .btn-outline-force {
   background: transparent !important;
   color: #3687c6 !important;
-  border: 1px solid #3687c6 !important; }
-  .btn-outline-force:hover {
-    background: #3687c6 !important;
-    color: #FFF !important; }
-
+  border: 1px solid #3687c6 !important;
+}
+.btn-outline-force:hover {
+  background: #3687c6 !important;
+  color: #FFF !important;
+}
 /* Fichier : /siteweb/lesroisdelareno/public/web/themes/custom/lesroisdelareno/scss/autos/front.scss */
 .project-item:hover .project-img:after {
-  top: 1.5em; }
-
+  top: 1.5em;
+}
 .container {
   max-width: 1170px;
-  width: 100%; }
-
+  width: 100%;
+}
 .page-node-1 .block-page-title-block {
-  display: none; }
+  display: none;
+}
 .page-node-1 .node__meta {
-  display: none; }
-
+  display: none;
+}
 @media only screen and (min-width: 992px) {
   .header-nav {
-    padding: 30px 0 45px; } }
+    padding: 30px 0 45px;
+  }
+}
 .header-nav .logo {
   padding: 0;
-  margin-bottom: 0.7em; }
+  margin-bottom: 0.7em;
+}
 @media only screen and (min-width: 992px) {
   .header-nav .logo {
-    margin-bottom: 0; } }
+    margin-bottom: 0;
+  }
+}
 .header-nav .logo img {
   width: auto;
   max-width: 175px;
   margin-top: 0;
-  height: 91px !important; }
+  height: 91px !important;
+}
 @media only screen and (min-width: 992px) {
   .header-nav .logo img {
     max-width: 200px;
     margin-top: -1.2em;
-    height: auto !important; } }
+    height: auto !important;
+  }
+}
 .header-nav .site-name {
   font-size: 1.5em;
   font-weight: 600;
-  color: #3687c6; }
+  color: #3687c6;
+}
 .header-nav .site-slogant {
-  font-style: italic; }
+  font-style: italic;
+}
 .header-nav .mobile-menu {
   margin: 0;
   position: absolute;
@@ -214,273 +237,344 @@
   left: auto;
   bottom: auto;
   top: calc(50% - 15px);
-  padding: 0; }
+  padding: 0;
+}
+.header-nav ul.top-contact li {
+  margin-bottom: 20px;
+}
+@media only screen and (min-width: 992px) {
   .header-nav ul.top-contact li {
-    margin-bottom: 20px; }
-  @media only screen and (min-width: 992px) {
-    .header-nav ul.top-contact li {
-      margin-bottom: 0; } }
-
+    margin-bottom: 0;
+  }
+}
 #fp-nav li .active span, .bg-color, .black-box.color, .bot-subscribe, .box-dark, .btn, .btn a, .btn-submit, .btn.btn-blue, .color-wrapper, .double-bounce1, .double-bounce2, .edu .btn-submit, .filter li a.active, .footer .btn-submit.alt, .footer.white .btn-submit.alt, .fp-slidesNav .active span, .hi-icon-wrap:hover.hi-icon-effect-1a .hi-icon, .map-bg:before, .nav-tabs li.active a:after, .navbar-nav > li.current-box, .navbar-nav > li:hover.box, .newsletter-wrapper #mc_embed_signup .button, .owl-slider-wrapper .item .owl-content, .owl-theme .owl-controls .owl-page.active span, .owl-theme .owl-controls.Gatesable .owl-page:hover span, .pagination .current, .pagination ul li a:hover, .panel-title .active, .panel-title > a:hover, .parallax .btn-submit, .parallax .btn-submit:hover, .post .date, .post-content .date, .post-content .testimonial, .pricing .plan.active, .pricing .plan:hover, .projects-grid-2.hover-color .project-item:hover .project-img:after, .projects-grid-3.hover-color .project-item:hover .project-img:after, .projects-grid.hover-color .project-item:hover .project-img:after, .q-form .btn-submit:hover, .q-form-title, .services-box-2 i, .services-box-2.left:hover i, .services-box-3:hover i, .social-icons li a:hover i, .table td:hover i, .tabs-top .tab.active a, .tags li a:hover, .team-alt.active, .team-alt:hover, .team-box-animated .back, .topbar, .topbar:after, ul.circled li.bg.current, ul.circled li:hover.bg, ul.circled span {
-  background: #3687c6; }
-
+  background: #3687c6;
+}
 .btn {
-  color: #FFF; }
-
+  color: #FFF;
+}
 #testimonials .author, .aboutme h3, .btn.btn-color-brd, .btn.parallax:hover, .btn:hover, .colored, .f-element .highlight.color, .f-element i, .facts-home a:hover, .filter a.active, .filter a:hover, .footer .services-box-3:hover i, .footer .widget .meta i:hover, .footer a:hover, .footer-links li a:hover, .items .info h4 a:hover, .meta ul li a:hover, .milestone-details, .nav > li > a:hover, .nav > li.current a, .navbar-nav .dropdown-menu li a.active, .navbar-nav .dropdown-menu li a:hover, .navbar-nav > li > a:hover, .navigation a:hover, .owl-portfolio .info h4 a:hover, .page-nav .active, .page-nav a:hover, .parallax a:hover, .parallax.pagetitle a, .post-content h2 a:hover, .post-content.testimonial .author, .post-format h2 a:hover, .post-home .col h1 a:hover, .pricing .plan h4, .product-grid .post .meta ul li a:hover, .product-grid .post .post-content .price span, .product-grid .post .post-content .rating, .product-grid .post .post-content h3 a:hover, .product-grid .post .post-content h5 a:hover, .progress-list li em, .rating, .rw-words-1 span, .services-box .col:hover i, .services-box i, .services-box-2 .content h3 a:hover.dark, .services-box-2 i.small, .sidebar a:hover, .sidebox a:hover, .tabs-top .tab a:hover, .tabs-top .tab.active a, .team-alt .social-icons li a:hover i, .team-box-animated .front span, .team-member .social-links a:hover, .testimonials h2, .top-contact li .icon i, .topbar li a:hover, .topbar ul.social-icons li a:hover i, .topbar-content ul.toplink li a:hover, .tp-caption a, .tp-caption.upper h2 span, .tp-caption.upper2 h2 span, .work-descr, .work-item:hover .work-descr, .yamm .yamm-content a:hover, a, ul.arrow li:before, ul.circled li:before {
-  color: #3687c6; }
-
+  color: #3687c6;
+}
 #fp-nav span, #testimonials .tab a.active, #testimonials .tab a:hover, .btn.btn-color-brd, .f-element .sep, .filter a.active, .filter a:hover, .filter li a.active, .fp-slidesNav span, .header-nav .dropdown-menu, .hi-icon-wrap:hover, .nav > li > a:hover:before, .nav-tabs li a:after, .nav-tabs li.active a:after, .navbar-nav > li > a:after, .navbar-nav > li.current, .navbar-nav > li.current:before, .navbar-nav > li:hover.pad, .navigation a:hover, .post-content .date:after, .pricing .plan.active, .pricing .plan:hover, .project-title:before, .services-box .col a:hover, .services-box-2.left i:after, .services-box-2.left:hover i, .services-box-3 .col:hover i, .services-box-3 i.circle-border, .services-box-3:hover i.circle-border, .social-icons li a:hover i, .table td:hover i, .tabs-top .tab.active a, .tags li a:hover, .team-box-animated .back, .top-contact li .icon i, .tp-caption.upper, :after, h2.heading:before, h3.heading:before, p.h-sub:before {
-  border-color: #3687c6; }
-
+  border-color: #3687c6;
+}
 .md-layer-4-20-6 a, .md-layer-4-21-6, .md-layer-4-22-6, .md-layer-4-23-6 {
-  background: #3687c6; }
-
+  background: #3687c6;
+}
 .footer_tags li a:hover, .nav-tabs li a:focus, .nav-tabs li a:hover, .nav-tabs li.active a, .nav-tabs li.active a:focus, .nav-tabs li.active a:hover, .pages, .progress .bar, .progress-green .bar, .progress-success .bar, .services-box-3 .col:hover i, .tooltip-inner {
-  background-color: #3687c6; }
-
+  background-color: #3687c6;
+}
 .box-dark.color1 {
-  background: #3687c6; }
-  .box-dark.color1 * {
-    color: #FFF !important; }
-  .box-dark.color1:hover * {
-    color: inherit !important; }
-
+  background: #3687c6;
+}
+.box-dark.color1 * {
+  color: #FFF !important;
+}
+.box-dark.color1:hover * {
+  color: inherit !important;
+}
 .show {
-  opacity: 1; }
-
+  opacity: 1;
+}
 .alert-dismissible {
   z-index: 99999;
-  position: relative; }
-
+  position: relative;
+}
 .box-dark .content h3 {
   font-size: 20px !important;
   position: relative;
-  line-height: 25px !important; }
-  .box-dark .content h3:before {
-    top: auto !important;
-    border-bottom-color: #fff !important;
-    bottom: -10px; }
-
+  line-height: 25px !important;
+}
+.box-dark .content h3:before {
+  top: auto !important;
+  border-bottom-color: #fff !important;
+  bottom: -10px;
+}
 @media only screen and (min-width: 1601px) {
   .box-dark {
-    padding: 20px 45px 30px; } }
-
+    padding: 20px 45px 30px;
+  }
+}
+.navbar-collapse {
+  max-height: 100vh;
+  overflow-y: auto;
+}
+.container-menu {
+  position: relative;
+  z-index: 999;
+}
+.modal.fade .modal-dialog {
+  -webkit-transform: translate(0, 0%);
+  -ms-transform: translate(0, 0%);
+  transform: translate(0, 0%);
+}
 /* Fichier : /siteweb/lesroisdelareno/public/web/themes/custom/lesroisdelareno/scss/autos/lesroisdelareno-bundle-model1.scss */
 .lesroisdelareno-bundle-model1 ol, .lesroisdelareno-bundle-model1 p, .lesroisdelareno-bundle-model1 ul {
-  margin-bottom: 0.8em; }
+  margin-bottom: 0.8em;
+}
 .lesroisdelareno-bundle-model1 ul {
-  list-style: square; }
-
+  list-style: square;
+}
 /* Fichier : /siteweb/lesroisdelareno/public/web/themes/custom/lesroisdelareno/scss/autos/menu.scss */
 .top-contact li {
-  width: 100%; }
+  width: 100%;
+}
 @media only screen and (min-width: 576px) {
   .top-contact li {
-    width: 50%; } }
+    width: 50%;
+  }
+}
 @media only screen and (min-width: 992px) {
   .top-contact li {
-    width: auto; }
-    .top-contact li:first-child {
-      width: 25%; } }
+    width: auto;
+  }
+  .top-contact li:first-child {
+    width: 25%;
+  }
+}
 @media only screen and (min-width: 1201px) {
   .top-contact li {
-    width: 30%; } }
-
+    width: 30%;
+  }
+}
 .topbar-content [class*="col-"] {
-  margin-bottom: 0; }
-
+  margin-bottom: 0;
+}
 .navbar-nav {
-  margin-top: 27px; }
+  margin-top: 27px;
+}
 @media only screen and (min-width: 992px) {
   .navbar-nav {
-    margin-top: 0; } }
-
+    margin-top: 0;
+  }
+}
 .nav-item.dropdown {
   position: relative;
-  transition: all 0.2s ease-in-out; }
+  transition: all 0.2s ease-in-out;
+}
 @media (prefers-reduced-motion: reduce) {
   .nav-item.dropdown {
-    transition: none; } }
+    transition: none;
+  }
+}
 .nav-item.dropdown .dropdown-menu {
   transition: all 0.2s ease-in-out;
-  max-height: 0; }
+  max-height: 0;
+}
 @media (prefers-reduced-motion: reduce) {
   .nav-item.dropdown .dropdown-menu {
-    transition: none; } }
+    transition: none;
+  }
+}
 @media only screen and (min-width: 992px) {
   .nav-item.dropdown .dropdown-menu {
-    position: absolute; } }
+    position: absolute;
+  }
+}
 .nav-item.dropdown:hover .dropdown-menu {
   opacity: 1;
   display: block !important;
-  max-height: 500px; }
-
+  max-height: 500px;
+}
 .container-menu {
   display: flex;
   align-items: flex-end;
-  z-index: 99999;
-  position: relative; }
+  z-index: 999;
+  position: relative;
+}
 @media only screen and (min-width: 992px) {
   .container-menu .container {
-    position: relative; }
+    position: relative;
+  }
   .container-menu .collapse {
     position: absolute;
     right: 0;
     bottom: auto;
-    top: -24px; } }
-
+    top: -24px;
+  }
+}
 .header-nav [class*="col-"] {
-  margin-bottom: 0; }
+  margin-bottom: 0;
+}
 .header-nav .top-contact li {
-  min-width: 240px; }
+  min-width: 240px;
+}
 @media only screen and (min-width: 992px) {
   .header-nav .top-contact li {
-    min-width: 300px; } }
-
+    min-width: 300px;
+  }
+}
 /* Fichier : /siteweb/lesroisdelareno/public/web/themes/custom/lesroisdelareno/scss/autos/owl.scss */
 .owl-carousel .owl-stage {
-  display: flex; }
-
+  display: flex;
+}
 .owl-carousel.owl-drag .owl-item {
   display: flex;
-  align-items: center; }
-
+  align-items: center;
+}
 /* Fichier : /siteweb/lesroisdelareno/public/web/themes/custom/lesroisdelareno/scss/autos/tableau-devis.scss */
 .table-container {
   min-width: 500px;
   width: 100%;
-  font-size: 15px; }
-  .table-container .ligne-item.piece {
-    font-weight: 600;
-    font-size: 17px;
-    padding: 1.5rem 0 0; }
-  .table-container .container-details {
-    border-bottom: 1px solid #eee;
-    padding-bottom: 1.5rem;
-    margin-bottom: 1.5rem; }
-    .table-container .container-details_titre {
-      margin-top: 1.5rem;
-      text-transform: lowercase;
-      margin-bottom: 0.5rem; }
-    .table-container .container-details .container-details {
-      margin-left: 1.5rem;
-      border-bottom: 0 solid #eee;
-      padding-bottom: 0;
-      margin-bottom: 0; }
-
+  font-size: 15px;
+}
+.table-container .ligne-item.piece {
+  font-weight: 600;
+  font-size: 17px;
+  padding: 1.5rem 0 0;
+}
+.table-container .container-details {
+  border-bottom: 1px solid #eee;
+  padding-bottom: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+.table-container .container-details_titre {
+  margin-top: 1.5rem;
+  text-transform: lowercase;
+  margin-bottom: 0.5rem;
+}
+.table-container .container-details .container-details {
+  margin-left: 1.5rem;
+  border-bottom: 0 solid #eee;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
 /* Fichier : /siteweb/lesroisdelareno/public/web/themes/custom/lesroisdelareno/scss/autos/webform-page-card.scss */
 .form-control.error {
   border: 1px solid #F00;
-  box-shadow: 0 2px 2px rgba(255, 0, 0, 0.47); }
-
+  box-shadow: 0 2px 2px rgba(255, 0, 0, 0.47);
+}
 .webform-main-container {
   background-image: url("/themes/custom/lesroisdelareno/images/background-batiement.jpg");
   background-position: right;
   background-repeat: no-repeat;
   background-size: auto 100%;
   position: relative;
-  z-index: 1; }
-  .webform-main-container::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    z-index: 1;
-    background: rgba(255, 255, 255, 0.88); }
-  .webform-main-container .container, .webform-main-container .page-orther-custom {
-    position: relative;
-    z-index: 5;
-    margin-top: 0 !important;
-    margin-bottom: 0 !important;
-    padding-top: 2em;
-    padding-bottom: 2em;
-    min-height: 400px;
-    display: flex;
-    width: 100%;
-    align-items: center;
-    flex-wrap: wrap; }
-    .webform-main-container .container .block, .webform-main-container .page-orther-custom .block, .webform-main-container .container .tabs, .webform-main-container .page-orther-custom .tabs {
-      width: 100%; }
-  .webform-main-container .messages-container {
-    width: 100%; }
-  .webform-main-container .webform-progress-tracker .progress-step.is-complete .progress-marker::after, .webform-main-container .webform-progress-tracker .progress-step.is-complete .progress-marker::before {
-    background-color: #2b6c9e; }
-  .webform-main-container table {
-    font-size: 1em; }
-
+  z-index: 1;
+}
+.webform-main-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+  background: rgba(255, 255, 255, 0.88);
+}
+.webform-main-container .container, .webform-main-container .page-orther-custom {
+  position: relative;
+  z-index: 5;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  min-height: 400px;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.webform-main-container .container .block, .webform-main-container .container .tabs, .webform-main-container .page-orther-custom .block, .webform-main-container .page-orther-custom .tabs {
+  width: 100%;
+}
+.webform-main-container .messages-container {
+  width: 100%;
+}
+.webform-main-container .webform-progress-tracker .progress-step.is-complete .progress-marker::after, .webform-main-container .webform-progress-tracker .progress-step.is-complete .progress-marker::before {
+  background-color: #2b6c9e;
+}
+.webform-main-container table {
+  font-size: 1em;
+}
 .container-webform-page-card {
   max-width: 690px;
   width: 100%;
   position: relative;
-  z-index: 1; }
-
+  z-index: 1;
+}
 .webform-page-card {
   border: 0 none;
   border-radius: 3px;
   box-shadow: 0 17px 41px -21px #3687c6;
   padding: 20px 30px;
-  border-top: 9px solid #3687c6; }
-  .webform-page-card .form-managed-file .js-form-item {
-    width: 100%; }
-  .webform-page-card label {
-    font-size: 14px; }
-    .webform-page-card .webform-composite-test--wrapper > .fieldset-wrapper {
-      position: relative; }
-      .webform-page-card .webform-composite-test--wrapper > .fieldset-wrapper::before {
-        content: "";
-        position: absolute;
-        top: 5px;
-        bottom: -1px;
-        width: 5px;
-        left: -31px;
-        background: #aecde4c7; }
-  .webform-page-card .radios--wrapper legend {
-    width: 100%;
-    margin-right: 1em;
-    max-width: 100%; }
-  .webform-page-card .radios--wrapper > .fieldset-wrapper {
-    max-width: 100%;
-    width: 100%; }
-  .webform-page-card .radios--wrapper .js-webform-radios {
-    display: flex;
-    justify-content: left;
-    align-items: center;
-    flex-wrap: wrap;
-    padding-left: 0; }
-    .webform-page-card .radios--wrapper .js-webform-radios .js-form-type-radio {
-      margin: 0 1em 0.5em 0;
-      width: calc(100% - 1em);
-      white-space: initial; }
+  border-top: 9px solid #3687c6;
+}
+.webform-page-card .form-managed-file .js-form-item {
+  width: 100%;
+}
+.webform-page-card label {
+  font-size: 14px;
+}
+.webform-page-card .webform-composite-test--wrapper > .fieldset-wrapper {
+  position: relative;
+}
+.webform-page-card .webform-composite-test--wrapper > .fieldset-wrapper::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  bottom: -1px;
+  width: 5px;
+  left: -31px;
+  background: #aecde4c7;
+}
+.webform-page-card .radios--wrapper legend {
+  width: 100%;
+  margin-right: 1em;
+  max-width: 100%;
+}
+.webform-page-card .radios--wrapper > .fieldset-wrapper {
+  max-width: 100%;
+  width: 100%;
+}
+.webform-page-card .radios--wrapper .js-webform-radios {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-left: 0;
+}
+.webform-page-card .radios--wrapper .js-webform-radios .js-form-type-radio {
+  margin: 0 1em 0.5em 0;
+  width: calc(100% - 1em);
+  white-space: initial;
+}
 .webform-page-card details.main-details {
   margin-bottom: 1em;
   padding-bottom: 1em;
-  border-bottom: 1px solid #b6bbbf; }
+  border-bottom: 1px solid #b6bbbf;
+}
 .webform-page-card details > summary {
-  font-size: 17px; }
+  font-size: 17px;
+}
 .webform-page-card details > .details-wrapper {
-  padding: 1.5em 0 1.5em 20px; }
+  padding: 1.5em 0 1.5em 20px;
+}
 .webform-page-card details legend {
-  font-size: 14px; }
+  font-size: 14px;
+}
 .webform-page-card details details {
   position: relative;
-  padding-left: 10px; }
-  .webform-page-card details details::before {
-    content: "";
-    position: absolute;
-    top: 5px;
-    bottom: -1px;
-    width: 5px;
-    left: -31px;
-    background: #aecde4c7; }
-  .webform-page-card details details::before {
-    left: 0; }
-  .webform-page-card details details .details-wrapper {
-    padding-bottom: 0;
-    padding-top: 0.5em;
-    padding-left: 1.5em; }
+  padding-left: 10px;
+}
+.webform-page-card details details::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  bottom: -1px;
+  width: 5px;
+  left: -31px;
+  background: #aecde4c7;
+}
+.webform-page-card details details::before {
+  left: 0;
+}
+.webform-page-card details details .details-wrapper {
+  padding-bottom: 0;
+  padding-top: 0.5em;
+  padding-left: 1.5em;
+}
 .webform-page-card .form-item-piece > label {
   font-size: 1.5em;
   width: 100%;
@@ -489,116 +583,148 @@
   text-align: center;
   border: 0;
   padding: 0;
-  margin-bottom: 5px; }
+  margin-bottom: 5px;
+}
 .webform-page-card .table-responsive {
   margin-right: -28px;
   width: auto;
   margin-left: -21px;
-  overflow: visible; }
-  .webform-page-card table legend {
-    margin: 0;
-    border: 0; }
-  .webform-page-card table thead {
-    display: none; }
-  .webform-page-card table tr {
-    border: 0;
-    background: transparent !important; }
-    .webform-page-card table tr td {
-      border: 0;
-      background: transparent !important; }
-      .webform-page-card table tr td input.image-button {
-        margin: 0;
-        border: 0;
-        border-radius: 0; }
-      .webform-page-card table tr td.webform-multiple-table--handle {
-        width: 10px;
-        padding: 0; }
-        .webform-page-card table tr td.webform-multiple-table--handle a {
-          opacity: 0; }
-      .webform-page-card table tr td.webform-multiple-table--operations-two {
-        width: 20px;
-        padding: 0; }
+  overflow: visible;
+}
+.webform-page-card table legend {
+  margin: 0;
+  border: 0;
+}
+.webform-page-card table thead {
+  display: none;
+}
+.webform-page-card table tr {
+  border: 0;
+  background: transparent !important;
+}
+.webform-page-card table tr td {
+  border: 0;
+  background: transparent !important;
+}
+.webform-page-card table tr td input.image-button {
+  margin: 0;
+  border: 0;
+  border-radius: 0;
+}
+.webform-page-card table tr td.webform-multiple-table--handle {
+  width: 10px;
+  padding: 0;
+}
+.webform-page-card table tr td.webform-multiple-table--handle a {
+  opacity: 0;
+}
+.webform-page-card table tr td.webform-multiple-table--operations-two {
+  width: 20px;
+  padding: 0;
+}
 .webform-page-card .btn {
   border-radius: 0;
-  font-weight: 700; }
+  font-weight: 700;
+}
 .webform-page-card .tabledrag-toggle-weight-wrapper {
-  display: none; }
+  display: none;
+}
 .webform-page-card .webform-multiple-add {
-  display: flex; }
+  display: flex;
+}
+.webform-page-card .webform-multiple-add input[name="piece_table_add"] {
+  background-color: transparent;
+  border: 1px solid #4c95ce;
+  color: #000;
+  transition: all 0.2s ease-in-out;
+}
+@media (prefers-reduced-motion: reduce) {
   .webform-page-card .webform-multiple-add input[name="piece_table_add"] {
-    background-color: transparent;
-    border: 1px solid #4c95ce;
-    color: #000;
-    transition: all 0.2s ease-in-out; }
-  @media (prefers-reduced-motion: reduce) {
-    .webform-page-card .webform-multiple-add input[name="piece_table_add"] {
-      transition: none; } }
-  .webform-page-card .webform-multiple-add input[name="piece_table_add"]:hover {
-    color: #FFF !important;
-    background-color: #3687c6; }
-  .webform-page-card .webform-multiple-add input[name="piece_table_add"] + fieldset {
-    display: none; }
+    transition: none;
+  }
+}
+.webform-page-card .webform-multiple-add input[name="piece_table_add"]:hover {
+  color: #FFF !important;
+  background-color: #3687c6;
+}
+.webform-page-card .webform-multiple-add input[name="piece_table_add"] + fieldset {
+  display: none;
+}
 .webform-page-card .form-actions {
   padding: 2em;
   display: flex;
   background: #e0e8ef;
   margin: 0 -30px -20px;
-  justify-content: space-between; }
-  .webform-page-card .form-actions .webform-button--previous {
-    margin-right: 2em;
-    opacity: 0.8;
-    max-width: 170px; }
-    .webform-page-card .form-actions .webform-button--previous + input {
-      max-width: 170px; }
+  justify-content: space-between;
+}
+.webform-page-card .form-actions .webform-button--previous {
+  margin-right: 2em;
+  opacity: 0.8;
+  max-width: 170px;
+}
+.webform-page-card .form-actions .webform-button--previous + input {
+  max-width: 170px;
+}
 .webform-page-card .container-form-resume {
   border-bottom: 1px solid #a09f9f;
   padding-bottom: 1em;
-  margin-bottom: 3em; }
-  .webform-page-card .container-form-resume details > summary {
-    font-size: 14px; }
-  .webform-page-card .container-form-resume .montant-total {
-    font-size: 1.21em;
-    font-weight: 600;
-    text-align: right;
-    padding: 0;
-    margin: 0.1em 0 0.5em; }
-  .webform-page-card .container-form-resume .titre-page-form {
-    font-size: 1.5em;
-    width: 100%;
-    font-weight: 400;
-    display: block;
-    text-align: center;
-    border: 0;
-    padding: 0;
-    margin-bottom: 5px; }
-  .webform-page-card .container-form-resume .piece.ligne-item {
-    font-weight: 600;
-    font-size: 16px;
-    margin-top: 1em; }
-  .webform-page-card .container-form-resume .primary-container {
-    position: relative; }
-    .webform-page-card .container-form-resume .primary-container::before {
-      content: "";
-      position: absolute;
-      top: 5px;
-      bottom: -1px;
-      width: 5px;
-      left: -31px;
-      background: #aecde4c7; }
-    .webform-page-card .container-form-resume .primary-container details > .details-wrapper {
-      padding-top: 0; }
-  .webform-page-card .container-form-resume .text-description {
-    margin: 0 0 0.5em;
-    font-style: italic; }
-
+  margin-bottom: 3em;
+}
+.webform-page-card .container-form-resume details > summary {
+  font-size: 14px;
+}
+.webform-page-card .container-form-resume .montant-total {
+  font-size: 1.21em;
+  font-weight: 600;
+  text-align: right;
+  padding: 0;
+  margin: 0.1em 0 0.5em;
+}
+.webform-page-card .container-form-resume .titre-page-form {
+  font-size: 1.5em;
+  width: 100%;
+  font-weight: 400;
+  display: block;
+  text-align: center;
+  border: 0;
+  padding: 0;
+  margin-bottom: 5px;
+}
+.webform-page-card .container-form-resume .piece.ligne-item {
+  font-weight: 600;
+  font-size: 16px;
+  margin-top: 1em;
+}
+.webform-page-card .container-form-resume .primary-container {
+  position: relative;
+}
+.webform-page-card .container-form-resume .primary-container::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  bottom: -1px;
+  width: 5px;
+  left: -31px;
+  background: #aecde4c7;
+}
+.webform-page-card .container-form-resume .primary-container details > .details-wrapper {
+  padding-top: 0;
+}
+.webform-page-card .container-form-resume .text-description {
+  margin: 0 0 0.5em;
+  font-style: italic;
+}
 .webform-confirmation {
   padding: 2em;
   font-size: 2em;
   line-height: 1.5em;
   border: 1px solid #e4e4e4;
   text-align: center;
-  margin-bottom: 2em; }
-  .webform-confirmation .webform-confirmation__message {
-    margin: 0; }
-  .webform-confirmation .webform-confirmation__back {
-    display: none; }
+  margin-bottom: 2em;
+}
+.webform-confirmation .webform-confirmation__message {
+  margin: 0;
+}
+.webform-confirmation .webform-confirmation__back {
+  display: none;
+}

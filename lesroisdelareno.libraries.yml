@@ -60,12 +60,28 @@ teaser-realisation:
 #####################################################################################################################################################
 
 
+page-default:
+  css:
+    theme:
+      css/page-default.css: {weight: 20}
+  js:
+    js/page-default.js: {}
+
+
 page-travaux-renovations:
   css:
     theme:
       css/page-travaux-renovations.css: {weight: 20}
   js:
     js/page-travaux-renovations.js: {}
+
+
+page-blogs:
+  css:
+    theme:
+      css/page-blogs.css: {weight: 20}
+  js:
+    js/page-blogs.js: {}
 
 
 page-taxonomie:

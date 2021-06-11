@@ -54,7 +54,7 @@
 .container-menu {
   display    : flex;
   align-items: flex-end;
-  z-index    : 99999;
+  z-index    : 999;
   position   : relative;
   @include media-min('DD') {
     .container {

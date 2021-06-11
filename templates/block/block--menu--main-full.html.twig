@@ -40,5 +40,5 @@
 
 {% set heading_id = attributes.id ~ '-menu'|clean_id %}
 <nav role="navigation" aria-labelledby="{{ heading_id }}"{{ attributes.addClass(classes)|without('role', 'aria-labelledby') }}>
-  {% block content %}{{ content }}{% endblock %}
+     {% block content %}{{ content }}{% endblock %}
 </nav>

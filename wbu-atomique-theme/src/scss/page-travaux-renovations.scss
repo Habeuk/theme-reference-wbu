@@ -2,7 +2,53 @@
 @use "./variables.scss" as *;
 @use "@stephane888/wbu-atomique/scss/organisme/sections/page-header-bg";
 @use "@stephane888/wbu-atomique/scss/molecule/steph/header-blog.scss";
+@use "@stephane888/wbu-atomique/scss/organisme/steph/lamaisonsaintgobain/single-article";
+@use "@stephane888/wbu-atomique/scss/molecule/steph/teaser-img-desc.scss";
 
-.header-blog p {
-  margin-bottom: $wbu-margin;
+.header-blog {
+  &.space-margin {
+    margin-bottom: 0;
+  }
+
+  p {
+    margin-bottom: $wbu-margin;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.serviceBlock-module {
+  max-width: 770px;
+}
+
+.service-cle {
+  max-width: 870px;
+
+  .images {
+    margin-bottom: $wbu-margin;
+    @include media-min('DD') {
+      margin-bottom: 0;
+    }
+
+    img {
+      @include media-min('DD') {
+        position: absolute;
+        right   : 3rem;
+      }
+    }
+  }
+  @include media-min('DD') {
+    .single-blog--body {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.teaser-img-desc {
+  .categorie,
+  .time_read {
+    display: none;
+  }
 }
