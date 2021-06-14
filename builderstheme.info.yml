@@ -1,4 +1,4 @@
-name: theme_reference_wbu
+name: builderstheme
 type: theme
 description: "Theme Pour entrprise"
 core: 8.x
@@ -7,7 +7,7 @@ base theme: wb_universe
 dependencies:
   - drupal:wb_universe
 logo: images/logo.png
-screenshot: images/theme_reference_wbu.png
+screenshot: images/builderstheme.png
 
 regions:
   top_header: "Top header"
@@ -19,7 +19,7 @@ regions:
 
 # Ajout des librairies
 libraries:
-  - theme_reference_wbu/global-style
+  - builderstheme/global-style
 
 # Supprimer les librairies du themes parent.  
 #libraries-override:

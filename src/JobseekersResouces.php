@@ -1,5 +1,5 @@
 <?php
-namespace Drupal\theme_reference_wbu;
+namespace Drupal\builderstheme;
 
 use Drupal\user\Entity\User;
 use Stephane888\Debug\debugLog;
