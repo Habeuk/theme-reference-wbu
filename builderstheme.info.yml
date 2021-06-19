@@ -20,10 +20,12 @@ regions:
 # Ajout des librairies
 libraries:
   - builderstheme/global-style
+  - builderstheme/page-default
+  - wb_universe/bootstrap-js
 
-# Supprimer les librairies du themes parent.  
-#libraries-override:
+# Supprimer les librairies du themes parent.
+libraries-override:
   #wb_universe/fontawesome: false
-  #wb_universe/google-police: false
-  #wb_universe/google-analytics: false
-
+  wb_universe/google-police: false
+  wb_universe/google-analytics: false
+  wb_universe/global-style: false

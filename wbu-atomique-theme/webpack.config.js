@@ -24,7 +24,7 @@ module.exports = {
   plugins,
   mode: env || "development", // On définit le mode en fonction de la valeur de NODE_ENV
   entry: {
-    "my-custom-page": "./src/js/script.js"
+    "page-default": "./src/js/page-default.js"
   },
   output: {
     path: path.resolve(__dirname, "../"),

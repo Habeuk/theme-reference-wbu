@@ -1,0 +1,10 @@
+@use "@stephane888/wbu-atomique/scss/wbu-ressources.scss" as *;
+$wbu-default-font-size: 1.5rem;
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1230px
+);
+$btn-font-size: $wbu-default-font-size;
+$font-size-base: $wbu-default-font-size; //

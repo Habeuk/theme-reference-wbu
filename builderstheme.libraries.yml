@@ -1,9 +1,9 @@
 global-style:
   css:
     theme:
-      css/style-auto.css: {}  
+      css/style-auto.css: {}
       css/style.css: {}
-  js: 
+  js:
     #example
     #modele/wilcon-theme/js/main.js: {}
     js/script.js: {}
@@ -11,3 +11,10 @@ global-style:
     - core/jquery
     - core/drupal
 
+#####################################################################################################################################################
+page-default:
+  css:
+    theme:
+      css/page-default.css: {weight: 20}
+  js:
+    js/page-default.js: {}
