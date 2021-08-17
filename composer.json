@@ -1,0 +1,16 @@
+{
+    "name": "stephane888/theme_reference_wbu",
+    "description": "Theme enfant pour wb_universe",
+    "type": "drupal-theme",
+    "license": "GPL-2.0-or-later",
+    "authors": [
+        {
+            "name": "stephane888",
+            "email": "kksasteph888@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+    	"stephane888/wb_universe": "^2.0"
+    }
+}
