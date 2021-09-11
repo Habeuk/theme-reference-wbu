@@ -14,7 +14,9 @@
 #}
 
 {% if theme_hook_original == "input__submit" %}
-	<input{{ attributes.addClass("form-control").removeClass('btn-primary') }} />{{ children }}
+	<input{{attributes.addClass("form-control")}}/>
+	{{ children }}
 {% else %}
-	<input{{ attributes.addClass("form-control") }} />{{ children }}
+	<input{{attributes.addClass("form-control")}}/>
+	{{ children }}
 {% endif %}

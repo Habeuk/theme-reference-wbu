@@ -31,14 +31,6 @@
  * http://www.w3.org/TR/WCAG-TECHS/H42.html for more information.
  */
 #}
-{%
-  set classes = [
-    'menu--' ~ derivative_plugin_id|clean_class,
-    'main-menu'
-  ]
-%}
-
-{% set heading_id = attributes.id ~ '-menu'|clean_id %}
-<nav role="navigation" aria-labelledby="{{ heading_id }}"{{ attributes.addClass(classes)|without('role', 'aria-labelledby') }}>
-     {% block content %}{{ content }}{% endblock %}
-</nav>
+{% block content %}
+	{{ content }}
+{% endblock %}

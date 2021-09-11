@@ -4,5 +4,3 @@
  * and open the template in the editor.
  */
 import "../scss/page-default.scss";
-
-

@@ -89,14 +89,14 @@
 /**
  * Pricelist
  */
-/* Fichier : /siteweb/lesroisdelareno/public/web/themes/custom/lesroisdelareno/scss/autos/1_main.scss */
+/* Fichier : /siteweb/lesroisdelareno/commerced9/web/themes/custom/lesroisdelareno/scss/autos/1_main.scss */
 .dialog-off-canvas-main-canvas {
   width: 100%;
 }
 .dialog-off-canvas-main-canvas .b-icon.bi {
   display: block;
 }
-/* Fichier : /siteweb/lesroisdelareno/public/web/themes/custom/lesroisdelareno/scss/autos/block-title.scss */
+/* Fichier : /siteweb/lesroisdelareno/commerced9/web/themes/custom/lesroisdelareno/scss/autos/block-title.scss */
 .block-title {
   position: relative;
   display: inline-block;
@@ -119,7 +119,7 @@
   bottom: -10px;
   left: 0;
 }
-/* Fichier : /siteweb/lesroisdelareno/public/web/themes/custom/lesroisdelareno/scss/autos/bunble-project.scss */
+/* Fichier : /siteweb/lesroisdelareno/commerced9/web/themes/custom/lesroisdelareno/scss/autos/bunble-project.scss */
 .lesroisdelareno-entete-project {
   position: relative;
   overflow: hidden;
@@ -171,7 +171,7 @@
 .lesroisdelareno-entete-project .content-text {
   max-width: 45%;
 }
-/* Fichier : /siteweb/lesroisdelareno/public/web/themes/custom/lesroisdelareno/scss/autos/buttons.scss */
+/* Fichier : /siteweb/lesroisdelareno/commerced9/web/themes/custom/lesroisdelareno/scss/autos/buttons.scss */
 .btn-outline-force {
   background: transparent !important;
   color: #3687c6 !important;
@@ -181,9 +181,18 @@
   background: #3687c6 !important;
   color: #FFF !important;
 }
-/* Fichier : /siteweb/lesroisdelareno/public/web/themes/custom/lesroisdelareno/scss/autos/front.scss */
+/* Fichier : /siteweb/lesroisdelareno/commerced9/web/themes/custom/lesroisdelareno/scss/autos/front.scss */
 .project-item:hover .project-img:after {
   top: 1.5em;
+}
+.choice-button__img--active:after {
+  background-image: url("/modules/custom/appformmanager/files/img/check-solid.77d669d3.svg") !important;
+}
+#app {
+  font-size: 1.8rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  min-height: 300px;
 }
 .container {
   max-width: 1170px;
@@ -247,16 +256,16 @@
     margin-bottom: 0;
   }
 }
-#fp-nav li .active span, .bg-color, .black-box.color, .bot-subscribe, .box-dark, .btn, .btn a, .btn-submit, .btn.btn-blue, .color-wrapper, .double-bounce1, .double-bounce2, .edu .btn-submit, .filter li a.active, .footer .btn-submit.alt, .footer.white .btn-submit.alt, .fp-slidesNav .active span, .hi-icon-wrap:hover.hi-icon-effect-1a .hi-icon, .map-bg:before, .nav-tabs li.active a:after, .navbar-nav > li.current-box, .navbar-nav > li:hover.box, .newsletter-wrapper #mc_embed_signup .button, .owl-slider-wrapper .item .owl-content, .owl-theme .owl-controls .owl-page.active span, .owl-theme .owl-controls.Gatesable .owl-page:hover span, .pagination .current, .pagination ul li a:hover, .panel-title .active, .panel-title > a:hover, .parallax .btn-submit, .parallax .btn-submit:hover, .post .date, .post-content .date, .post-content .testimonial, .pricing .plan.active, .pricing .plan:hover, .projects-grid-2.hover-color .project-item:hover .project-img:after, .projects-grid-3.hover-color .project-item:hover .project-img:after, .projects-grid.hover-color .project-item:hover .project-img:after, .q-form .btn-submit:hover, .q-form-title, .services-box-2 i, .services-box-2.left:hover i, .services-box-3:hover i, .social-icons li a:hover i, .table td:hover i, .tabs-top .tab.active a, .tags li a:hover, .team-alt.active, .team-alt:hover, .team-box-animated .back, .topbar, .topbar:after, ul.circled li.bg.current, ul.circled li:hover.bg, ul.circled span {
+#fp-nav li .active span, .bg-color, .black-box.color, .bot-subscribe, .box-dark, .btn, .btn a, .btn-submit, .btn.btn-blue, .color-wrapper, .double-bounce1, .double-bounce2, .edu .btn-submit, .filter li a.active, .footer .btn-submit.alt, .footer.white .btn-submit.alt, .fp-slidesNav .active span, .hi-icon-wrap:hover.hi-icon-effect-1a .hi-icon, .map-bg:before, .nav-tabs li.active a:after, .navbar-nav > li.current-box, .navbar-nav > li:hover.box, .newsletter-wrapper #mc_embed_signup .button, .owl-slider-wrapper .item .owl-content, .owl-theme .owl-controls .owl-page.active span, .owl-theme .owl-controls.Gatesable .owl-page:hover span, .pagination .current, .pagination ul li a:hover, .panel-title .active, .panel-title > a:hover, .parallax .btn-submit, .parallax .btn-submit:hover, .post .date, .post-content .date, .post-content .testimonial, .pricing .plan.active, .pricing .plan:hover, .projects-grid-2.hover-color .project-item:hover .project-img:after, .projects-grid-3.hover-color .project-item:hover .project-img:after, .projects-grid.hover-color .project-item:hover .project-img:after, .q-form .btn-submit:hover, .q-form-title, .services-box-2 i, .services-box-2.left:hover i, .services-box-3:hover i, .social-icons li a:hover i, .tabs-top .tab.active a, .tags li a:hover, .team-alt.active, .team-alt:hover, .team-box-animated .back, .topbar, .topbar:after, ul.circled li.bg.current, ul.circled li:hover.bg, ul.circled span {
   background: #3687c6;
 }
 .btn {
-  color: #FFF;
+  color: #fff;
 }
-#testimonials .author, .aboutme h3, .btn.btn-color-brd, .btn.parallax:hover, .btn:hover, .colored, .f-element .highlight.color, .f-element i, .facts-home a:hover, .filter a.active, .filter a:hover, .footer .services-box-3:hover i, .footer .widget .meta i:hover, .footer a:hover, .footer-links li a:hover, .items .info h4 a:hover, .meta ul li a:hover, .milestone-details, .nav > li > a:hover, .nav > li.current a, .navbar-nav .dropdown-menu li a.active, .navbar-nav .dropdown-menu li a:hover, .navbar-nav > li > a:hover, .navigation a:hover, .owl-portfolio .info h4 a:hover, .page-nav .active, .page-nav a:hover, .parallax a:hover, .parallax.pagetitle a, .post-content h2 a:hover, .post-content.testimonial .author, .post-format h2 a:hover, .post-home .col h1 a:hover, .pricing .plan h4, .product-grid .post .meta ul li a:hover, .product-grid .post .post-content .price span, .product-grid .post .post-content .rating, .product-grid .post .post-content h3 a:hover, .product-grid .post .post-content h5 a:hover, .progress-list li em, .rating, .rw-words-1 span, .services-box .col:hover i, .services-box i, .services-box-2 .content h3 a:hover.dark, .services-box-2 i.small, .sidebar a:hover, .sidebox a:hover, .tabs-top .tab a:hover, .tabs-top .tab.active a, .team-alt .social-icons li a:hover i, .team-box-animated .front span, .team-member .social-links a:hover, .testimonials h2, .top-contact li .icon i, .topbar li a:hover, .topbar ul.social-icons li a:hover i, .topbar-content ul.toplink li a:hover, .tp-caption a, .tp-caption.upper h2 span, .tp-caption.upper2 h2 span, .work-descr, .work-item:hover .work-descr, .yamm .yamm-content a:hover, a, ul.arrow li:before, ul.circled li:before {
+#testimonials .author, .aboutme h3, .colored, .f-element .highlight.color, .f-element i, .facts-home a:hover, .filter a.active, .filter a:hover, .footer .services-box-3:hover i, .footer .widget .meta i:hover, .footer a:hover, .footer-links li a:hover, .items .info h4 a:hover, .meta ul li a:hover, .milestone-details, .nav > li > a:hover, .nav > li.current a, .navbar-nav .dropdown-menu li a.active, .navbar-nav .dropdown-menu li a:hover, .navbar-nav > li > a:hover, .navigation a:hover, .owl-portfolio .info h4 a:hover, .page-nav .active, .page-nav a:hover, .parallax a:hover, .parallax.pagetitle a, .post-content h2 a:hover, .post-content.testimonial .author, .post-format h2 a:hover, .post-home .col h1 a:hover, .pricing .plan h4, .product-grid .post .meta ul li a:hover, .product-grid .post .post-content .price span, .product-grid .post .post-content .rating, .product-grid .post .post-content h3 a:hover, .product-grid .post .post-content h5 a:hover, .progress-list li em, .rating, .rw-words-1 span, .services-box .col:hover i, .services-box i, .services-box-2 .content h3 a:hover.dark, .services-box-2 i.small, .sidebar a:hover, .sidebox a:hover, .tabs-top .tab a:hover, .tabs-top .tab.active a, .team-alt .social-icons li a:hover i, .team-box-animated .front span, .team-member .social-links a:hover, .testimonials h2, .top-contact li .icon i, .topbar li a:hover, .topbar ul.social-icons li a:hover i, .topbar-content ul.toplink li a:hover, .tp-caption a, .tp-caption.upper h2 span, .tp-caption.upper2 h2 span, .work-descr, .work-item:hover .work-descr, .yamm .yamm-content a:hover, a, ul.arrow li:before, ul.circled li:before {
   color: #3687c6;
 }
-#fp-nav span, #testimonials .tab a.active, #testimonials .tab a:hover, .btn.btn-color-brd, .f-element .sep, .filter a.active, .filter a:hover, .filter li a.active, .fp-slidesNav span, .header-nav .dropdown-menu, .hi-icon-wrap:hover, .nav > li > a:hover:before, .nav-tabs li a:after, .nav-tabs li.active a:after, .navbar-nav > li > a:after, .navbar-nav > li.current, .navbar-nav > li.current:before, .navbar-nav > li:hover.pad, .navigation a:hover, .post-content .date:after, .pricing .plan.active, .pricing .plan:hover, .project-title:before, .services-box .col a:hover, .services-box-2.left i:after, .services-box-2.left:hover i, .services-box-3 .col:hover i, .services-box-3 i.circle-border, .services-box-3:hover i.circle-border, .social-icons li a:hover i, .table td:hover i, .tabs-top .tab.active a, .tags li a:hover, .team-box-animated .back, .top-contact li .icon i, .tp-caption.upper, :after, h2.heading:before, h3.heading:before, p.h-sub:before {
+#fp-nav span, #testimonials .tab a.active, #testimonials .tab a:hover, .btn.btn-color-brd, .f-element .sep, .filter a.active, .filter a:hover, .filter li a.active, .fp-slidesNav span, .header-nav .dropdown-menu, .hi-icon-wrap:hover, .nav > li > a:hover:before, .nav-tabs li a:after, .nav-tabs li.active a:after, .navbar-nav > li > a:after, .navbar-nav > li.current, .navbar-nav > li.current:before, .navbar-nav > li:hover.pad, .navigation a:hover, .post-content .date:after, .pricing .plan.active, .pricing .plan:hover, .project-title:before, .services-box .col a:hover, .services-box-2.left i:after, .services-box-2.left:hover i, .services-box-3 .col:hover i, .services-box-3 i.circle-border, .services-box-3:hover i.circle-border, .social-icons li a:hover i, .tabs-top .tab.active a, .tags li a:hover, .team-box-animated .back, .top-contact li .icon i, .tp-caption.upper, :after, h2.heading:before, h3.heading:before, p.h-sub:before {
   border-color: #3687c6;
 }
 .md-layer-4-20-6 a, .md-layer-4-21-6, .md-layer-4-22-6, .md-layer-4-23-6 {
@@ -269,7 +278,7 @@
   background: #3687c6;
 }
 .box-dark.color1 * {
-  color: #FFF !important;
+  color: #fff !important;
 }
 .box-dark.color1:hover * {
   color: inherit !important;
@@ -296,27 +305,14 @@
     padding: 20px 45px 30px;
   }
 }
-.navbar-collapse {
-  max-height: 100vh;
-  overflow-y: auto;
-}
-.container-menu {
-  position: relative;
-  z-index: 999;
-}
-.modal.fade .modal-dialog {
-  -webkit-transform: translate(0, 0%);
-  -ms-transform: translate(0, 0%);
-  transform: translate(0, 0%);
-}
-/* Fichier : /siteweb/lesroisdelareno/public/web/themes/custom/lesroisdelareno/scss/autos/lesroisdelareno-bundle-model1.scss */
+/* Fichier : /siteweb/lesroisdelareno/commerced9/web/themes/custom/lesroisdelareno/scss/autos/lesroisdelareno-bundle-model1.scss */
 .lesroisdelareno-bundle-model1 ol, .lesroisdelareno-bundle-model1 p, .lesroisdelareno-bundle-model1 ul {
   margin-bottom: 0.8em;
 }
 .lesroisdelareno-bundle-model1 ul {
   list-style: square;
 }
-/* Fichier : /siteweb/lesroisdelareno/public/web/themes/custom/lesroisdelareno/scss/autos/menu.scss */
+/* Fichier : /siteweb/lesroisdelareno/commerced9/web/themes/custom/lesroisdelareno/scss/autos/menu.scss */
 .top-contact li {
   width: 100%;
 }
@@ -377,23 +373,6 @@
   display: block !important;
   max-height: 500px;
 }
-.container-menu {
-  display: flex;
-  align-items: flex-end;
-  z-index: 999;
-  position: relative;
-}
-@media only screen and (min-width: 992px) {
-  .container-menu .container {
-    position: relative;
-  }
-  .container-menu .collapse {
-    position: absolute;
-    right: 0;
-    bottom: auto;
-    top: -24px;
-  }
-}
 .header-nav [class*="col-"] {
   margin-bottom: 0;
 }
@@ -405,7 +384,7 @@
     min-width: 300px;
   }
 }
-/* Fichier : /siteweb/lesroisdelareno/public/web/themes/custom/lesroisdelareno/scss/autos/owl.scss */
+/* Fichier : /siteweb/lesroisdelareno/commerced9/web/themes/custom/lesroisdelareno/scss/autos/owl.scss */
 .owl-carousel .owl-stage {
   display: flex;
 }
@@ -413,7 +392,7 @@
   display: flex;
   align-items: center;
 }
-/* Fichier : /siteweb/lesroisdelareno/public/web/themes/custom/lesroisdelareno/scss/autos/tableau-devis.scss */
+/* Fichier : /siteweb/lesroisdelareno/commerced9/web/themes/custom/lesroisdelareno/scss/autos/tableau-devis.scss */
 .table-container {
   min-width: 500px;
   width: 100%;
@@ -440,7 +419,7 @@
   padding-bottom: 0;
   margin-bottom: 0;
 }
-/* Fichier : /siteweb/lesroisdelareno/public/web/themes/custom/lesroisdelareno/scss/autos/webform-page-card.scss */
+/* Fichier : /siteweb/lesroisdelareno/commerced9/web/themes/custom/lesroisdelareno/scss/autos/webform-page-card.scss */
 .form-control.error {
   border: 1px solid #F00;
   box-shadow: 0 2px 2px rgba(255, 0, 0, 0.47);

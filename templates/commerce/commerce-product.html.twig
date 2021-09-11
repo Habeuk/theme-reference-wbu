@@ -1,0 +1,80 @@
+{#
+/**
+ * @file
+ *
+ * Default product template.
+ *
+ * Available variables:
+ * - attributes: HTML attributes for the wrapper.
+ * - product: The rendered product fields.
+ *   Use 'product' to print them all, or print a subset such as
+ *   'product.title'. Use the following code to exclude the
+ *   printing of a given field:
+ *   @code
+ *   {{ product|without('title') }}
+ *   @endcode
+ * - product_entity: The product entity.
+ * - product_url: The product URL.
+ *
+ * @ingroup themeable
+ */
+#}
+{{ attach_library('lesroisdelareno/product-full') }}
+
+
+<article{{attributes.addClass(['row','product-full'])}}>
+	<div class="col-md-6">
+		{{product.field_images}}
+	</div>
+	<div class="col-md-6">
+		<h1 class="title">
+			{{ product.title }}
+		</h1>
+		{{ product.variation_price }}
+		{{- product | without ('variation_attributes','field_images','body','field_informations_complementair','field_fiche_technique','variation_price') -}}
+		<div class="call-action-devis">
+			<i class="icon-tools"></i>
+			<span>
+				Lesroisdelareno vous propose la pose de cet article.
+			</span>
+			<a href="#">
+				Faites une demande de devis
+			</a>
+		</div>
+	</div>
+	<div class="product-tabs col-12">
+		<ul class="nav nav-tabs" id="myTab" role="tablist">
+			<li class="nav-item" role="presentation">
+				<a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">
+					Description
+				</a>
+			</li>
+			<li class="nav-item" role="presentation">
+				<a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">
+					Informations complémentaires
+				</a>
+
+			</li>
+			<li class="nav-item" role="presentation">
+				<a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">
+					Fiche technique
+				</a>
+
+			</li>
+		</ul>
+		<div class="tab-content" id="myTabContent">
+			<div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+				{{product.body}}
+			</div>
+
+			<div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+				{{product.field_informations_complementair}}
+			</div>
+
+			<div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+				{{product.field_fiche_technique}}</div>
+
+		</div>
+
+	</div>
+</article>

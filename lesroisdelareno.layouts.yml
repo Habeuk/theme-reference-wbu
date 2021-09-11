@@ -372,24 +372,7 @@ lesroisdelareno.teaser_realisation_model_blog_small_:
       label: Title
     url:
       label: "Url sur l'affichage"
-
-
-lesroisdelareno.teaser_realisation_model_blog_small_:
-  label: 'teaser-realisation SMALL'
-  category: 'Template lesroisdelareno'
-  template: templates/layouts/models/realisations/tesaser-nos-realisations-small
-  library: 'lesroisdelareno/teaser-realisation'
-  default_region: image
-  regions:
-    bgimage:
-      label: Bg Image
-    listes:
-      label: 'Listes Buttons'
-    titre:
-      label: Title
-    url:
-      label: "Url sur l'affichage"
-      
+     
 lesroisdelareno.pourquoi_choisir:
   label: 'Pourquoi choisir (Nos realisations)'
   category: 'Template lesroisdelareno'
@@ -421,3 +404,4 @@ lesroisdelareno.nos-realisation:
       label: Title
     url:
       label: "Url sur l'affichage"
+

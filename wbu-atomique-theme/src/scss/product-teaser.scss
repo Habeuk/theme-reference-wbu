@@ -1,0 +1,28 @@
+@use "@stephane888/wbu-atomique/scss/wbu-ressources.scss" as *;
+@use "./variables.scss" as *;
+@use "@stephane888/wbu-atomique/scss/organisme/products/teasers/product-teaser.scss";
+
+.page-product-full {
+  .col {
+    padding: 0;
+  }
+}
+.product-teaser {
+  height: 100%;
+  i {
+    padding-right: $wbu-margin * 0.5;
+  }
+  .item:last-child {
+    margin-bottom: 0;
+  }
+  .title {
+    height: 67px;
+    overflow: hidden;
+    a {
+      text-transform: lowercase;
+    }
+  }
+  form .field--widget-commerce-product-variation-attributes {
+    display: none;
+  }
+}

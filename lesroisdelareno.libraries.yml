@@ -1,7 +1,6 @@
 global-style:
   css:
     theme:
-      css/normalize.css: {}
       css/style-auto.css: {}
       css/style.css: {}
   js:
@@ -10,37 +9,27 @@ global-style:
     js/html5-shiv.js: {}
     js/script.js: {}
 
-
-
 theme-gater:
   css:
     theme:
-      modele/themes/custom/gater/css/bootstrap.css: {}
-      modele/themes/custom/gater/css/style.css: {}
-      modele/themes/custom/gater/css/responsive.css: {}
-      modele/themes/custom/gater/css/color/yellow.css: {}
-      modele/themes/custom/gater/css/settings.css: {}
-      modele/themes/custom/gater/css/owl.carousel.css: {}
-      modele/themes/custom/gater/css/jquery.fancybox.css: {}
+      #modele/themes/custom/gater/css/bootstrap.css: {}
+      #modele/themes/custom/gater/css/style.css: {}
+      #modele/themes/custom/gater/css/responsive.css: {}
+      #modele/themes/custom/gater/css/color/yellow.css: {}
+      #modele/themes/custom/gater/css/settings.css: {}
+      #modele/themes/custom/gater/css/owl.carousel.css: {}
+      #modele/themes/custom/gater/css/jquery.fancybox.css: {}
       modele/themes/custom/gater/css/fonts/fontello.css: {}
-      modele/themes/custom/gater/css/fonts/gizmo.css: {}
+      #modele/themes/custom/gater/css/fonts/gizmo.css: {}
       modele/themes/custom/gater/css/fonts/picons.css: {}
-      modele/themes/custom/gater/switcher/switcher.css: {}
-      modele/themes/custom/gater/css/update.css: {}
-  js:
-    modele/themes/custom/gater/js/bootstrap.min.js: {}
-    #modele/themes/custom/gater/js/jquery.easing.1.3.js: {}
-    #modele/themes/custom/gater/js/jquery.inview.js: {}
-    #modele/themes/custom/gater/js/jquery.ui.totop.js: {}
-    #modele/themes/custom/gater/js/isotope.pkgd.min.js: {}
+      #modele/themes/custom/gater/switcher/switcher.css: {}
+      #modele/themes/custom/gater/css/update.css: {}
 
-
-md-slider:
+google-oswald:
   css:
     theme:
-      modele/modules/md_slider/assets/css/md-slider.css: {}
-      modele/modules/md_slider/assets/css/md-slider-style.css: {}
-      modele/sites/default/files/md-slider-css/md-slider-homepage_slider-layers.css: {}
+      "https://fonts.googleapis.com/css2?family=Oswald:wght@200;400&display=swap":
+        { type: external, attributes: { rel: stylesheet } }
 
 testimony:
   css:
@@ -56,81 +45,96 @@ teaser-realisation:
   js:
     js/teaser-realisation.js: {}
 
-
 #####################################################################################################################################################
 
+product-teaser-mini:
+  css:
+    theme:
+      css/product-teaser-mini.css: { weight: 20 }
+  js:
+    js/product-teaser-mini.js: {}
+
+product-teaser:
+  css:
+    theme:
+      css/product-teaser.css: { weight: 20 }
+  js:
+    js/product-teaser.js: {}
+
+product-full:
+  css:
+    theme:
+      css/product-full.css: { weight: 20 }
+  js:
+    js/product-full.js: {}
 
 page-default:
   css:
     theme:
-      css/page-default.css: {weight: 20}
+      css/page-default.css: { weight: 20 }
   js:
     js/page-default.js: {}
-
 
 page-travaux-renovations:
   css:
     theme:
-      css/page-travaux-renovations.css: {weight: 20}
+      css/page-travaux-renovations.css: { weight: 20 }
   js:
     js/page-travaux-renovations.js: {}
-
 
 page-blogs:
   css:
     theme:
-      css/page-blogs.css: {weight: 20}
+      css/page-blogs.css: { weight: 20 }
   js:
     js/page-blogs.js: {}
-
 
 page-taxonomie:
   css:
     theme:
-      css/page-taxonomie.css: {weight: 20}
+      css/page-taxonomie.css: { weight: 20 }
   js:
     js/page-taxonomie.js: {}
 
 page-single-realisation:
   css:
     theme:
-      css/page-single-realisation.css: {weight: 20}
+      css/page-single-realisation.css: { weight: 20 }
   js:
     js/page-single-realisation.js: {}
-
 
 page-home-principal:
   css:
     theme:
-      css/page-home-principal.css: {weight: 20}
+      css/page-home-principal.css: { weight: 20 }
   js:
     js/page-home-principal.js: {}
 
 defautl-style:
   css:
     theme:
-      css/defautl-style.css: {weight: 20}
+      css/defautl-style.css: { weight: 20 }
   js:
     js/defautl-style.js: {}
 
 page-single-article:
   css:
     theme:
-      css/page-single-article.css: {weight: 20}
+      css/page-single-article.css: { weight: 20 }
   js:
     js/page-single-article.js: {}
 
 page-nos-guides-travaux:
   css:
     theme:
-      css/page-nos-guides-travaux.css: {weight: 20}
+      css/page-nos-guides-travaux.css: { weight: 20 }
   js:
     js/page-nos-guides-travaux.js: {}
 
 page-nos-realisations:
   css:
     theme:
-      css/page-nos-realisations.css: {weight: 20}
+      css/page-nos-realisations.css: { weight: 20 }
   js:
     js/page-nos-realisations.js: {}
 
@@ -155,7 +159,6 @@ blog-teaser:
   js:
     js/blog-teaser.js: {}
 
-
 block-call-to-action:
   css:
     theme:
@@ -178,11 +181,12 @@ jquery-custom:
     url: https://github.com/jquery/jquery/blob/2.2.3/LICENSE.txt
     gpl-compatible: true
   js:
-    modele/core/assets/vendor/jquery/jquery.min.js: { minified: true, weight: -20 }
+    modele/core/assets/vendor/jquery/jquery.min.js:
+      { minified: true, weight: -20 }
 
 override-style:
   css:
     theme:
-      css/override-style.css: {weight: 25}
+      css/override-style.css: { weight: 25 }
   js:
     js/override-style.js: {}

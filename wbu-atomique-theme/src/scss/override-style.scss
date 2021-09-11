@@ -1,23 +1,29 @@
-@use "@stephane888/wbu-atomique/scss/wbu-ressources.scss" as *;
+@use "@stephane888/wbu-atomique/scss/wbu-ressources-clean.scss" as *;
 @use "./variables.scss" as *;
+@use "./bootstrap.scss";
+@use "@stephane888/wbu-atomique/scss/atome/typography/_default.scss";
+@use "fonts/Ubuntu/police.scss";
 
-.space-margin {
-  margin-bottom: $wbu-margin*2;
-  @include media-min('DD') {
-    margin-bottom: $wbu-margin*4;
-  }
+.container {
+  max-width: 1200px;
+  width: 100%;
 }
 
+.space-margin {
+  margin-bottom: $wbu-margin * 2;
+  @include media-min("DD") {
+    margin-bottom: $wbu-margin * 4;
+  }
+}
 .space-padding {
-  padding-top   : $wbu-margin*2;
-  padding-bottom: $wbu-margin*1.5;
-  @include media-min('DD') {
-    padding-top   : $wbu-margin*4;
-    padding-bottom: $wbu-margin*2.5;
+  padding-top: $wbu-margin * 2;
+  padding-bottom: $wbu-margin * 1.5;
+  @include media-min("DD") {
+    padding-top: $wbu-margin * 4;
+    padding-bottom: $wbu-margin * 2.5;
   }
 }
 // on supprimer la marge-bottom sur le dernier article dans une liste:
-
 .views {
   .views-row {
     &:last-child {

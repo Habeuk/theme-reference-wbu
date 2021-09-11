@@ -1,0 +1,22 @@
+@use "@stephane888/wbu-atomique/scss/wbu-ressources.scss" as *;
+@use "./variables.scss" as *;
+
+#product-full-ion-range-slider {
+  &.ui-slider {
+    margin-bottom: $wbu-margin * 1.5;
+    margin-left: 10px;
+    margin-right: 10px;
+    &.ui-widget-content {
+      background-color: #e7e7e7;
+      border: none;
+    }
+    .ui-widget-header {
+      background-color: $wbu-color-primary;
+    }
+    .ui-slider-handle {
+      background-color: #fff;
+      border: 2px solid $wbu-color-primary;
+      border-radius: 50%;
+    }
+  }
+}

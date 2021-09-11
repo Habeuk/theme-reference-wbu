@@ -2,4 +2,74 @@
 @use "./variables.scss" as *;
 @use "@stephane888/wbu-atomique/scss/organisme/steph/lesroidelareno/service-icone.scss";
 @use "@stephane888/wbu-atomique/scss/organisme/steph/lamaisonsaintgobain/commentaires.scss";
-@use "@stephane888/wbu-atomique/scss/molecule/steph/block-call-to-action.scss"
+@use "@stephane888/wbu-atomique/scss/molecule/steph/block-call-to-action.scss";
+
+#block-homepageslider {
+  .btn {
+    a {
+      background: $wbu-color-primary;
+    }
+  }
+  .md-slide-item > .md-objects {
+    > .md-object:first-child {
+      border-left: 2px solid $wbu-color-primary;
+    }
+  }
+}
+/**
+ * -- Lesroisdelareno-bundle-model1
+ */
+.lesroisdelareno-bundle-model1 {
+  .titre {
+    padding: 1rem 0;
+  }
+}
+
+.comment-lmsg__container {
+  .owl-carousel .owl-nav button {
+    left: -90px;
+    &.owl-next {
+      right: -90px;
+      left: auto;
+    }
+  }
+
+  .owl-stage-outer {
+    @include media-min(DD) {
+      //max-width: calc(100% - 200px);
+    }
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .owl-carousel {
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/**
+ * --
+ */
+.block-md-slider-blocknos-realisations {
+  margin-bottom: $space_bottom;
+}
+
+/**
+ * --
+ */
+.services-sliders {
+  margin: 0;
+}
+
+/**
+ * --
+ */
+.images-bg {
+  margin: 0;
+  background-color: rgb(211, 212, 212);
+}
+
+.nos-realisations.titre-section {
+  margin-bottom: 0;
+}

@@ -14,29 +14,28 @@ regions:
   content: "Contenu principal"
   call_to_action: "Call to action"
   footer: "Footer"
+  commerce_sidebar_left: "commerce sidebar left"
 
 # Ajout des librairies
-libraries:  
+libraries:
   - lesroisdelareno/theme-gater
- # - lesroisdelareno/md-slider
-  - lesroisdelareno/global-style
-  - lesroisdelareno/defautl-style
   - lesroisdelareno/override-style
+  - lesroisdelareno/google-oswald
+  # - lesroisdelareno/global-style
+  - lesroisdelareno/defautl-style
 
-# Supprimer les librairies du themes parent.  
+# Supprimer les librairies du themes parent.
 libraries-override:
   wb_universe/fontawesome: false
   wb_universe/google-police: false
   wb_universe/google-analytics: false
+  wb_universe/global-style: false
   # Replace jquery library.
   #core/jquery: lesroisdelareno/jquery-custom
-  
+
 # Add custom css to ckeditor
 ckeditor_stylesheets:
   - modele/themes/custom/gater/css/bootstrap.css
   - css/style-auto.css
-  - css/page-single-article.css  
+  - css/page-single-article.css
   - css/ckeditor.css
-
-  
-  

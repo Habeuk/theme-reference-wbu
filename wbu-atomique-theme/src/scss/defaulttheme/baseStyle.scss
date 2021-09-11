@@ -1,0 +1,18 @@
+@use "@stephane888/wbu-atomique/scss/wbu-ressources.scss" as *;
+@use "../variables.scss" as *;
+@use "@stephane888/wbu-atomique/scss/atome/typography/a.scss";
+//
+@use "./topbar.scss";
+@use "./header-nav";
+@use "./contain-main-menu.scss";
+
+//
+.container {
+  max-width: 1200px;
+  .main-level {
+    position: relative;
+  }
+  a {
+    color: $wbu-color-primary;
+  }
+}

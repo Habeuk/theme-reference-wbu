@@ -1,0 +1,37 @@
+{#
+/**
+ * @file
+ *
+ * Default product template.
+ *
+ * Available variables:
+ * - attributes: HTML attributes for the wrapper.
+ * - product: The rendered product fields.
+ *   Use 'product' to print them all, or print a subset such as
+ *   'product.title'. Use the following code to exclude the
+ *   printing of a given field:
+ *   @code
+ *   {{ product|without('title') }}
+ *   @endcode
+ * - product_entity: The product entity.
+ * - product_url: The product URL.
+ *
+ * @ingroup themeable
+ */
+#}
+
+{{ attach_library('lesroisdelareno/product-teaser-mini') }}
+
+<article{{attributes.addClass('product-teaser-mini')}}>
+	<div class="image item">
+		{{ product.field_images }}
+	</div>
+	<div class="text">
+		<h4 class="title item">
+			{{ product.title }}
+		</h4>
+		<div class="item price">
+			{{ product.variation_price }}
+		</div>
+	</div>
+</article>

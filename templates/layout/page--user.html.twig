@@ -1,5 +1,9 @@
+{% if page.top_header %}
+    {{ page.top_header }}
+{% endif %}
+
 {% if page.content %}
-<div class="page container">
-	<div{{ page.content.attributes }}>  {{ page.content|without('attributes', 'wrapper_attribute', 'entete') }}</div>
-</div>
+    <div class="page page-orther-custom">
+         <div{{ page.content.attributes }}>  {{ page.content|without('attributes', 'wrapper_attribute', 'entete') }}</div>
+    </div>
 {% endif %}

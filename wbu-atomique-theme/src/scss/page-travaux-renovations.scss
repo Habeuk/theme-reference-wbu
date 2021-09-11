@@ -28,6 +28,8 @@
 
   .images {
     margin-bottom: $wbu-margin;
+    position     : relative;
+    overflow     : auto;
     @include media-min('DD') {
       margin-bottom: 0;
     }

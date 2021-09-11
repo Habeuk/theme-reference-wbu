@@ -8,9 +8,9 @@
 {% endif %}
 
 {% if page.content %}
-<div{{ page.content.attributes }}>
-	{{ page.content|without('attributes','wrapper_attribute') }}	
-</div>
+	<div{{page.content.attributes.addClass("container-fluid0")}}>
+		{{ page.content|without('attributes','wrapper_attribute') }}
+	</div>
 {% endif %}
 
 {% if page.call_to_action %}

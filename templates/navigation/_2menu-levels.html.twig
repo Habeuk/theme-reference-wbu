@@ -1,0 +1,65 @@
+{{ menus.menu_links(items, attributes, 0, show_icone_home, logged_in,is_admin) }}
+
+
+{% macro menu_links(items, attributes, menu_level, show_icone_home=null, logged_in=false, is_admin=false) %}
+
+
+	<ul{{attributes.addClass(['menu','menu--'~menu_name|clean_class,'nav','navbar-nav'])}}>
+
+		{% for item in items %}
+			{% set item_classes = [
+     item.is_expanded ? 'expanded',
+     item.is_expanded and menu_level == 0 ? 'dropdown',
+     item.in_active_trail ? 'active',
+      'nav-item'
+     ]
+   %}
+			<li{{item.attributes.addClass(item_classes)}}>
+				{% if item.below is not empty %}
+					<a href="{{ item.url }}" class="nav-link dropdown-toggle" data-toggle="dropdown">{{ item.title }}
+					</a>
+					<div class="dropdown-menu dropdown-fullwidth">
+						{{ item.content }}
+					</div>
+				{% else %}
+					<a href="{{ item.url }}" class="nav-link">{{ item.title }}</a>
+				{% endif %}
+			</li>
+		{% endfor %}
+
+		{% if is_admin == 'true' %}
+			<li{{item.attributes.addClass(classes)}}>
+				<a href="/fr/appformmanager/manager" class="nav-link">
+					Les devis
+				</a>
+			</li>
+		{% elseif logged_in == 'true' %}
+			<li{{item.attributes.addClass(classes)}}>
+				<a href="/fr/appformmanager/form" class="nav-link">
+					Mes devis
+				</a>
+			</li>
+		{% endif %}
+		<li>
+			<ul class="social-top d-none d-xl-block">
+				<li>
+					<a href="https://twitter.com/" class="twitter-alt" title="Twitter" data-placement="top">
+						<i class="icon-twitter"></i>
+					</a>
+				</li>
+				<li>
+					<a href="https://www.facebook.com/" class="facebook-alt" title="Facebook" data-placement="top">
+						<i class="icon-facebook"></i>
+					</a>
+				</li>
+				<li>
+					<a href="https://www.instagram.com/lesroisdelareno.fr/" class="google-alt" title="Instagram" data-placement="top">
+						<i class="icon-instagram"></i>
+					</a>
+				</li>
+			</ul>
+		</li>
+
+	</ul>
+
+{% endmacro %}
