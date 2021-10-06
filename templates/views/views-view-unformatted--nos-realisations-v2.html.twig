@@ -17,40 +17,48 @@
  * @ingroup themeable
  */
 #}
+
+
 {% if title %}
-  <h3>{{ title }}</h3>
+	<h3>{{ title }}</h3>
 {% endif %}
 {% set it=0 %}
 {% set periode=4 %}
-<div class="row">
-{% for row in rows %}		
-	{% if it == 0 %}
-		{% set styleRenderBig = true %}
-	{% else %}
-		{% set styleRenderBig = false %}
-	{% endif %}
-  {%
-    set row_classes = [
-      default_row_class ? 'views-row',
-      (styleRenderBig == true ) ?  'col-md-12':'col-md-6'
+{% set mainclass = [
+        view.element['#display_id'] == 'block_1'?'row':''
     ]
-  %}  
-  <div{{ row.attributes.addClass(row_classes) }}>
-  {% if styleRenderBig == true %}
-  	{% set item = row.content|merge({ '#view_mode': 'teaser_realisation_model_blog_' }) %}
-  {% else %}
-  	{% set item = row.content|merge({ '#view_mode': 'teaser_realisation_model_blog_small_' }) %}
-  {% endif %}
-    {{ item }}    
-  </div>
-  {% set it=1+it  %}
-  {% if it == periode %}
-	<div {{ row.attributes.addClass(row_classes) }}>
-		{{ load_block_content(10) }}
-	</div>
-	{% endif %}  
-  {% if it == periode %}
-  	{% set it = 0 %}
-  {% endif %}
-{% endfor %}
+%}
+<div{{attributes.addClass(mainclass)}}>
+	{% for row in rows %}
+		{% if it == 0 %}
+			{% set styleRenderBig = true %}
+		{% else %}
+			{% set styleRenderBig = false %}
+		{% endif %}
+		{% if view.element['#display_id'] == 'block_1' %}
+			{%
+      set row_classes = [
+        default_row_class ? 'views-row',
+        (styleRenderBig == true ) ?  'col-md-12':'col-md-6'
+      ]
+      %}
+		{% endif %}
+		<div{{row.attributes.addClass(row_classes)}}>
+			{% if styleRenderBig == true %}
+				{% set item = row.content|merge({ '#view_mode': 'teaser_realisation_model_blog_' }) %}
+			{% else %}
+				{% set item = row.content|merge({ '#view_mode': 'teaser_realisation_model_blog_small_' }) %}
+			{% endif %}
+			{{ item }}
+		</div>
+		{% set it=1+it  %}
+		{% if it == periode %}
+			<div {{ row.attributes.addClass(row_classes) }}>
+				{{ load_block_content(10) }}
+			</div>
+		{% endif %}
+		{% if it == periode %}
+			{% set it = 0 %}
+		{% endif %}
+	{% endfor %}
 </div>

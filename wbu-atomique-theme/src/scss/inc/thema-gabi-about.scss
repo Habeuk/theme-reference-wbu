@@ -1,0 +1,16 @@
+@use "@stephane888/wbu-atomique/scss/wbu-ressources.scss" as *;
+@use "../variables.scss" as *;
+.thema-gabi-about {
+  .textcotebg {
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      background-color: rgba($color: #000000, $alpha: 0.3);
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+    }
+  }
+}

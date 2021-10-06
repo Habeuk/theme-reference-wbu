@@ -1,0 +1,39 @@
+@use "@stephane888/wbu-atomique/scss/wbu-ressources-clean.scss" as *;
+@use "../variables.scss";
+.tabs-m1.tabs {
+  .nav-item {
+    padding: 0 !important;
+    .nav-link {
+      background-color: #f6f6f6;
+      position: relative;
+      padding: $wbu-margin * 0.75 $wbu-margin * 1.25;
+      color: inherit;
+      font-weight: 400;
+      font-size: $wbu-default-font-size * 1.2;
+      &.active {
+        background-color: $wbu-color-primary;
+        color: #fff;
+      }
+      &::before {
+        content: "";
+        position: absolute;
+        height: 2px;
+        top: auto;
+        left: 0;
+        bottom: 0;
+        right: auto;
+        width: 0;
+        background-color: $wbu-color-primary;
+        transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1) 0.1s;
+      }
+      &:hover::before {
+        width: 100%;
+      }
+    }
+  }
+  .nav.nav-tabs {
+    justify-content: center;
+    border: 0;
+    margin-bottom: $wbu-margin * 2.5;
+  }
+}

@@ -6,6 +6,7 @@ use Drupal\Core\Url;
 use Stephane888\Debug\debugLog;
 use Drupal\Core\Menu\MenuTreeParameters;
 use Drupal\Core\Template\Attribute;
+use Drupal\wbumenudomain\Entity\Wbumenudomain as WbumenudomainEntity;
 
 /**
  * custom config.
@@ -17,7 +18,7 @@ require_once ('inc/form.inc');
  */
 function lesroisdelareno_preprocess_page(&$variables)
 {
-	JobseekersResouces::wbupreprocess_page($variables);
+    JobseekersResouces::wbupreprocess_page($variables);
 }
 
 /**
@@ -25,13 +26,13 @@ function lesroisdelareno_preprocess_page(&$variables)
  */
 function lesroisdelareno_preprocess_layout(&$variables)
 {
-	if ($variables['theme_hook_original'] === 'footer') {
-		$menu_name = 'footer';
-		$MenuTreeParameters = new MenuTreeParameters();
-		$menu_tree = \Drupal::menuTree();
-		$menuTreeFooter = $menu_tree->load($menu_name, $MenuTreeParameters);
-		$variables['menu_footer'] = $menu_tree->build($menuTreeFooter);
-	}
+    if ($variables['theme_hook_original'] === 'footer') {
+        $menu_name = 'footer';
+        $MenuTreeParameters = new MenuTreeParameters();
+        $menu_tree = \Drupal::menuTree();
+        $menuTreeFooter = $menu_tree->load($menu_name, $MenuTreeParameters);
+        $variables['menu_footer'] = $menu_tree->build($menuTreeFooter);
+    }
 }
 
 /**
@@ -39,7 +40,7 @@ function lesroisdelareno_preprocess_layout(&$variables)
  */
 function lesroisdelareno_preprocess_html(&$variables)
 {
-	// dump($variables);
+    //
 }
 
 /**
@@ -47,11 +48,11 @@ function lesroisdelareno_preprocess_html(&$variables)
  */
 function lesroisdelareno_library_info_alter(&$libraries, $extension)
 {
-	// dump($extension);
-	// dump($libraries);
-	if ($extension == "formatage_models") {
-		// dump($libraries);
-	}
+    // dump($extension);
+    // dump($libraries);
+    if ($extension == "formatage_models") {
+        // dump($libraries);
+    }
 }
 
 /**
@@ -59,7 +60,32 @@ function lesroisdelareno_library_info_alter(&$libraries, $extension)
  */
 function lesroisdelareno_page_attachments_alter(array &$attachments)
 {
-	// dump($attachments);
+    // get current domaine id
+    /** @var \Drupal\domain\Entity\Domain $active */
+    $active = \Drupal::service('domain.negotiator')->getActiveDomain();
+
+    if (empty($active)) {
+        $active = \Drupal::entityTypeManager()->getStorage('domain')->loadDefaultDomain();
+    }
+    $id = $active->id();
+
+    // dump($attachments);
+    $query = \Drupal::entityQuery('wbumenudomain')->condition('hostname', $id);
+    $domainIds = $query->execute();
+    $domainProperty = WbumenudomainEntity::loadMultiple($domainIds);
+    // dump($domainProperty);
+    if (! empty($domainProperty)) {
+        /**
+         *
+         * @var \Drupal\wbumenudomain\Entity\Wbumenudomain $domainProperty
+         */
+        $domainProperty = reset($domainProperty);
+        $attachments['#attached']['library'][] = $domainProperty->getLirairy();
+    } else {
+        $attachments['#attached']['library'][] = 'lesroisdelareno/override-style';
+        $attachments['#attached']['library'][] = 'lesroisdelareno/google-oswald';
+        $attachments['#attached']['library'][] = 'lesroisdelareno/defautl-style';
+    }
 }
 
 /**
@@ -67,8 +93,8 @@ function lesroisdelareno_page_attachments_alter(array &$attachments)
  */
 function lesroisdelareno_preprocess_layout_main_menu(array &$variables)
 {
-	$block = \Drupal\block\Entity\Block::load('lesroisdelareno_main_menu');
-	$variables['site_main_menu'] = \Drupal::entityTypeManager()->getViewBuilder('block')->view($block);
+    $block = \Drupal\block\Entity\Block::load('lesroisdelareno_main_menu');
+    $variables['site_main_menu'] = \Drupal::entityTypeManager()->getViewBuilder('block')->view($block);
 }
 
 /**
@@ -76,12 +102,11 @@ function lesroisdelareno_preprocess_layout_main_menu(array &$variables)
  */
 function lesroisdelareno_preprocess_input__image_button(array &$variables)
 {
-	if (isset($variables['element']["#src"]) && $variables['element']["#src"] === 'modules/contrib/webform/images/icons/plus.svg') {
-		$variables['attributes']['class'][] = 'd-none';
-	}
-	elseif (isset($variables['element']["#src"]) && $variables['element']["#src"] === 'modules/contrib/webform/images/icons/minus.svg') {
-		$variables['attributes']['src'] = '/themes/custom/lesroisdelareno/images/trash-alt.svg';
-	}
+    if (isset($variables['element']["#src"]) && $variables['element']["#src"] === 'modules/contrib/webform/images/icons/plus.svg') {
+        $variables['attributes']['class'][] = 'd-none';
+    } elseif (isset($variables['element']["#src"]) && $variables['element']["#src"] === 'modules/contrib/webform/images/icons/minus.svg') {
+        $variables['attributes']['src'] = '/themes/custom/lesroisdelareno/images/trash-alt.svg';
+    }
 }
 
 /**
@@ -89,31 +114,31 @@ function lesroisdelareno_preprocess_input__image_button(array &$variables)
  */
 function lesroisdelareno_preprocess_pager(array &$variables)
 {
-	// dump($variables);
-	// $variables['pager']['items'];
-	// if (! isset($variables['items']) && $variables['pager']['items']) {
-	// $variables = $variables['pager'] + $variables;
-	// }
-	// // add url on element by #route_name
-	// // doc : https://www.drupal.org/node/2046643
-	// // $generator = Drupal::urlGenerator();
-	// // $url = $generator->generateFromRoute('override_webform.results', array(
-	// // 'webform' => 'renovation'
-	// // ));
-	// $route_parameters = [
-	// 'webform' => 'renovation'
-	// ];
-	// $options = [
-	// 'absolute' => true,
-	// 'query' => []
-	// ];
-	// $variables['current'] = $variables['#current'];
-	// if (! empty($variables['items']['pages']))
-	// foreach ($variables['items']['pages'] as $key => $page) {
-	// $options['query']['page'] = $key;
-	// $urlObject = Url::fromRoute($variables['#route_name'], $route_parameters, $options);
-	// $variables['items']['pages'][$key]['href'] = $urlObject;
-	// }
+    // dump($variables);
+    // $variables['pager']['items'];
+    // if (! isset($variables['items']) && $variables['pager']['items']) {
+    // $variables = $variables['pager'] + $variables;
+    // }
+    // // add url on element by #route_name
+    // // doc : https://www.drupal.org/node/2046643
+    // // $generator = Drupal::urlGenerator();
+    // // $url = $generator->generateFromRoute('override_webform.results', array(
+    // // 'webform' => 'renovation'
+    // // ));
+    // $route_parameters = [
+    // 'webform' => 'renovation'
+    // ];
+    // $options = [
+    // 'absolute' => true,
+    // 'query' => []
+    // ];
+    // $variables['current'] = $variables['#current'];
+    // if (! empty($variables['items']['pages']))
+    // foreach ($variables['items']['pages'] as $key => $page) {
+    // $options['query']['page'] = $key;
+    // $urlObject = Url::fromRoute($variables['#route_name'], $route_parameters, $options);
+    // $variables['items']['pages'][$key]['href'] = $urlObject;
+    // }
 }
 
 /**
@@ -121,15 +146,15 @@ function lesroisdelareno_preprocess_pager(array &$variables)
  */
 function lesroisdelareno_preprocess_region(array &$variables)
 {
-	// dump($variables);
+    // dump($variables);
 }
 
 function lesroisdelareno_preprocess_form(array &$variables)
 {
-	if (! empty($variables['element']['#form_id']) && $variables['element']['#form_id'] == 'views_exposed_form') {
-		if (! empty($variables['element']['#wrapper_attributes']))
-			$variables['attributes'] += $variables['element']['#wrapper_attributes'];
-	}
+    if (! empty($variables['element']['#form_id']) && $variables['element']['#form_id'] == 'views_exposed_form') {
+        if (! empty($variables['element']['#wrapper_attributes']))
+            $variables['attributes'] += $variables['element']['#wrapper_attributes'];
+    }
 }
 
 /**
@@ -137,7 +162,7 @@ function lesroisdelareno_preprocess_form(array &$variables)
  */
 function lesroisdelareno_preprocess_webform(array &$variables)
 {
-	// dump($variables);
+    // dump($variables);
 }
 
 /**
@@ -145,9 +170,9 @@ function lesroisdelareno_preprocess_webform(array &$variables)
  */
 function lesroisdelareno_preprocess_fieldset(array &$variables)
 {
-	// dump($variables);
-	// debugLog::$themeName = null;
-	// debugLog::kintDebugDrupal($variables, 'fieldset', null, true);
+    // dump($variables);
+    // debugLog::$themeName = null;
+    // debugLog::kintDebugDrupal($variables, 'fieldset', null, true);
 }
 
 /**
@@ -155,14 +180,14 @@ function lesroisdelareno_preprocess_fieldset(array &$variables)
  */
 function lesroisdelareno_theme($existing, $type, $theme, $path)
 {
-	return [
-			'custom_card' => [
-					'render element' => 'element'
-			],
-			'wbu_clean_field' => [
-					'render element' => 'element'
-			]
-	];
+    return [
+        'custom_card' => [
+            'render element' => 'element'
+        ],
+        'wbu_clean_field' => [
+            'render element' => 'element'
+        ]
+    ];
 }
 
 

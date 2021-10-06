@@ -1,0 +1,15 @@
+@use "@stephane888/wbu-atomique/scss/wbu-ressources-clean.scss" as *;
+@use "./variables.scss" as *;
+//bootstrap override
+$primary: $wbu-color-primary;
+$border-radius: 0;
+$border-radius-lg: 0;
+$border-radius-sm: 0;
+$btn-padding-y-lg: 1rem;
+$btn-padding-x-lg: 1.6rem;
+$navbar-nav-link-padding-x: $wbu-margin * 0.5;
+$nav-link-padding-y: $wbu-margin * 0.5;
+$nav-link-padding-x: $wbu-margin * 0.8;
+$font-size-base: $wbu-default-font-size;
+$form-check-input-gutter: $wbu-margin;
+$card-spacer-x: $wbu-margin;

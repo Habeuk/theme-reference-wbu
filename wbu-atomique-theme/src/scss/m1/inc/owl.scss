@@ -1,0 +1,36 @@
+@use "@stephane888/wbu-atomique/scss/wbu-ressources-clean.scss" as *;
+@use "../variables.scss";
+.owl-carousel {
+  .owl-wrapper {
+    display: flex !important;
+  }
+  .owl-item {
+    //on force pour les articles, pour que chaque cadre ait la meme hauteur.
+    > div {
+      height: 100%;
+      article {
+        height: 100%;
+        > div {
+          height: 100%;
+        }
+      }
+    }
+  }
+  .owl-controls {
+    .owl-pagination {
+      margin-top: $wbu-margin * 0.75;
+    }
+    .owl-page {
+      span {
+        border-radius: 0;
+        width: 20px;
+        height: 4px;
+      }
+      &.active {
+        span {
+          background: $wbu-color-primary;
+        }
+      }
+    }
+  }
+}

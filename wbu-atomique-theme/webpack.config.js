@@ -19,7 +19,6 @@ plugins.push(
   })
 );
 
-console.log("devMode", devMode);
 module.exports = {
   plugins,
   mode: env || "development", // On définit le mode en fonction de la valeur de NODE_ENV
@@ -30,7 +29,6 @@ module.exports = {
     "override-style": "./src/js/override-style.js",
     commentaire: "./src/js/commentaire.js",
     "page-taxonomie": "./src/js/page-taxonomie.js",
-    "blog-teaser": "./src/js/blog-teaser.js",
     "page-single-article": "./src/js/page-single-article.js",
     "page-home-principal": "./src/js/page-home-principal.js",
     "page-single-realisation": "./src/js/page-single-realisation.js",
@@ -42,6 +40,14 @@ module.exports = {
     "product-full": "./src/js/product-full.js",
     "product-teaser": "./src/js/product-teaser.js",
     "product-teaser-mini": "./src/js/product-teaser-mini.js",
+    prestataires: "./src/js/prestataires.js",
+    "prestataires-m0": "./src/js/prestataires-m0.js",
+    "prestataires-m0-default": "./src/js/prestataires-m0-default.js",
+    "prestataires-m1": "./src/js/prestataires-m1.js",
+    "prestataires-m1-default": "./src/js/prestataires-m1-default.js",
+    "prestataires-m2": "./src/js/prestataires-m2.js",
+    "prestataires-m3": "./src/js/prestataires-m3.js",
+    "prestataires-m4": "./src/js/prestataires-m4.js",
   },
   output: {
     path: path.resolve(__dirname, "../"),

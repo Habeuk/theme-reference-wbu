@@ -12,6 +12,7 @@ regions:
   header: "Header"
   hero_slider: "Hero slider"
   content: "Contenu principal"
+  sidebar_left: "sidebar left"
   call_to_action: "Call to action"
   footer: "Footer"
   commerce_sidebar_left: "commerce sidebar left"
@@ -19,10 +20,9 @@ regions:
 # Ajout des librairies
 libraries:
   - lesroisdelareno/theme-gater
-  - lesroisdelareno/override-style
-  - lesroisdelareno/google-oswald
-  # - lesroisdelareno/global-style
-  - lesroisdelareno/defautl-style
+  #- lesroisdelareno/override-style
+  #- lesroisdelareno/google-oswald
+  #- lesroisdelareno/defautl-style
 
 # Supprimer les librairies du themes parent.
 libraries-override:

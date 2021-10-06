@@ -9,62 +9,14 @@
   .block {
     margin-bottom: $wbu-margin * 2;
   }
-  .block-title {
-    .title {
-      font-weight: 300;
-    }
-    &::before {
-      bottom: 2px;
-    }
-    @include traitBottom(
-      $wbu-margin * 0.7,
-      $wbu-color-primary,
-      $wbu-margin-left: 0
-    );
-  }
+  @import "./inc/block-title.scss";
   /**
- * formulaire de filtre.
- */
-  .view_filter_display_filter {
-    &.filter-principal {
-      margin-bottom: $wbu-margin;
-      .form-item-sort-by {
-        label {
-          display: none;
-        }
-        select {
-          min-width: 200px;
-          padding: $wbu-margin * 0.4 $wbu-margin * 0.8;
-          line-height: 1.5;
-          height: auto;
-          font-size: $wbu-default-font-size * 1.1;
-        }
-      }
-      .form-actions {
-        display: none;
-      }
-    }
-    &.filter-side-bar-prix {
-      fieldset legend {
-        display: none;
-      }
-      // product-full-ion-range-slider
-      #product-full-ion-range-slider {
-        width: 100%;
-      }
-    }
-    &.filter-side-bar-search {
-      label {
-        display: none;
-      }
-      .form-actions {
-        display: none;
-      }
-    }
-  }
+   * formulaire de filtre.
+   */
+  @import "./inc/view_filter_display_filter.scss";
   /**
- * view display
- */
+   * view display
+   */
   .catalogue-search {
     position: relative;
     @include media-min("MD") {
@@ -88,6 +40,7 @@
       box-shadow: 0 15px 30px rgb(0 0 0 / 10%);
       padding: 0 15px 15px 15px;
       margin-left: -15px;
+      min-height: 100%;
     }
     .contain-cartsider-bar {
       font-size: $wbu-default-font-size * 0.8;
@@ -127,35 +80,10 @@
   }
 
   /**
-   * -
+   * -hierarchical-taxonomy-menu
    */
-  .hierarchical-taxonomy-menu {
-    &.menu {
-      padding-left: 0;
-      .menu {
-        padding-left: $wbu-margin;
-        width: 100%;
-      }
-    }
-    .menu-item {
-      padding-top: $wbu-margin * 0.5;
-      padding-bottom: $wbu-margin * 0.5;
-      border-bottom: 1px solid #ccc;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      a {
-        color: inherit;
-      }
-      i {
-        font-size: $wbu-default-font-size * 1.4;
-      }
-    }
-    .menu-item:last-child {
-      border-bottom: 0px solid #ccc;
-    }
-  }
+  @import "./inc/hierarchical-taxonomy-menu.scss";
+
   .cart-side-bar {
     .form-actions {
       display: none;

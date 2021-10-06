@@ -1,0 +1,62 @@
+@use "@stephane888/wbu-atomique/scss/wbu-ressources.scss" as *;
+@use "./variables.scss" as *;
+@use "@stephane888/wbu-atomique/scss/molecule/stan/billetDeBlogTeaser";
+
+.page-prestaires {
+  .block {
+    margin-bottom: $wbu-margin * 2;
+  }
+
+  @import "./inc/block-title.scss";
+  /**
+   * formulaire de filtre.
+   */
+  @import "./inc/view_filter_display_filter.scss";
+  //map google
+  .datas-on-map {
+    max-width: 400px;
+    .image-logo {
+      margin-right: $wbu-margin * 0.5;
+    }
+  }
+
+  // teaser
+  .billetDeBlogTeaser {
+    margin-bottom: $wbu-margin * 1.5;
+    &__text {
+      .title {
+        font-size: 2.1rem;
+      }
+    }
+  }
+
+  // view render
+  .prestataire-search {
+    position: relative;
+    @include media-min("MD") {
+      header {
+        position: absolute;
+        right: 0;
+        top: -70px;
+        left: auto;
+      }
+    }
+  }
+
+  /**
+   * Side bar left
+   */
+  .side-bar-left {
+    .region-sidebar-left {
+      box-shadow: 0 15px 30px rgb(0 0 0 / 10%);
+      padding: 0 15px 15px 15px;
+      margin-left: -15px;
+      min-height: 100%;
+    }
+
+    /**
+   * -hierarchical-taxonomy-menu
+   */
+    @import "./inc/hierarchical-taxonomy-menu.scss";
+  }
+}

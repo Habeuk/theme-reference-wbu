@@ -1,0 +1,13 @@
+.block-title {
+  .title {
+    font-weight: 300;
+  }
+  &::before {
+    bottom: 2px;
+  }
+  @include traitBottom(
+    $wbu-margin * 0.7,
+    $wbu-color-primary,
+    $wbu-margin-left: 0
+  );
+}

@@ -1,0 +1,31 @@
+@use "@stephane888/wbu-atomique/scss/wbu-ressources.scss" as *;
+@use "../variables.scss" as *;
+.block-section-blog {
+  /**
+   * .titre-description
+   */
+  .titre-description {
+    > * {
+      max-width: 100%;
+    }
+  }
+  /**
+   *  .textcotebg
+   */
+  .textcotebg {
+    padding: $wbu-margin 0;
+    margin-bottom: $wbu-margin;
+    .row {
+      margin-right: -$gutter;
+      margin-left: -$gutter;
+    }
+    .entete {
+      padding: 0 $gutter / 2;
+      .title {
+        a {
+          color: inherit;
+        }
+      }
+    }
+  }
+}

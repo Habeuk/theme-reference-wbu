@@ -1,0 +1,21 @@
+{% if content %}
+	{% set link_item %}
+	{{content.url}}
+	{% endset %}
+	<div {{attributes.addClass('layout__region')}}>
+		<div {{region_attributes.datas.addClass('main')}}>
+			<a href="{{link_item|striptags|trim}}">
+				{{content.dadas|layout_value}}
+			</a>
+		</div>
+		<div {{region_attributes.main.addClass('main')}}>
+			<a href="{{link_item|striptags|trim}}">
+				{{content.main|layout_value}}
+			</a>
+		</div>
+		{% if content.url.layout_builder_add_block %}
+			{{content.url}}
+			{{content.url.layout_builder_add_block}}
+		{% endif %}
+	</div>
+{% endif %}

@@ -37,6 +37,8 @@
     %}
 		<ul class="{{classses}}">
 			{% for item in items %}
+
+
 				{%
             set classes = [
               menu_level ? 'dropdown-item' : 'nav-item',
@@ -48,7 +50,6 @@
           %}
 				<li{{item.attributes.addClass(classes)}}>
 					{% if menu_level == 0 %}
-
 						{%
               set link_classes = [
                 not menu_level ? 'nav-link',
@@ -59,6 +60,7 @@
             %}
 
 						{% if item.below %}
+
 							{{ link(item.title, item.url, {'class': link_classes, 'data-toggle': 'dropdown', 'aria-expanded': 'false', 'aria-haspopup': 'true' }) }}
 							{{ menus.menu_links(item.below, attributes, menu_level + 1) }}
 						{% else %}
@@ -74,7 +76,6 @@
 						<div class="layout-block">
 							{{item.content}}
 						</div>
-
 					{% endif %}
 
 				</li>

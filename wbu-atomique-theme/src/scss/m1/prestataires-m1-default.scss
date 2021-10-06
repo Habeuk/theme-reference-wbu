@@ -1,0 +1,57 @@
+@use "@stephane888/wbu-atomique/scss/wbu-ressources-clean.scss" as *;
+@use "./variables.scss" as *;
+@use "./inc/boostrap.scss";
+@use "../defautl-style.scss";
+@use "@stephane888/wbu-atomique/scss/atome/typography/h1.scss";
+@use "@stephane888/wbu-atomique/scss/atome/typography/h2.scss";
+@use "@stephane888/wbu-atomique/scss/atome/typography/h3.scss";
+@use "@stephane888/wbu-atomique/scss/atome/typography/h4.scss";
+@use "../fonts/oswald/police.scss";
+/**
+ */
+// load librairy
+@use "@stephane888/wbu-atomique/scss/organisme/sections/textcotebg.scss";
+@use "@stephane888/wbu-atomique/scss/organisme/sections/description.scss";
+/**
+ */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Oswald", sans-serif;
+}
+.bg-light {
+  background-color: #f4f4f4 !important;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+}
+
+.space-margin {
+  margin-bottom: $wbu-margin * 2;
+  @include media-min("DD") {
+    margin-bottom: $wbu-margin * 4;
+  }
+}
+.space-padding {
+  padding-top: $wbu-margin * 2;
+  padding-bottom: $wbu-margin * 1.5;
+  @include media-min("DD") {
+    padding-top: $wbu-margin * 4;
+    padding-bottom: $wbu-margin * 2.5;
+  }
+}
+// on supprimer la marge-bottom sur le dernier article dans une liste:
+.views {
+  .views-row {
+    &:last-child {
+      .teaser-img-desc {
+        margin-bottom: 0;
+      }
+    }
+  }
+}

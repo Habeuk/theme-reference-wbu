@@ -1,0 +1,10 @@
+@use "@stephane888/wbu-atomique/scss/wbu-ressources-clean.scss" as *;
+@use "../variables.scss" as *;
+$wbu-color-primary: #ff6347;
+$wbu-color-link-hover: #921d08;
+$wbu-h2-font-size: 3.4rem;
+$wbu-color-link: $wbu-color-primary;
+$wbu-title-color: #585555;
+$space_bottom: $wbu-margin * 5;
+$space_top: $wbu-margin * 4;
+$space_inner_top: $space_top * 0.5;

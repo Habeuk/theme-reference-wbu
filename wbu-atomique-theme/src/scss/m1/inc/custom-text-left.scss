@@ -1,0 +1,30 @@
+@use "@stephane888/wbu-atomique/scss/wbu-ressources-clean.scss" as *;
+@use "../variables.scss";
+@use "@stephane888/wbu-atomique/scss/organisme/sections/titre-description.scss";
+.custom-text-left {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  .title {
+    padding-right: $wbu-margin;
+    position: relative;
+    text-transform: uppercase;
+    &::after {
+      display: none;
+    }
+  }
+  .description {
+    max-width: 650px;
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -$wbu-margin * 1.5;
+      right: auto;
+      bottom: $wbu-margin * 0.5;
+      width: 1px;
+      background: #cfcfcf;
+    }
+  }
+}

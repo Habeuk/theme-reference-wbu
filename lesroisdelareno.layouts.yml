@@ -1,4 +1,17 @@
 # les elements personalisers tels que "fieldtype" doivent etre supprimer y compris le code PHP en relation. Car ce code a peut de change d'evoluer.
+lesroisdelareno.link:
+  label: 'display link'
+  category: 'Template lesroisdelareno'
+  template: templates/layouts/link
+  default_region: main
+  regions:
+    main:
+      label: 'Texte du lien'
+    dadas:
+      label: 'Données'
+    url:
+      label: 'lien'
+
 lesroisdelareno.topbar_content:
   label: 'topbar-content'
   category: 'Template lesroisdelareno'
