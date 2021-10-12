@@ -50,22 +50,28 @@ teaser-realisation:
 prestataires_m4:
   css:
     theme:
+      css/prestataires-m4-default.css: {}
       css/prestataires-m4.css: { weight: 20 }
   js:
+    js/prestataires-m4-default.js: {}
     js/prestataires-m4.js: {}
 
 prestataires_m3:
   css:
     theme:
+      css/prestataires-m3-default.css: {}
       css/prestataires-m3.css: { weight: 20 }
   js:
     js/prestataires-m3.js: {}
+    js/prestataires-m3-default.js: {}
 
 prestataires_m2:
   css:
     theme:
+      css/prestataires-m2-default.css: {}
       css/prestataires-m2.css: { weight: 20 }
   js:
+    js/prestataires-m2-default.js: {}
     js/prestataires-m2.js: {}
 
 prestataires_m1:

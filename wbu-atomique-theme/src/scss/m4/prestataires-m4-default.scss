@@ -1,0 +1,12 @@
+@use "@stephane888/wbu-atomique/scss/wbu-ressources-clean.scss" as *;
+@use "./variables.scss" as *;
+@use "./inc/boostrap.scss";
+@use "../defautl-style.scss";
+@use "@stephane888/wbu-atomique/scss/atome/typography/h1.scss";
+@use "@stephane888/wbu-atomique/scss/atome/typography/h2.scss";
+@use "@stephane888/wbu-atomique/scss/atome/typography/h3.scss";
+@use "@stephane888/wbu-atomique/scss/atome/typography/h4.scss";
+@use "../fonts/Teko/police.scss";
+
+// load librairy
+@use "@stephane888/wbu-atomique/scss/organisme/sections/swiper-big-v2.scss";

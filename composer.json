@@ -1,0 +1,14 @@
+{
+    "name": "stephane888/lesroisdelareno",
+    "description": "theme lesroidelareno",
+    "type": "drupal-theme-custom",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "stephane888",
+            "email": "kksasteph888@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}

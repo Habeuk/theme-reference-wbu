@@ -1,0 +1,33 @@
+@use "@stephane888/wbu-atomique/scss/wbu-ressources-clean.scss" as *;
+@use "./variables.scss" as *;
+@use "../inc/partenaires.scss";
+
+/**
+ * - .teaser-m1
+ */
+.teaser-m1 {
+  max-width: 100%;
+}
+
+/**
+ * - comments-left
+ */
+.comments-left {
+  position: relative;
+  background-attachment: fixed;
+  &::before {
+    content: "";
+    background-color: rgba(22, 22, 22, 0.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+  }
+  .entete {
+    background: transparent;
+    text-align: center;
+    color: #fff;
+  }
+}
+

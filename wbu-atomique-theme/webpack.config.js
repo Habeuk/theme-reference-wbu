@@ -46,8 +46,11 @@ module.exports = {
     "prestataires-m1": "./src/js/prestataires-m1.js",
     "prestataires-m1-default": "./src/js/prestataires-m1-default.js",
     "prestataires-m2": "./src/js/prestataires-m2.js",
+    "prestataires-m2-default": "./src/js/prestataires-m2-default.js",
     "prestataires-m3": "./src/js/prestataires-m3.js",
+    "prestataires-m3-default": "./src/js/prestataires-m3-default.js",
     "prestataires-m4": "./src/js/prestataires-m4.js",
+    "prestataires-m4-default": "./src/js/prestataires-m4-default.js",
   },
   output: {
     path: path.resolve(__dirname, "../"),

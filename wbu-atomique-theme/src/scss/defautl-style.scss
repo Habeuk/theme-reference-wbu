@@ -14,8 +14,8 @@
   }
   .owl-item {
     img {
-      width: 100px;
-      height: 100px;
+      max-width: 150px;
+      max-height: 100px;
     }
   }
 }
@@ -29,6 +29,9 @@
 }
 .padding-top {
   padding-top: $space_top;
+}
+.margin-top {
+  margin-top: $space_top;
 }
 .padding-bottom {
   padding-bottom: $space_bottom;

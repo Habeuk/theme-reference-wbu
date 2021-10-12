@@ -1,0 +1,21 @@
+@use "@stephane888/wbu-atomique/scss/wbu-ressources.scss" as *;
+@use "../variables.scss" as *;
+/**
+ * lesroisdelareno-blockcounter
+ */
+.lesroisdelareno-blockcounter {
+  padding: $space_inner_top 0;
+  background-color: rgb(219, 219, 219);
+  .owl-dots {
+    display: none;
+  }
+  img {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    -webkit-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+  }
+  .owl-item:hover img {
+    filter: grayscale(0);
+  }
+}

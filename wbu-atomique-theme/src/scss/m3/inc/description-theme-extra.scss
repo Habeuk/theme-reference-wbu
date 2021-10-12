@@ -1,0 +1,8 @@
+@use "@stephane888/wbu-atomique/scss/wbu-ressources-clean.scss" as *;
+@use "../variables.scss";
+.description-theme-extra {
+  .textcotebg {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
