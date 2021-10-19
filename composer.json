@@ -11,6 +11,7 @@
     ],
     "minimum-stability": "dev",
     "require": {
-    	"stephane888/wb_universe": "^2.0  | dev-2x"
+    	"stephane888/wb_universe": "^2.0  | dev-2x",
+    	"drupal/pathauto": "^1.8"
     }
 }

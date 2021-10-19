@@ -1,0 +1,14 @@
+uuid: 48401f6f-9991-43b0-b151-aa54f5b32452
+langcode: fr
+status: true
+dependencies:
+  module:
+    - taxonomy
+id: url_term_taxo
+label: 'url term taxo'
+type: 'canonical_entities:taxonomy_term'
+pattern: '[term:vocabulary:vid]/[term:name]'
+selection_criteria: {  }
+selection_logic: and
+weight: 0
+relationships: {  }
