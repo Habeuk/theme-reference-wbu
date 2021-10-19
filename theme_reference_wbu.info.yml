@@ -11,7 +11,7 @@ screenshot: images/theme_reference_wbu.png
 
 regions:
   top_header: "Top header"
-  header: "Top header"
+  header: "Header"
   hero_slider: "Hero slider"
   content: "Contenu principal"
   call_to_action: "Call to action"
@@ -20,10 +20,9 @@ regions:
 # Ajout des librairies
 libraries:
   - theme_reference_wbu/global-style
-
-# Supprimer les librairies du themes parent.  
+# Supprimer les librairies du themes parent.
 #libraries-override:
-  #wb_universe/fontawesome: false
-  #wb_universe/google-police: false
-  #wb_universe/google-analytics: false
+#wb_universe/fontawesome: false
+#wb_universe/google-police: false
+#wb_universe/google-analytics: false
 

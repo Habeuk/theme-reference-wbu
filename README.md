@@ -1,4 +1,4 @@
-# stephane888/theme_reference_wbu
+# theme_reference_wbu
 
 ## Table of Contents
 
@@ -9,7 +9,7 @@
 
 ## About <a name = "about"></a>
 
-Ce theme drupal est un modele de base, il permet de generer rapidement un sous theme. il utilise nodejs pour generer les styes.
+theme_reference_wbu est un theme drupal est un modele de base, il permet de generer rapidement un sous theme. il utilise nodejs pour generer les styes.
 
 ## Getting Started <a name = "getting_started"></a>
 
