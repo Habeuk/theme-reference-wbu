@@ -1,0 +1,25 @@
+uuid: 4d07fb66-eae9-487d-87c4-5fc1560cd58d
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - theme_reference_wbu
+_core:
+  default_config_hash: NDwadleLD3YVSbDUaakxyYZyINYtkFtOVGShfq4kWy8
+id: theme_reference_wbu_branding
+theme: theme_reference_wbu
+region: header
+weight: 0
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  provider: system
+  label_display: '0'
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: true
+visibility: {  }

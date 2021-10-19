@@ -11,6 +11,6 @@
     ],
     "minimum-stability": "dev",
     "require": {
-    	"stephane888/wb_universe": "^2.0"
+    	"stephane888/wb_universe": "^2.0  | dev-2x"
     }
 }

@@ -1,0 +1,20 @@
+uuid: 50ba009a-40a7-4010-bfba-93d60ac075c1
+langcode: en
+status: true
+dependencies:
+  theme:
+    - theme_reference_wbu
+_core:
+  default_config_hash: 7rR9chwXvdM2H8OYMAYx9Zj3GGlPMrZp_M3ZA4thYTk
+id: theme_reference_wbu_page_title
+theme: theme_reference_wbu
+region: content
+weight: -50
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility: {  }

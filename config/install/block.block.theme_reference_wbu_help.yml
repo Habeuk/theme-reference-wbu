@@ -1,0 +1,22 @@
+uuid: cf08dfcb-f6ec-4ac4-89d6-a6a5eebbe3d6
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - theme_reference_wbu
+_core:
+  default_config_hash: 8I8iACSa0sKO3k3jlvUG1ge52rfcKX7USJAQYnzuBgg
+id: theme_reference_wbu_help
+theme: theme_reference_wbu
+region: content
+weight: -30
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }

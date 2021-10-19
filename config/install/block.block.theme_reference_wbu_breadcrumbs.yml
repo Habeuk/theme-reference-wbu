@@ -1,0 +1,22 @@
+uuid: 0ed5ae1c-f215-47b7-992e-78b455a9cf03
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - theme_reference_wbu
+_core:
+  default_config_hash: oXUb3JZR2WW5VOdw4HrhRicCsq51mCgLfRyvheG68ck
+id: theme_reference_wbu_breadcrumbs
+theme: theme_reference_wbu
+region: top_header
+weight: -5
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  provider: system
+  label_display: '0'
+visibility: {  }
