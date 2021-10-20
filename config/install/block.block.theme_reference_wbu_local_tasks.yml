@@ -1,11 +1,8 @@
-uuid: 1d71ff0b-e6a6-4fac-82f2-42950d423f02
 langcode: en
 status: true
 dependencies:
   theme:
     - theme_reference_wbu
-_core:
-  default_config_hash: X9I1OB0W3WlWtrK-CNcg6hNWwa8wficanpH8pYnDZDE
 id: theme_reference_wbu_local_tasks
 theme: theme_reference_wbu
 region: content
