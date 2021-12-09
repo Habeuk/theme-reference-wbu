@@ -6,7 +6,7 @@ core_version_requirement: ^8 || ^9
 base theme: wb_universe
 dependencies:
   - drupal:wb_universe
-  - drupal:pathauto
+
 logo: images/logo.png
 screenshot: images/theme_reference_wbu.png
 
