@@ -7,4 +7,3 @@ global-style:
   dependencies:
     - core/jquery
     - core/drupal
-
