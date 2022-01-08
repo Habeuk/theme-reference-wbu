@@ -28,7 +28,7 @@ Nous allons creer le theme : mydigitaltheme
 ### Installing
 
 Une foix le theme telechargé, il est dans /themes/contrib.
-Copier le /themes/contrib/theme_reference_wbu vers /themes/contrib/mydigitaltheme
+Copier le /themes/custom/theme_reference_wbu vers /themes/custom/mydigitaltheme
 
 Acceder à /themes/contrib/mydigitaltheme via un terminal et executé le fichie traitementHtml.sh
 
