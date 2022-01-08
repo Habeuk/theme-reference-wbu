@@ -30,7 +30,7 @@ Nous allons creer le theme : mydigitaltheme
 Une foix le theme telechargé, il est dans /themes/contrib.
 Copier le /themes/custom/theme_reference_wbu vers /themes/custom/mydigitaltheme
 
-Acceder à /themes/contrib/mydigitaltheme via un terminal et executé le fichie traitementHtml.sh
+Acceder à /themes/custom/mydigitaltheme via un terminal et executé le fichie traitementHtml.sh
 
 ```
  ./traitementHtml.sh
