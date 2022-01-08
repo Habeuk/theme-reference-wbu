@@ -1,4 +1,4 @@
-# stephane888/theme_reference_wbu
+# theme_reference_wbu
 
 ## Table of Contents
 
@@ -9,7 +9,7 @@
 
 ## About <a name = "about"></a>
 
-Ce theme drupal est un modele de base, il permet de generer rapidement un sous theme. il utilise nodejs pour generer les styes.
+theme_reference_wbu est un theme drupal est un modele de base, il permet de generer rapidement un sous theme. il utilise nodejs pour generer les styes.
 
 ## Getting Started <a name = "getting_started"></a>
 
@@ -28,7 +28,7 @@ Nous allons creer le theme : mydigitaltheme
 ### Installing
 
 Une foix le theme telechargé, il est dans /themes/contrib.
-Copier le /themes/contrib/theme_reference_wbu vers /themes/contrib/mydigitaltheme
+Copier le /themes/custom/theme_reference_wbu vers /themes/custom/mydigitaltheme
 
 Acceder à /themes/contrib/mydigitaltheme via un terminal et executé le fichie traitementHtml.sh
 

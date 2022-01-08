@@ -1,0 +1,12 @@
+@use "@stephane888/wbu-atomique/scss/wbu-ressources.scss" as *;
+@use "./variables.scss" as *;
+@use "./bootstrap.scss";
+@use "@stephane888/wbu-atomique/scss/atome/typography/_default.scss";
+@use "@stephane888/wbu-atomique/scss/atome/typography/a.scss";
+@use "./fonts/Ubuntu/police.scss";
+
+//
+.dialog-off-canvas-main-canvas {
+  max-width: 100%;
+  width: 100%;
+}

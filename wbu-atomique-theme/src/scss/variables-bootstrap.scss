@@ -1,0 +1,27 @@
+@use "@stephane888/wbu-atomique/scss/wbu-ressources-clean.scss" as *;
+@use "./variables.scss" as *;
+
+$font-size-base: $wbu-default-font-size;
+// Shared variables that are reassigned to `$input-` and `$btn-` specific variables.
+$input-btn-padding-y: 0.7rem !default;
+$input-btn-padding-x: 1.2rem !default;
+
+$input-btn-padding-y-sm: 0.35rem !default;
+$input-btn-padding-x-sm: 0.8rem !default;
+
+$input-btn-padding-y-lg: 1rem !default;
+$input-btn-padding-x-lg: 1.7rem !default;
+
+//bootstrap override
+$primary: $wbu-color-primary;
+$border-radius: 0;
+$border-radius-lg: 0;
+$border-radius-sm: 0;
+$btn-padding-y-lg: 1rem;
+$btn-padding-x-lg: 1.6rem;
+$navbar-nav-link-padding-x: $wbu-margin * 0.5;
+$nav-link-padding-y: $wbu-margin * 0.5;
+$nav-link-padding-x: $wbu-margin * 0.8;
+$font-size-base: $wbu-default-font-size;
+$form-check-input-gutter: $wbu-margin;
+$card-spacer-x: $wbu-margin;

@@ -1,0 +1,19 @@
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - theme_reference_wbu
+id: theme_reference_wbu_messages
+theme: theme_reference_wbu
+region: top_header
+weight: 1
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }
