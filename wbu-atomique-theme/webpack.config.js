@@ -92,7 +92,7 @@ module.exports = {
       },
       //règles de compilations pour les images
       {
-        test: /\.(gif|png|jpe?g)$/i,
+        test: /\.(gif|png|eot|jpe?g)$/i,
         use: [
           {
             // Using file-loader for these files
