@@ -5,7 +5,7 @@
 	{{ page.hero_slider }}
 {% endif %}
 {% if page.content %}
-	<div{{page.content.attributes.addClass('container-fluid')}}>
+	<div{{page.content.attributes}}>
 		{{ page.content|without('attributes','wrapper_attribute') }}
 	</div>
 {% endif %}
