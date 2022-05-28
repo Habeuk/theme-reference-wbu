@@ -22,8 +22,10 @@ regions:
 libraries:
   - theme_reference_wbu/global-style
 # Supprimer les librairies du themes parent.
-#libraries-override:
+libraries-override:
 #wb_universe/fontawesome: false
-#wb_universe/google-police: false
-#wb_universe/google-analytics: false
+  wb_universe/google-police: false
+  wb_universe/google-analytics: false
+  wb_universe/global-style-js: false
+
 
