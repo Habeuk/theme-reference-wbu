@@ -46,7 +46,6 @@
     "not ie 11"
   ],
   "dependencies": {
-    "@stephane888/wbu-atomique": "^1.0.5",
     "bootstrap": "^4.6.0",
     "image-webpack-loader": "^7.0.1",
     "imagemin": "^7.0.1"
