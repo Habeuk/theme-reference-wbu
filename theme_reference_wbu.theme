@@ -1,14 +1,4 @@
 <?php
-use Drupal\theme_reference_wbu\JobseekersResouces;
-use Drupal\Core\Form\FormStateInterface;
-use Symfony\Component\HttpFoundation\Request;
 
-/**
- * Implement hook_preprocess_page
- */
-function theme_reference_wbu_preprocess_page(&$variables)
-{
-  JobseekersResouces::wbupreprocess_page($variables);
-}
 
 
