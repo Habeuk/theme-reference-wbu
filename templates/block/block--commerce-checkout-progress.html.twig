@@ -96,6 +96,8 @@
     'block',
     'block-' ~ configuration.provider|clean_class,
     'block-' ~ plugin_id|clean_class,
+    'width-tablet',
+    'mx-auto'
   ]
 %}
 <div{{ attributes.addClass(classes) }}>
@@ -107,7 +109,7 @@
   {% endif %}
   {{ title_suffix }}
   {% block content %}
-    <div{{ content_attributes.addClass('content') }}>
+    <div{{ content_attributes.addClass(['content','checkout-progress--custom']) }}>
       {{ content }}
     </div>
   {% endblock %}
