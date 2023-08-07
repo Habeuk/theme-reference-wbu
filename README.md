@@ -1,61 +1,42 @@
-# theme_reference_wbu
+# Drupal module : clothingslayouts
 
-## Table of Contents
+Le module contient plusieurs layout.
 
-- [About](#about)
-- [Getting Started](#getting_started)
-- [Usage](#usage)
-- [Contributing](../CONTRIBUTING.md)
-
-## About <a name = "about"></a>
-
-theme_reference_wbu est un theme drupal est un modele de base, il permet de generer rapidement un sous theme. il utilise nodejs pour generer les styes.
-
-## Getting Started <a name = "getting_started"></a>
-
-Pour son installation vous devez avoir un envirroment drupal utilisant composer.
-vous pouvez l'installer avec :
+## installation
 
 ```
-composer require stephane888/theme_reference_wbu
+composer require habeuk/clothingslayouts
 ```
 
-### Prerequisites
+## List layouts
 
-La proceduire qui suit a été effectué sous un environnement linux.
-Nous allons creer le theme : mydigitaltheme
+#### Section 1 : Clothing : tabs (clothingslayouts_tabs)
 
-### Installing
+<img alt="Logo habeuk" src="./icones/sections/clothingslayouts-tabs.png" height="400px" width="auto">
 
-Une foix le theme telechargé, il est dans /themes/contrib.
-Copier le /themes/custom/theme_reference_wbu vers /themes/custom/mydigitaltheme
+#### Section 2 : hero
 
-Acceder à /themes/custom/mydigitaltheme via un terminal et executé le fichie traitementHtml.sh
+<img alt="Logo habeuk" src="./icones/sections/clothingslayoutshero.png" height="400px" width="auto">
 
-```
- ./traitementHtml.sh
-```
+### Author
 
-pour la question : mettre à jour le thème , 1 mettre à jour ou 0 non , la reponse 1
+<div>
+<img alt="Logo habeuk" src="https://habeuk.com/sites/default/files/styles/medium/public/2023-08/logo-habeuk.png" height="40px">
+<strong> Provide by <a href="https://habeuk.com/" target="_blank"> habeuk.com </a> </strong>
+</div>
+# Drupal theme : theme_reference_wbu
 
-```
-mettre à jour le thème , 1 mettre à jour ou 0 non : 1
-```
+Theme utilisé par le generateur de site web.
 
-ensuite :
+## installation
 
 ```
-Entrez le nom de lancien theme    : theme_reference_wbu
+composer require habeuk/theme_reference_wbu
 ```
 
-Votre nouveau theme mydigitaltheme est pret.
+### Author
 
-## Usage <a name = "usage"></a>
-
-Les styles sont gerers ici via nodeJs, donc vous devez egalment installé les paquets requis:
-Acceder à /wbu-atomique-theme
-
-```
-cd mydigitaltheme/wbu-atomique-theme
-npm install
-```
+<div>
+<img alt="Logo habeuk" src="https://habeuk.com/sites/default/files/styles/medium/public/2023-08/logo-habeuk.png" height="40px">
+<strong> Provide by <a href="https://habeuk.com/" target="_blank"> habeuk.com </a> </strong>
+</div>
