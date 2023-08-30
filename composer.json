@@ -1,7 +1,7 @@
 {
   "name": "habeuk/theme_reference_wbu",
   "description": "Theme enfant pour wb_universe",
-  "type": "drupal-theme-custom",
+  "type": "drupal-custom-theme",
   "license": "GPL-2.0-or-later",
   "authors": [
     {
