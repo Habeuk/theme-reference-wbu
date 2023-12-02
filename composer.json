@@ -11,6 +11,6 @@
   ],
   "minimum-stability": "dev",
   "require": {
-    "habeuk/wb_universe": "^3.0  | dev-3x"
+    "habeuk/wb_universe": "^4.0  | dev-4x"
   }
 }
